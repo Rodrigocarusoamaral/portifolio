@@ -155,14 +155,11 @@
         /* ===== MARQUEE ===== */
         .marquee-section{border-top:1px solid var(--border-soft);border-bottom:1px solid var(--border-soft);padding:30px 0;overflow:hidden;-webkit-mask-image:linear-gradient(to right,transparent,#000 90px,#000 calc(100% - 90px),transparent);mask-image:linear-gradient(to right,transparent,#000 90px,#000 calc(100% - 90px),transparent)}
         .marquee-lead{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--text-3);text-align:center;margin-bottom:24px}
-        .marquee-track{display:flex;gap:68px;align-items:center;animation:marquee 50s linear infinite;width:max-content}
+        .marquee-track{display:flex;gap:64px;align-items:center;animation:marquee 52s linear infinite;width:max-content}
         .marquee-track:hover{animation-play-state:paused}
         @keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
-        .logo-item{height:25px;opacity:.42;transition:opacity .35s var(--ease);flex-shrink:0;filter:grayscale(1)}
-        [data-theme="dark"] .logo-item{filter:grayscale(1) brightness(0) invert(1)}
-        .logo-item:hover{opacity:.8}
-        .logo-text{font-family:var(--editorial);font-style:italic;font-size:19px;font-weight:400;letter-spacing:-.01em;color:var(--text-2);opacity:.78;transition:opacity .3s var(--ease);flex-shrink:0;white-space:nowrap}
-        .logo-text:hover{opacity:.85}
+        .logo-text{font-family:var(--display);font-style:normal;font-size:20px;font-weight:600;letter-spacing:-.015em;color:var(--text-2);opacity:.78;transition:opacity .3s var(--ease),color .3s var(--ease);flex-shrink:0;white-space:nowrap}
+        .logo-text:hover{opacity:1;color:var(--accent)}
 
         /* ===== METRICS ===== */
         .metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;background:var(--bg-card)}
@@ -606,15 +603,15 @@ const caseStudies = [
     {tag:'Edge Computing',title:'Palantir Edge AI Collaboration',outcome:'Extended Palantir ontology capabilities to edge devices, bringing decision intelligence on-device.',role:'GTM Strategy & Partnership Lead',link:'https://www.qualcomm.com/news/releases/2025/03/qualcomm-and-palantir-work-to-extend-ai-and-ontology-capabilitie'}
 ];
 const partners = [
-    {name:'Qualcomm',logo:GH+'Qualcomm-Logo.png'},
-    {name:'IBM',logo:GH+'IBM_logo.svg.png'},
-    {name:'AWS',logo:GH+'aws.svg'},
-    {name:'Palantir',logo:GH+'Palantir_Technologies_logo.svg.png'},
-    {name:'Google',logo:GH+'google.svg'},
-    {name:'Mistral AI',logo:GH+'mistral-logo-color-black.png'},
-    {name:'Duolingo',logo:GH+'Duolingo.svg'},
-    {name:'Oracle',logo:GH+'oracle.svg'},
-    {name:'Meta',logo:GH+'meta.svg'}
+    {name:'Qualcomm'},
+    {name:'IBM'},
+    {name:'AWS'},
+    {name:'Palantir'},
+    {name:'Google'},
+    {name:'Mistral AI'},
+    {name:'Duolingo'},
+    {name:'Oracle'},
+    {name:'Meta'}
 ];
 const platforms = [
     {title:'Qualcomm AI Engine',link:'https://www.qualcomm.com/processors/ai-engine',role:'Led product messaging, positioning, and feature storytelling in collaboration with product management and digital SEO teams.',thumbnail:'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=500&fit=crop'},
@@ -637,19 +634,12 @@ const beyondItems = [
     {title:'AI Personal Projects',description:'Exploring emerging AI applications and experimental builds on nights and weekends.',icon:'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>'}
 ];
 
-// ===== MARQUEE =====
+// ===== MARQUEE (uniform wordmarks) =====
 const mq = document.getElementById('marqueeSection');
 const wrapper = document.createElement('div');
 wrapper.className = 'marquee-track';
 partners.concat(partners).forEach(p => {
-    if(p.logo){
-        const img = document.createElement('img');
-        img.className = 'logo-item'; img.src = p.logo; img.alt = p.name; img.loading = 'lazy';
-        img.onerror = function(){ const t = document.createElement('span'); t.className='logo-text'; t.textContent = p.name; this.replaceWith(t); };
-        wrapper.appendChild(img);
-    } else {
-        const t = document.createElement('span'); t.className='logo-text'; t.textContent = p.name; wrapper.appendChild(t);
-    }
+    const t = document.createElement('span'); t.className='logo-text'; t.textContent = p.name; wrapper.appendChild(t);
 });
 mq.appendChild(wrapper);
 
@@ -712,7 +702,6 @@ experiences.forEach(exp => {
     });
     timeline.appendChild(item);
 });
-// open the current role by default
 const firstCard = timeline.querySelector('.tl-item.current .tl-card');
 if(firstCard){ firstCard.classList.add('open'); firstCard.querySelector('.tl-expand span').textContent='Collapse'; }
 
