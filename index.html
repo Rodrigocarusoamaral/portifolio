@@ -122,7 +122,7 @@
         .hero{min-height:calc(100vh - 70px);display:grid;grid-template-columns:1.25fr 0.9fr;gap:72px;align-items:center;padding:72px 0 64px;position:relative}
         .hero-court{position:absolute;inset:0;z-index:0;pointer-events:none;opacity:.5;overflow:hidden}
         .hero-court svg{position:absolute;right:-60px;top:50%;transform:translateY(-50%);height:118%;width:auto;color:var(--accent)}
-        .hero>div{position:relative;z-index:2}
+        .hero>div:not(.hero-court){position:relative;z-index:2}
         .hero-avail{display:inline-flex;align-items:center;gap:9px;font-family:var(--mono);font-size:12px;letter-spacing:.04em;color:var(--text-2);padding:7px 15px;border:1px solid var(--border);border-radius:999px;margin-bottom:34px;opacity:0;animation:fadeUp .8s var(--ease) .1s forwards;background:var(--bg)}
         .hero-avail .pulse{width:7px;height:7px;border-radius:50%;background:var(--olive);box-shadow:0 0 0 0 rgba(111,107,69,.5);animation:pulse 2.4s infinite}
         @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(111,107,69,.45)}70%{box-shadow:0 0 0 7px rgba(111,107,69,0)}100%{box-shadow:0 0 0 0 rgba(111,107,69,0)}}
