@@ -1,0 +1,10 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="RCA favicon">
+  <rect x="0" y="0" width="64" height="64" rx="15" fill="#B85A3B"/>
+  <g fill="none" stroke="#F4EEE2" stroke-width="2.6" stroke-linecap="square">
+    <rect x="16" y="11" width="32" height="42" rx="1"/>
+    <line x1="16" y1="32" x2="48" y2="32"/>
+    <line x1="32" y1="22" x2="32" y2="42"/>
+    <line x1="22" y1="22" x2="42" y2="22"/>
+    <line x1="22" y1="42" x2="42" y2="42"/>
+  </g>
+</svg>

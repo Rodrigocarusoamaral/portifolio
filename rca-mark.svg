@@ -1,0 +1,19 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Rodrigo Caruso Amaral mark">
+  <!-- Clay Court mark: a top-down singles court abstraction -->
+  <rect x="0" y="0" width="240" height="240" rx="52" fill="#B85A3B"/>
+  <!-- court lines in chalk -->
+  <g fill="none" stroke="#F4EEE2" stroke-width="7" stroke-linecap="square">
+    <!-- outer court (singles sidelines + baselines) -->
+    <rect x="58" y="40" width="124" height="160" rx="2"/>
+    <!-- net line (mid) -->
+    <line x1="58" y1="120" x2="182" y2="120"/>
+    <!-- service lines -->
+    <line x1="78" y1="84" x2="162" y2="84"/>
+    <line x1="78" y1="156" x2="162" y2="156"/>
+    <!-- center service line -->
+    <line x1="120" y1="84" x2="120" y2="156"/>
+    <!-- center marks on baselines -->
+    <line x1="120" y1="40" x2="120" y2="52"/>
+    <line x1="120" y1="188" x2="120" y2="200"/>
+  </g>
+</svg>
