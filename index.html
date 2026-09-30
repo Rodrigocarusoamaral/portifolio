@@ -1,763 +1,511 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rodrigo Caruso Amaral — AI Strategy, Partnerships & Go-to-Market</title>
-    <meta name="description" content="Rodrigo Caruso Amaral — AI strategy, partnerships, and go-to-market leader. Bridging cutting-edge AI with real-world market impact, from cloud to edge.">
-    <meta property="og:title" content="Rodrigo Caruso Amaral">
-    <meta property="og:description" content="AI Strategy, Partnerships & Go-to-Market Leader">
-    <meta property="og:type" content="website">
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <style>
-        :root{
-            /* ===== CLAY COURT — light (default) ===== */
-            --bg:#FBF7EE;            /* paper */
-            --bg-raised:#F4EEE2;     /* chalk */
-            --bg-card:#FCF9F1;
-            --bg-ink:#221E1A;        /* ink (terminal) */
-            --border:rgba(34,30,26,0.13);
-            --border-soft:rgba(34,30,26,0.07);
-            --border-hover:rgba(34,30,26,0.26);
-            --text-1:#221E1A;        /* ink */
-            --text-2:#5A5347;
-            --text-3:#8C8273;        /* stone */
-            --accent:#B85A3B;        /* clay */
-            --accent-deep:#9C4528;   /* clay deep */
-            --accent-dim:rgba(184,90,59,0.10);
-            --accent-soft:rgba(184,90,59,0.05);
-            --olive:#6F6B45;
-            --ochre:#CB9A4F;
-            --chalk:#F4EEE2;
-            --radius:16px;
-            --radius-sm:10px;
-            --maxw:1180px;
-            --pad:64px;
-            --display:'Bricolage Grotesque',-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;
-            --editorial:'Newsreader',Georgia,'Times New Roman',serif;
-            --sans:'Bricolage Grotesque',-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;
-            --mono:'JetBrains Mono',ui-monospace,monospace;
-            --ease:cubic-bezier(0.22,1,0.36,1);
-            --ease-out:cubic-bezier(0,0,0.2,1);
-        }
-        [data-theme="dark"]{
-            /* ===== NIGHT COURT — dark ===== */
-            --bg:#1A1714;
-            --bg-raised:#221E19;
-            --bg-card:#26211B;
-            --bg-ink:#F2EAD9;
-            --border:rgba(242,234,217,0.11);
-            --border-soft:rgba(242,234,217,0.055);
-            --border-hover:rgba(242,234,217,0.26);
-            --text-1:#F2EAD9;
-            --text-2:#B8B0A0;
-            --text-3:#8A8273;
-            --accent:#D27349;
-            --accent-deep:#B85A3B;
-            --accent-dim:rgba(210,115,73,0.13);
-            --accent-soft:rgba(210,115,73,0.06);
-            --olive:#9A955F;
-            --ochre:#D9AD63;
-            --chalk:#F4EEE2;
-        }
-        *{margin:0;padding:0;box-sizing:border-box}
-        html{scroll-behavior:smooth}
-        ::selection{background:var(--accent-dim);color:var(--accent-deep)}
-        body{font-family:var(--sans);background:var(--bg);color:var(--text-1);overflow-x:hidden;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;line-height:1.65;font-size:16px;transition:background .5s var(--ease),color .5s var(--ease)}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rodrigo Caruso Amaral</title>
+<meta name="description" content="Rodrigo Caruso Amaral. AI business development, partnerships, and go-to-market at Qualcomm, based in San Diego.">
+<meta property="og:title" content="Rodrigo Caruso Amaral">
+<meta property="og:description" content="AI business development, partnerships, and go-to-market at Qualcomm.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://rodrigocarusoamaralportfolio.me/">
+<meta property="og:image" content="https://rodrigocarusoamaralportfolio.me/profile-1400.jpg">
+<meta name="theme-color" content="#F7F7F5">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600&family=DM+Serif+Display:ital@1&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F7F7F5;
+  --card:#EEEEEA;
+  --card-2:#E6E6E1;
+  --white:#FFFFFF;
+  --ink:#1B1B1A;
+  --ink-2:#4F4F4B;
+  --ink-3:#63635E;
+  --line:rgba(27,27,26,.09);
+  --line-2:rgba(27,27,26,.16);
+  --blue:#2F5BEA;
+  --sans:"Albert Sans",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --serif:"DM Serif Display",Georgia,serif;
+  --out:cubic-bezier(.23,1,.32,1);
+  --r-lg:28px;
+  --r-md:18px;
+  --r-sm:12px;
+  --max:1120px;
+  --gutter:20px;
+  --space:88px;
+  color-scheme:light;
+}
+@media(min-width:760px){:root{--gutter:32px;--space:120px}}
 
-        /* paper grain */
-        body::before{content:'';position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.55;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E")}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:96px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{font-family:var(--sans);font-size:17px;line-height:1.55;color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;overflow-x:clip}
+::selection{background:var(--ink);color:var(--bg)}
+:focus-visible{outline:2px solid var(--blue);outline-offset:3px;border-radius:6px}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+h1,h2,h3{font-weight:500;letter-spacing:-.025em;text-wrap:balance}
+.serif{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:-.01em}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gutter)}
+.section{padding-top:var(--space)}
+.h2{font-size:clamp(2rem,3.6vw,3rem);line-height:1.08;margin-bottom:14px}
+.lede{color:var(--ink-2);max-width:56ch;font-size:clamp(1.02rem,1.3vw,1.15rem)}
+.muted{color:var(--ink-3)}
+.head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:40px;flex-wrap:wrap}
 
-        /* ===== THE BASELINE — signature clay rule ===== */
-        .baseline{height:2px;background:var(--accent);border:none;width:100%;opacity:.9}
-        hr.baseline{margin:0}
+/* Pills */
+.pill{display:inline-flex;align-items:center;gap:8px;height:46px;padding:0 22px;border-radius:999px;font-weight:500;font-size:15.5px;white-space:nowrap;transition:transform .16s var(--out),background-color .15s ease,color .15s ease}
+.pill:active{transform:scale(.97)}
+.pill-dark{background:var(--ink);color:var(--bg)}
+.pill-light{background:var(--card);color:var(--ink)}
+@media(hover:hover){.pill-dark:hover{background:#000}.pill-light:hover{background:var(--card-2)}}
+.pill svg{width:16px;height:16px}
+.arrow-ic{width:18px;height:18px;flex:none;transition:transform .25s var(--out)}
 
-        /* ===== NAV ===== */
-        .nav{position:fixed;top:0;left:0;right:0;z-index:100;background:color-mix(in srgb,var(--bg) 80%,transparent);backdrop-filter:blur(20px) saturate(1.4);-webkit-backdrop-filter:blur(20px) saturate(1.4);border-bottom:1px solid transparent;transition:border-color .4s var(--ease),background .4s var(--ease)}
-        .nav.scrolled{border-bottom:1px solid var(--border-soft)}
-        .nav-inner{max-width:var(--maxw);margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:0 var(--pad);height:70px}
-        .nav-logo{font-family:var(--display);font-size:18px;font-weight:600;letter-spacing:-.02em;color:var(--text-1);text-decoration:none;display:flex;align-items:center;gap:11px}
-        .nav-logo .mark{width:26px;height:26px;flex-shrink:0;display:block}
-        .nav-logo .mark rect.bg{fill:var(--accent)}
-        .nav-logo .mark g{stroke:var(--chalk)}
-        .nav-links{display:flex;gap:34px;list-style:none}
-        .nav-links a{font-family:var(--mono);font-size:12px;font-weight:400;color:var(--text-3);text-decoration:none;letter-spacing:.02em;transition:color .3s var(--ease);position:relative}
-        .nav-links a::after{content:'';position:absolute;left:0;right:100%;bottom:-6px;height:2px;background:var(--accent);transition:right .3s var(--ease)}
-        .nav-links a:hover,.nav-links a.active{color:var(--text-1)}
-        .nav-links a.active::after{right:0}
-        .nav-right{display:flex;align-items:center;gap:14px}
-        .theme-btn{width:34px;height:34px;border-radius:50%;background:transparent;border:1px solid var(--border);color:var(--text-3);cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .3s var(--ease)}
-        .theme-btn:hover{border-color:var(--border-hover);color:var(--text-1);transform:rotate(15deg)}
-        .ham{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px}
-        .ham span{width:18px;height:1.5px;background:var(--text-1);transition:all .3s var(--ease)}
-        @media(max-width:820px){
-            .nav-inner{padding:0 28px;height:62px}
-            .nav-links{display:none}
-            .ham{display:flex}
-            .nav-links.open{display:flex;flex-direction:column;gap:22px;position:absolute;top:62px;left:0;right:0;background:var(--bg-raised);border-bottom:1px solid var(--border);padding:32px 28px}
-            .nav-links.open a{font-size:15px}
-        }
+/* Header: name left, glass pill nav right */
+.top{position:sticky;top:0;z-index:50;padding:14px 0;transition:background-color .2s ease}
+.top-in{display:flex;justify-content:space-between;align-items:center;gap:16px}
+.id{line-height:1.25}
+.id b{font-weight:600;font-size:15.5px;display:block}
+.id span{font-size:13.5px;color:var(--ink-3)}
+.navpill{display:flex;align-items:center;gap:4px;padding:5px;border-radius:999px;background:rgba(255,255,255,.72);backdrop-filter:blur(14px) saturate(1.4);-webkit-backdrop-filter:blur(14px) saturate(1.4);box-shadow:0 1px 0 rgba(255,255,255,.8) inset,0 6px 24px -12px rgba(27,27,26,.25);border:1px solid var(--line)}
+.navpill a{padding:9px 16px;border-radius:999px;font-size:14.5px;font-weight:500;color:var(--ink-2);transition:background-color .15s ease,color .15s ease}
+.navpill a:hover{color:var(--ink)}
+.navpill a[aria-current="true"]{background:var(--ink);color:var(--bg)}
+.navpill .mail{width:38px;height:38px;padding:0;display:grid;place-items:center;background:var(--ink);color:var(--bg);margin-left:4px}
+.navpill .mail svg{width:17px;height:17px}
+.navpill .opt{display:none}
+@media(min-width:720px){.navpill .opt{display:inline-block}}
+@media(max-width:520px){.id span{display:none}.id b{font-size:14.5px}.navpill a{padding:8px 12px;font-size:14px}.navpill a[href="#experience"]{display:none}.navpill .mail{width:34px;height:34px}main .portrait{width:240px}.wcard{padding:22px;border-radius:22px}.wcard p{font-size:15px}}
 
-        /* ===== LAYOUT ===== */
-        .container{max-width:var(--maxw);margin:0 auto;padding:0 var(--pad);position:relative;z-index:2}
-        @media(max-width:820px){.container{padding:0 28px}:root{--pad:28px}}
-        main{padding-top:70px;position:relative;z-index:2}
-        section{position:relative}
+/* Hero */
+.hero{padding-top:40px;display:grid;gap:40px;align-items:center}
+@media(min-width:900px){.hero{grid-template-columns:1.35fr .65fr;gap:64px;padding-top:56px}}
+.hero-tag{display:inline-flex;align-items:center;gap:10px;font-size:14.5px;color:var(--ink-2);margin-bottom:22px}
+.hero-tag i{width:8px;height:8px;border-radius:50%;background:var(--blue);box-shadow:0 0 0 4px rgba(47,91,234,.14)}
+.hero h1{font-size:clamp(2.6rem,6vw,4.9rem);line-height:1.02;letter-spacing:-.035em;margin-bottom:26px}
+.hero h1 .serif{font-size:1.06em;letter-spacing:-.02em}
+.hero-sub{font-size:clamp(1.05rem,1.4vw,1.22rem);line-height:1.5;margin-bottom:30px;max-width:40ch}
+.hero-sub b{font-weight:500;color:var(--ink)}
+.hero-sub span{display:block;color:var(--ink-3)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:10px}
+.portrait{justify-self:center;width:min(360px,78vw);aspect-ratio:3/4;border-radius:999px;overflow:hidden;background:var(--card);box-shadow:0 30px 60px -40px rgba(27,27,26,.45)}
+@media(min-width:900px){.portrait{justify-self:end;width:100%;max-width:340px}}
+.portrait img{width:100%;height:100%;object-fit:cover;object-position:center 22%}
 
-        /* ===== TYPE / LABELS ===== */
-        .eyebrow{font-family:var(--mono);font-size:11.5px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin-bottom:22px;display:inline-flex;align-items:center;gap:11px}
-        .eyebrow::before{content:'';width:26px;height:2px;background:var(--accent);display:inline-block}
-        .sec-title{font-family:var(--display);font-size:clamp(2rem,4.2vw,3.05rem);font-weight:600;letter-spacing:-.03em;line-height:1.06;margin-bottom:22px;color:var(--text-1)}
-        .sec-title em{font-family:var(--editorial);font-style:italic;font-weight:400;color:var(--accent)}
-        .sec-desc{font-family:var(--editorial);font-size:18px;line-height:1.72;color:var(--text-2);max-width:560px;margin-bottom:56px}
-        .sec-head{margin-bottom:8px}
+/* Stats */
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:28px 24px;margin-top:64px;padding-top:28px;border-top:1px solid var(--line)}
+@media(min-width:760px){.stats{grid-template-columns:repeat(4,1fr)}}
+.stat b{display:block;font-weight:500;font-size:clamp(2rem,3.4vw,2.8rem);letter-spacing:-.03em;line-height:1;margin-bottom:10px;font-variant-numeric:tabular-nums}
+.stat span{font-size:14.5px;color:var(--ink-3);line-height:1.35;display:block;max-width:20ch}
 
-        .block{padding:104px 0}
-        @media(max-width:820px){.block{padding:72px 0}}
+/* Logos */
+.logos{margin-top:64px;display:grid;gap:20px}
+.logos p{font-size:14px;color:var(--ink-3)}
+.logo-row{display:flex;flex-wrap:wrap;align-items:center;gap:22px 44px}
+.logo-row img{height:22px;width:auto;filter:grayscale(1);opacity:.62;transition:opacity .2s ease}
+.logo-row img.q{height:20px}
+.logo-row img.p{height:24px}
+.logo-row img:hover{opacity:1}
 
-        /* ===== HERO ===== */
-        .hero{min-height:calc(100vh - 70px);display:grid;grid-template-columns:1.25fr 0.9fr;gap:72px;align-items:center;padding:72px 0 64px;position:relative}
-        .hero-court{position:absolute;inset:0;z-index:0;pointer-events:none;opacity:.5;overflow:hidden}
-        .hero-court svg{position:absolute;right:-60px;top:50%;transform:translateY(-50%);height:118%;width:auto;color:var(--accent)}
-        .hero>div:not(.hero-court){position:relative;z-index:2}
-        .hero-avail{display:inline-flex;align-items:center;gap:9px;font-family:var(--mono);font-size:12px;letter-spacing:.04em;color:var(--text-2);padding:7px 15px;border:1px solid var(--border);border-radius:999px;margin-bottom:34px;opacity:0;animation:fadeUp .8s var(--ease) .1s forwards;background:var(--bg)}
-        .hero-avail .pulse{width:7px;height:7px;border-radius:50%;background:var(--olive);box-shadow:0 0 0 0 rgba(111,107,69,.5);animation:pulse 2.4s infinite}
-        @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(111,107,69,.45)}70%{box-shadow:0 0 0 7px rgba(111,107,69,0)}100%{box-shadow:0 0 0 0 rgba(111,107,69,0)}}
-        .hero h1{font-family:var(--display);font-size:clamp(3rem,6vw,5.1rem);font-weight:600;letter-spacing:-.045em;line-height:1.0;margin-bottom:26px;opacity:0;animation:fadeUp .9s var(--ease) .2s forwards}
-        .hero h1 em{font-family:var(--editorial);font-style:italic;font-weight:400;letter-spacing:-.02em;color:var(--accent)}
-        .hero-sub{font-family:var(--mono);font-size:clamp(.85rem,1.3vw,.98rem);font-weight:500;letter-spacing:.02em;color:var(--text-1);margin-bottom:22px;opacity:0;animation:fadeUp .9s var(--ease) .32s forwards}
-        .hero-desc{font-family:var(--editorial);font-size:18px;line-height:1.74;color:var(--text-2);max-width:500px;margin-bottom:40px;opacity:0;animation:fadeUp .9s var(--ease) .44s forwards}
-        .hero-cta{display:flex;gap:14px;flex-wrap:wrap;align-items:center;opacity:0;animation:fadeUp .9s var(--ease) .56s forwards}
-        .btn{padding:14px 26px;border-radius:var(--radius-sm);font-size:13.5px;font-weight:600;text-decoration:none;transition:all .35s var(--ease);display:inline-flex;align-items:center;gap:9px;border:1px solid transparent;cursor:pointer;letter-spacing:-.01em;font-family:var(--display)}
-        .btn svg{transition:transform .35s var(--ease)}
-        .btn-p{background:var(--accent);color:var(--chalk)}
-        .btn-p:hover{background:var(--accent-deep);transform:translateY(-2px);box-shadow:0 10px 28px -10px var(--accent)}
-        .btn-p:hover svg{transform:translateX(3px)}
-        .btn-s{background:transparent;color:var(--text-1);border-color:var(--border-hover)}
-        .btn-s:hover{border-color:var(--text-1);transform:translateY(-2px)}
-        .btn-s:hover svg{transform:translateY(2px)}
-        .btn-ghost{background:transparent;color:var(--text-2);border:none;padding:14px 4px}
-        .btn-ghost:hover{color:var(--text-1)}
+/* Work cards (Perry-style: big rounded card, title and arrow, image inside) */
+.work{display:grid;gap:16px}
+@media(min-width:860px){.work{grid-template-columns:1fr 1fr;gap:20px}.work .wide{grid-column:1/-1}.work .wide .wmedia{aspect-ratio:2.1/1}}
+.wcard{display:flex;flex-direction:column;gap:22px;padding:28px;border-radius:var(--r-lg);background:var(--card);transition:background-color .2s ease}
+@media(min-width:760px){.wcard{padding:36px}}
+.wcard:hover{background:var(--card-2)}
+.wcard-top{display:flex;justify-content:space-between;align-items:start;gap:20px}
+.wcard h3{font-size:clamp(1.5rem,2.4vw,2rem);line-height:1.12;margin-bottom:8px}
+.wcard p{color:var(--ink-3);font-size:15.5px;max-width:52ch}
+.wcard p b{color:var(--ink);font-weight:500}
+.wcard .arrow-ic{width:26px;height:26px;margin-top:4px}
+.wcard:hover .arrow-ic{transform:translateX(4px)}
+.wmedia{border-radius:var(--r-md);overflow:hidden;background:var(--white);aspect-ratio:16/9;margin-top:auto;box-shadow:0 1px 0 var(--line)}
+.wmedia img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--out)}
+.wcard:hover .wmedia img{transform:scale(1.025)}
+.wmedia.logos-pair{display:flex;align-items:center;justify-content:center;gap:clamp(18px,4vw,40px);padding:0 10%}
+.wmedia.logos-pair img{width:auto;height:auto;object-fit:contain;transform:none!important}
+.wmedia.logos-pair .x{font-family:var(--serif);font-style:italic;font-size:clamp(1.6rem,3vw,2.4rem);color:var(--ink-3);line-height:1}
+.lp-q{max-width:34%;height:clamp(20px,3vw,34px)!important}
+.lp-ibm{max-width:26%;height:clamp(36px,5vw,60px)!important}
+.lp-pal{max-width:40%;height:clamp(28px,4.2vw,48px)!important}
 
-        .headshot-wrap{opacity:0;animation:scaleIn 1.1s var(--ease) .3s forwards;position:relative;z-index:2}
-        .headshot{width:100%;aspect-ratio:4/5;border-radius:var(--radius);overflow:hidden;background:var(--bg-card);position:relative;box-shadow:0 30px 70px -36px rgba(34,30,26,.4)}
-        .headshot::after{content:'';position:absolute;inset:0;box-shadow:inset 0 0 0 1px var(--border-soft);border-radius:var(--radius);pointer-events:none}
-        .headshot img{width:100%;height:100%;object-fit:cover;object-position:center top;filter:grayscale(8%) contrast(1.03) sepia(6%);transition:transform 1.2s var(--ease),filter .6s var(--ease)}
-        .headshot-wrap:hover img{transform:scale(1.03)}
-        .headshot-cap{position:absolute;left:18px;bottom:18px;right:18px;display:flex;justify-content:space-between;align-items:flex-end;font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:#fff;text-shadow:0 1px 8px rgba(0,0,0,.55)}
-        @keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
-        @keyframes scaleIn{from{opacity:0;transform:scale(.97)}to{opacity:1;transform:scale(1)}}
-        @media(max-width:900px){.hero{grid-template-columns:1fr;gap:48px;min-height:auto;padding:56px 0 16px}.headshot-wrap{order:-1;max-width:300px}.hero-court{display:none}}
+/* Media list (Blunar-style rows) */
+.vlist{list-style:none;border-top:1px solid var(--line)}
+.vlist li{border-bottom:1px solid var(--line)}
+.vrow{display:grid;grid-template-columns:120px 1fr auto;gap:18px;align-items:center;padding:16px 0;transition:background-color .15s ease}
+@media(min-width:760px){.vrow{grid-template-columns:180px 1fr 140px auto;gap:28px;padding:18px 8px}}
+.vrow:hover{background:rgba(27,27,26,.025)}
+.vthumb{aspect-ratio:16/9;border-radius:10px;overflow:hidden;background:var(--card)}
+.vthumb img{width:100%;height:100%;object-fit:cover}
+.vrow h3{font-size:16.5px;line-height:1.3;letter-spacing:-.01em;margin-bottom:3px}
+.vrow p{font-size:14.5px;color:var(--ink-3);line-height:1.4}
+.vrow .when{display:none;font-size:14px;color:var(--ink-3)}
+@media(min-width:760px){.vrow .when{display:block}}
+.vrow .arrow-ic{color:var(--ink-3)}
+.vrow:hover .arrow-ic{transform:translate(3px,-3px);color:var(--ink)}
 
-        /* ===== MARQUEE ===== */
-        .marquee-section{border-top:1px solid var(--border-soft);border-bottom:1px solid var(--border-soft);padding:30px 0;overflow:hidden;-webkit-mask-image:linear-gradient(to right,transparent,#000 90px,#000 calc(100% - 90px),transparent);mask-image:linear-gradient(to right,transparent,#000 90px,#000 calc(100% - 90px),transparent)}
-        .marquee-lead{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--text-3);text-align:center;margin-bottom:24px}
-        .marquee-track{display:flex;gap:64px;align-items:center;animation:marquee 52s linear infinite;width:max-content}
-        .marquee-track:hover{animation-play-state:paused}
-        @keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
-        .logo-text{font-family:var(--display);font-style:normal;font-size:20px;font-weight:600;letter-spacing:-.015em;color:var(--text-2);opacity:.78;transition:opacity .3s var(--ease),color .3s var(--ease);flex-shrink:0;white-space:nowrap}
-        .logo-text:hover{opacity:1;color:var(--accent)}
+/* Briefs */
+.briefs{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+@media(min-width:860px){.briefs{grid-template-columns:repeat(4,1fr);gap:18px}}
+.brief{display:block;padding:14px;border-radius:var(--r-md);background:var(--card);transition:background-color .2s ease}
+.brief:hover{background:var(--card-2)}
+.brief .cover{border-radius:8px;overflow:hidden;background:var(--white);aspect-ratio:17/22;box-shadow:0 12px 30px -20px rgba(27,27,26,.4)}
+.brief .cover img{width:100%;height:100%;object-fit:cover;object-position:top;transition:transform .6s var(--out)}
+.brief:hover .cover img{transform:translateY(-2px) scale(1.01)}
+.brief h3{font-size:15.5px;margin:14px 4px 2px;letter-spacing:-.01em}
+.brief p{font-size:13.5px;color:var(--ink-3);margin:0 4px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:28px}
+.chips a{display:inline-flex;align-items:center;gap:6px;height:40px;padding:0 16px;border-radius:999px;background:var(--white);border:1px solid var(--line);font-size:14.5px;font-weight:500;transition:border-color .15s ease,transform .16s var(--out)}
+.chips a:hover{border-color:var(--line-2)}
+.chips a:active{transform:scale(.97)}
+.chips svg{width:14px;height:14px;color:var(--ink-3)}
 
-        /* ===== METRICS ===== */
-        .metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;background:var(--bg-card)}
-        .metric-card{padding:48px 40px;text-align:center;transition:background .4s var(--ease);border-right:1px solid var(--border-soft);position:relative}
-        .metric-card:last-child{border-right:none}
-        .metric-card:hover{background:var(--accent-soft)}
-        .metric-val{font-family:var(--mono);font-size:clamp(2.4rem,4.6vw,3.3rem);font-weight:500;letter-spacing:-.04em;margin-bottom:10px;color:var(--text-1);line-height:1}
-        .metric-val .u{color:var(--accent)}
-        .metric-lab{font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--text-3)}
-        @media(max-width:640px){.metrics{grid-template-columns:1fr}.metric-card{border-right:none;border-bottom:1px solid var(--border-soft)}.metric-card:last-child{border-bottom:none}}
+/* Experience */
+.xp{border-top:1px solid var(--line)}
+.role{display:grid;gap:8px;padding:30px 0;border-bottom:1px solid var(--line)}
+@media(min-width:860px){.role{grid-template-columns:220px 1fr;gap:40px;padding:36px 0}}
+.role .yr{font-size:14.5px;color:var(--ink-3);font-variant-numeric:tabular-nums;padding-top:4px}
+.role h3{font-size:clamp(1.2rem,1.8vw,1.45rem);line-height:1.25;margin-bottom:2px}
+.role .co{font-size:15px;color:var(--ink-3);margin-bottom:14px}
+.role ul{list-style:none;display:grid;gap:8px;max-width:64ch}
+.role li{position:relative;padding-left:18px;color:var(--ink-2);font-size:15.5px}
+.role li::before{content:"";position:absolute;left:2px;top:.72em;width:5px;height:5px;border-radius:50%;background:var(--line-2)}
 
-        /* ===== TERMINAL ===== */
-        .term-grid{display:grid;grid-template-columns:0.85fr 1.15fr;gap:56px;align-items:center}
-        .term-box{background:var(--bg-ink);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;box-shadow:0 24px 60px -32px rgba(34,30,26,.45)}
-        .term-header{display:flex;align-items:center;gap:8px;padding:15px 22px;border-bottom:1px solid rgba(128,128,128,.18)}
-        .term-dot{width:11px;height:11px;border-radius:50%}
-        .dot-r{background:#C0563A}.dot-y{background:#CB9A4F}.dot-g{background:#6F6B45}
-        .term-title{margin-left:auto;margin-right:auto;font-size:11.5px;font-weight:500;font-family:var(--mono);letter-spacing:.02em}
-        [data-theme="dark"] .term-title{color:rgba(34,30,26,.5)}
-        [data-theme="light"] .term-title{color:rgba(244,238,226,.5)}
-        .term-body{padding:26px;font-family:var(--mono);font-size:13px;max-height:320px;overflow-y:auto;display:flex;flex-direction:column;gap:5px}
-        [data-theme="light"] .term-body{color:rgba(244,238,226,.66)}
-        [data-theme="dark"] .term-body{color:rgba(34,30,26,.62)}
-        .term-body::-webkit-scrollbar{width:4px}.term-body::-webkit-scrollbar-thumb{background:rgba(128,128,128,.25);border-radius:2px}
-        .t-line{line-height:1.7;opacity:0;animation:termFade .15s var(--ease) forwards}
-        .t-cmd{color:var(--accent)}
-        [data-theme="light"] .t-cmd{color:#E0915F}
-        @keyframes termFade{to{opacity:1}}
-        @media(max-width:820px){.term-grid{grid-template-columns:1fr;gap:36px}}
+/* Writing */
+.wr{display:grid;gap:20px}
+@media(min-width:900px){.wr{grid-template-columns:1fr 1fr;gap:20px}}
+.panel{border-radius:var(--r-lg);background:var(--card);padding:28px}
+@media(min-width:760px){.panel{padding:36px}}
+.panel-head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:22px}
+.panel-head h3{font-size:1.05rem;font-weight:600;letter-spacing:-.01em}
+.panel-head a{font-size:14px;color:var(--ink-3);display:inline-flex;align-items:center;gap:4px}
+.panel-head a:hover{color:var(--ink)}
+.panel-head a svg{width:14px;height:14px}
+.feat{display:block;padding:22px;border-radius:var(--r-md);background:var(--white);margin-bottom:10px;transition:transform .25s var(--out),box-shadow .25s ease}
+.feat:hover{transform:translateY(-2px);box-shadow:0 14px 30px -22px rgba(27,27,26,.4)}
+.feat small{font-size:13.5px;color:var(--ink-3)}
+.feat h4{font-size:clamp(1.25rem,1.9vw,1.6rem);font-weight:500;letter-spacing:-.02em;line-height:1.18;margin:8px 0 10px}
+.feat p{font-size:15px;color:var(--ink-2)}
+.rows{list-style:none}
+.rows li+li{border-top:1px solid var(--line)}
+.rows a{display:grid;grid-template-columns:1fr auto;gap:16px;align-items:baseline;padding:13px 2px;font-size:15.5px;font-weight:500;line-height:1.35;transition:color .15s ease}
+.rows a:hover{color:var(--blue)}
+.rows span{font-size:13.5px;color:var(--ink-3);font-weight:400;white-space:nowrap;font-variant-numeric:tabular-nums}
+.outlet{font-size:13.5px;color:var(--ink-3);margin:18px 2px 4px}
+.outlet:first-of-type{margin-top:0}
 
-        /* ===== EXPERIENCE ===== */
-        .timeline{position:relative;padding-left:34px}
-        .timeline::before{content:'';position:absolute;left:0;top:8px;bottom:8px;width:2px;background:var(--border)}
-        .tl-item{position:relative;margin-bottom:18px}.tl-item:last-child{margin-bottom:0}
-        .tl-dot{position:absolute;left:-38px;top:36px;width:10px;height:10px;border-radius:50%;background:var(--bg);border:2px solid var(--border-hover);z-index:2}
-        .tl-item.current .tl-dot{background:var(--accent);border-color:var(--accent);box-shadow:0 0 0 4px var(--accent-soft)}
-        .tl-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:30px 34px;cursor:pointer;transition:border-color .35s var(--ease),transform .35s var(--ease),box-shadow .35s var(--ease)}
-        .tl-card:hover{border-color:var(--border-hover);box-shadow:0 16px 40px -28px rgba(34,30,26,.32)}
-        .tl-head{display:flex;justify-content:space-between;align-items:flex-start;gap:18px}
-        .tl-title{font-family:var(--display);font-size:20px;font-weight:600;margin-bottom:6px;letter-spacing:-.02em;line-height:1.25}
-        .tl-co{font-family:var(--mono);font-size:13px;font-weight:500;color:var(--accent);margin-bottom:7px;letter-spacing:.01em}
-        .tl-meta{font-family:var(--mono);font-size:11.5px;color:var(--text-3);letter-spacing:.02em}
-        .tl-badge{font-family:var(--mono);font-size:10px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);padding:5px 12px;background:var(--accent-dim);border-radius:999px;white-space:nowrap;display:inline-flex;align-items:center;gap:6px}
-        .tl-badge::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--accent);animation:bdPulse 2s infinite}
-        @keyframes bdPulse{0%,100%{opacity:1}50%{opacity:.4}}
-        .tl-body{max-height:0;overflow:hidden;opacity:0;transition:max-height .55s var(--ease),opacity .4s var(--ease),margin .4s var(--ease),padding .4s var(--ease);margin-top:0;padding-top:0}
-        .tl-card.open .tl-body{max-height:640px;opacity:1;margin-top:24px;padding-top:24px;border-top:1px solid var(--border-soft)}
-        .tl-body li{font-family:var(--editorial);font-size:15.5px;line-height:1.72;color:var(--text-2);margin-bottom:12px;margin-left:18px;padding-left:4px}
-        .tl-body li::marker{color:var(--accent)}
-        .tl-expand{display:flex;align-items:center;gap:7px;margin-top:16px;font-family:var(--mono);font-size:11px;color:var(--text-3);letter-spacing:.04em;text-transform:uppercase}
-        .tl-expand svg{transition:transform .3s var(--ease)}.tl-card.open .tl-expand svg{transform:rotate(180deg)}
+/* Beyond */
+.beyond{display:grid;gap:16px;grid-template-columns:1fr}
+@media(min-width:600px){.beyond{grid-template-columns:1fr 1fr}}
+@media(min-width:1000px){.beyond{grid-template-columns:repeat(4,1fr)}}
+.bcard{padding:24px;border-radius:var(--r-md);background:var(--card)}
+.bcard svg{width:26px;height:26px;color:var(--ink);margin-bottom:28px;stroke-width:1.5}
+.bcard h3{font-size:1.05rem;margin-bottom:6px;letter-spacing:-.01em}
+.bcard p{font-size:14.5px;color:var(--ink-3);line-height:1.45}
 
-        /* ===== CASE STUDIES ===== */
-        .cs-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
-        .cs-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:40px;transition:border-color .35s var(--ease),transform .35s var(--ease),box-shadow .35s var(--ease);position:relative;overflow:hidden;display:flex;flex-direction:column}
-        .cs-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .5s var(--ease)}
-        .cs-card:hover{border-color:var(--border-hover);transform:translateY(-3px);box-shadow:0 20px 48px -30px rgba(34,30,26,.32)}
-        .cs-card:hover::before{transform:scaleX(1)}
-        .cs-tag{font-family:var(--mono);font-size:10.5px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:20px}
-        .cs-title{font-family:var(--display);font-size:23px;font-weight:600;line-height:1.2;margin-bottom:16px;letter-spacing:-.025em}
-        .cs-desc{font-family:var(--editorial);font-size:16px;color:var(--text-2);line-height:1.7;margin-bottom:18px;flex:1}
-        .cs-role{font-family:var(--mono);font-size:11.5px;color:var(--text-3);margin-bottom:24px;letter-spacing:.02em}
-        .cs-link{font-family:var(--display);font-size:13px;font-weight:600;color:var(--text-1);text-decoration:none;display:inline-flex;align-items:center;gap:7px;transition:gap .3s var(--ease),color .3s var(--ease);margin-top:auto}
-        .cs-link:hover{gap:11px;color:var(--accent)}
-        @media(max-width:768px){.cs-grid{grid-template-columns:1fr}}
+/* Contact / footer */
+.contact{padding-top:var(--space);padding-bottom:40px}
+.contact h2{font-size:clamp(3rem,9vw,7rem);line-height:.98;letter-spacing:-.04em;margin-bottom:22px}
+.contact .lede{margin-bottom:28px}
+.foot{display:grid;gap:28px;margin-top:72px;padding-top:28px;border-top:1px solid var(--line)}
+@media(min-width:760px){.foot{grid-template-columns:1fr auto auto;gap:72px}}
+.foot .fh{font-size:12.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);margin-bottom:12px}
+.foot ul{list-style:none;display:grid;gap:8px}
+.foot ul a{font-size:16px;font-weight:500;display:inline-flex;align-items:center;gap:6px}
+.foot ul a:hover{color:var(--blue)}
+.foot ul svg{width:15px;height:15px}
+.foot .copy{font-size:14px;color:var(--ink-3);line-height:1.5}
+.foot .copy b{display:block;color:var(--ink);font-weight:500;font-size:15.5px}
 
-        /* ===== VIDEOS ===== */
-        .carousel{position:relative}
-        .vid-scroll,.plat-scroll{display:flex;gap:24px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding:6px 0 30px;-ms-overflow-style:none;scrollbar-width:none}
-        .vid-scroll::-webkit-scrollbar,.plat-scroll::-webkit-scrollbar{display:none}
-        .vid-card{flex:0 0 392px;scroll-snap-align:start;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;cursor:pointer;transition:border-color .35s var(--ease),transform .35s var(--ease),box-shadow .35s var(--ease)}
-        .vid-card:hover{border-color:var(--border-hover);transform:translateY(-3px);box-shadow:0 18px 44px -28px rgba(34,30,26,.32)}
-        .vid-thumb{width:100%;aspect-ratio:16/9;background:var(--bg-raised);position:relative;overflow:hidden}
-        .vid-thumb img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 1s var(--ease)}
-        .vid-card:hover .vid-thumb img{transform:scale(1.05)}
-        .vid-play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%) scale(.9);width:56px;height:56px;border-radius:50%;background:rgba(34,30,26,.6);backdrop-filter:blur(8px);border:1.5px solid rgba(244,238,226,.4);display:flex;align-items:center;justify-content:center;opacity:0;transition:all .35s var(--ease)}
-        .vid-card:hover .vid-play{opacity:1;transform:translate(-50%,-50%) scale(1)}
-        .vid-play::after{content:'';width:0;height:0;border-left:11px solid #fff;border-top:7px solid transparent;border-bottom:7px solid transparent;margin-left:3px}
-        .vid-info{padding:26px}
-        .vid-tag{font-family:var(--mono);font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
-        .vid-title{font-family:var(--display);font-size:18px;font-weight:600;line-height:1.28;margin-bottom:11px;letter-spacing:-.02em}
-        .vid-desc{font-family:var(--editorial);font-size:14.5px;color:var(--text-2);line-height:1.65}
-        .scroll-ctrls{display:flex;gap:10px}
-        .scroll-btn{width:44px;height:44px;border-radius:50%;background:var(--bg-card);border:1px solid var(--border);color:var(--text-2);cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .3s var(--ease)}
-        .scroll-btn:hover{border-color:var(--border-hover);color:var(--text-1);background:var(--bg-raised)}
-        .head-row{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:48px;gap:24px}
-        .head-row .sec-desc{margin-bottom:0}
-        @media(max-width:768px){.vid-card{flex:0 0 calc(100vw - 56px)}.head-row{flex-direction:column;align-items:flex-start}.head-row .scroll-ctrls{display:none}}
-
-        /* archive */
-        .arch-row{display:flex;justify-content:center;margin-top:8px}
-        .arch-btn{font-family:var(--mono);font-size:11.5px;font-weight:500;color:var(--text-3);background:none;border:1px solid var(--border);border-radius:999px;padding:11px 22px;cursor:pointer;letter-spacing:.06em;text-transform:uppercase;transition:all .3s var(--ease);display:inline-flex;align-items:center;gap:8px}
-        .arch-btn:hover{color:var(--text-1);border-color:var(--border-hover)}
-        .arch-btn .arr{transition:transform .3s var(--ease);display:inline-block}
-        .arch-btn:hover .arr{transform:translateX(4px)}
-
-        /* ===== PLATFORMS ===== */
-        .plat-card{flex:0 0 452px;scroll-snap-align:start;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;transition:border-color .35s var(--ease),transform .35s var(--ease),box-shadow .35s var(--ease)}
-        .plat-card:hover{border-color:var(--border-hover);transform:translateY(-3px);box-shadow:0 18px 44px -28px rgba(34,30,26,.32)}
-        .plat-thumb{width:100%;aspect-ratio:2/1;background:var(--bg-raised);overflow:hidden}
-        .plat-thumb img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 1s var(--ease)}
-        .plat-card:hover .plat-thumb img{transform:scale(1.05)}
-        .plat-body{padding:30px}
-        .plat-title{font-family:var(--display);font-size:19px;font-weight:600;margin-bottom:11px;letter-spacing:-.02em}
-        .plat-role{font-family:var(--editorial);font-size:15px;color:var(--text-2);line-height:1.68;margin-bottom:18px}
-        .plat-link{font-family:var(--display);font-size:13px;font-weight:600;color:var(--text-1);text-decoration:none;display:inline-flex;align-items:center;gap:7px;transition:gap .3s var(--ease),color .3s var(--ease)}.plat-link:hover{gap:11px;color:var(--accent)}
-        @media(max-width:768px){.plat-card{flex:0 0 calc(100vw - 56px)}}
-
-        /* ===== BRIEFS ===== */
-        .briefs-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:48px}
-        .brief-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;transition:border-color .35s var(--ease),transform .35s var(--ease),box-shadow .35s var(--ease)}
-        .brief-card:hover{border-color:var(--border-hover);transform:translateY(-3px);box-shadow:0 16px 40px -28px rgba(34,30,26,.3)}
-        .brief-card a{text-decoration:none;color:inherit;display:block}
-        .brief-thumb{width:100%;background:var(--bg-raised);border-bottom:1px solid var(--border-soft);overflow:hidden}
-        .brief-thumb img,.brief-thumb canvas{width:100%;height:auto;display:block}
-        .brief-body{padding:22px}
-        .brief-tag{font-family:var(--mono);font-size:9.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:10px}
-        .brief-title{font-family:var(--display);font-size:16px;font-weight:600;line-height:1.28;margin-bottom:9px;letter-spacing:-.02em}
-        .brief-desc{font-family:var(--editorial);font-size:13.5px;color:var(--text-2);line-height:1.55}
-        @media(max-width:900px){.briefs-grid{grid-template-columns:repeat(2,1fr)}}
-        @media(max-width:520px){.briefs-grid{grid-template-columns:1fr}}
-
-        /* ===== WRITING / BLOG ===== */
-        .blog-list{margin-bottom:28px;border-top:2px solid var(--accent)}
-        .blog-entry{border-bottom:1px solid var(--border-soft);transition:background .3s var(--ease)}
-        .blog-entry a{text-decoration:none;color:inherit;display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center;padding:26px 8px;transition:padding .35s var(--ease)}
-        .blog-entry:hover{background:var(--accent-soft)}
-        .blog-entry:hover a{padding-left:20px;padding-right:20px}
-        .blog-entry-cat{font-family:var(--mono);font-size:10px;font-weight:500;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);margin-bottom:9px}
-        .blog-entry-title{font-family:var(--display);font-size:19px;font-weight:600;line-height:1.3;letter-spacing:-.02em;transition:color .3s var(--ease)}
-        .blog-entry:hover .blog-entry-title{color:var(--accent)}
-        .blog-entry-meta{font-family:var(--mono);font-size:11px;color:var(--text-3);margin-top:9px;letter-spacing:.02em}
-        .blog-entry-arrow{color:var(--text-3);opacity:0;transform:translateX(-6px);transition:all .35s var(--ease)}
-        .blog-entry:hover .blog-entry-arrow{opacity:1;transform:translateX(0);color:var(--accent)}
-        .blog-archive{max-height:0;overflow:hidden;transition:max-height .7s var(--ease)}
-        .blog-archive.open{max-height:1600px}
-
-        /* ===== ESSAYS ===== */
-        .essays-wrap{margin-top:96px}
-        .essay-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:8px}
-        .essay-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:34px;transition:border-color .35s var(--ease),transform .35s var(--ease),box-shadow .35s var(--ease)}
-        .essay-card:hover{border-color:var(--border-hover);transform:translateY(-3px);box-shadow:0 18px 44px -28px rgba(34,30,26,.32)}
-        .essay-card a{text-decoration:none;color:inherit;display:block}
-        .essay-cat{font-family:var(--mono);font-size:10px;font-weight:500;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);margin-bottom:16px}
-        .essay-title{font-family:var(--editorial);font-size:22px;font-weight:500;line-height:1.25;margin-bottom:13px;letter-spacing:-.01em}
-        .essay-desc{font-family:var(--editorial);font-size:15px;color:var(--text-2);line-height:1.68;margin-bottom:16px}
-        .essay-meta{font-family:var(--mono);font-size:11px;color:var(--text-3);letter-spacing:.02em}
-        @media(max-width:768px){.essay-grid{grid-template-columns:1fr}.essays-wrap{margin-top:64px}}
-
-        /* ===== BEYOND ===== */
-        .beyond-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
-        .beyond-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:38px 28px;transition:border-color .35s var(--ease),transform .35s var(--ease),box-shadow .35s var(--ease)}
-        .beyond-card:hover{border-color:var(--border-hover);transform:translateY(-3px);box-shadow:0 16px 40px -28px rgba(34,30,26,.3)}
-        .beyond-icon{width:48px;height:48px;margin-bottom:22px;display:flex;align-items:center;justify-content:center;color:var(--accent);background:var(--accent-dim);border-radius:13px}
-        .beyond-title{font-family:var(--display);font-size:17px;font-weight:600;margin-bottom:11px;letter-spacing:-.02em}
-        .beyond-desc{font-family:var(--editorial);font-size:14.5px;color:var(--text-2);line-height:1.62}
-        @media(max-width:900px){.beyond-grid{grid-template-columns:repeat(2,1fr)}}
-        @media(max-width:500px){.beyond-grid{grid-template-columns:1fr}}
-
-        /* ===== CONTACT ===== */
-        .contact{text-align:center;padding:120px var(--pad);border-top:2px solid var(--accent);position:relative;z-index:2;overflow:hidden}
-        .contact .eyebrow{justify-content:center}
-        .contact-title{font-family:var(--display);font-size:clamp(2.2rem,5vw,3.5rem);font-weight:600;letter-spacing:-.035em;margin-bottom:20px;line-height:1.04;max-width:760px;margin-left:auto;margin-right:auto}
-        .contact-title em{font-family:var(--editorial);font-style:italic;font-weight:400;color:var(--accent)}
-        .contact-desc{font-family:var(--editorial);font-size:18px;color:var(--text-2);margin-bottom:40px;max-width:520px;margin-left:auto;margin-right:auto;line-height:1.68}
-        .contact-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
-
-        footer{padding:40px var(--pad);border-top:1px solid var(--border-soft);position:relative;z-index:2;display:flex;justify-content:space-between;align-items:center;max-width:var(--maxw);margin:0 auto;flex-wrap:wrap;gap:16px}
-        footer .f-name{font-family:var(--display);font-weight:600;font-size:15px;color:var(--text-2);letter-spacing:-.01em}
-        footer .f-tag{font-family:var(--editorial);font-style:italic;font-size:14px;color:var(--text-3)}
-        footer .f-meta{font-family:var(--mono);font-size:11px;color:var(--text-3);letter-spacing:.03em}
-        footer a{color:var(--text-3);text-decoration:none;transition:color .3s var(--ease)}
-        footer a:hover{color:var(--accent)}
-
-        /* ===== REVEAL ===== */
-        .reveal{opacity:0;transform:translateY(24px);transition:opacity .9s var(--ease-out),transform .9s var(--ease-out)}
-        .reveal.vis{opacity:1;transform:translateY(0)}
-        .stagger>*{opacity:0;transform:translateY(16px);transition:opacity .65s var(--ease-out),transform .65s var(--ease-out)}
-        .stagger.vis>*{opacity:1;transform:none}
-        .stagger.vis>*:nth-child(1){transition-delay:.04s}
-        .stagger.vis>*:nth-child(2){transition-delay:.1s}
-        .stagger.vis>*:nth-child(3){transition-delay:.16s}
-        .stagger.vis>*:nth-child(4){transition-delay:.22s}
-        .stagger.vis>*:nth-child(5){transition-delay:.28s}
-        .stagger.vis>*:nth-child(6){transition-delay:.34s}
-        .stagger.vis>*:nth-child(n+7){transition-delay:.4s}
-        @media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}.reveal,.stagger>*{opacity:1;transform:none}}
-    </style>
+/* Reveal: short fade-up, once */
+.rv{opacity:0;transform:translateY(16px);transition:opacity .7s var(--out),transform .7s var(--out)}
+.rv.on{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+</style>
 </head>
 <body>
-    <nav class="nav" id="nav"><div class="nav-inner">
-        <a href="#" class="nav-logo">
-            <svg class="mark" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect class="bg" x="0" y="0" width="64" height="64" rx="15"/><g fill="none" stroke-width="2.6" stroke-linecap="square"><rect x="16" y="11" width="32" height="42" rx="1"/><line x1="16" y1="32" x2="48" y2="32"/><line x1="32" y1="22" x2="32" y2="42"/><line x1="22" y1="22" x2="42" y2="22"/><line x1="22" y1="42" x2="42" y2="42"/></g></svg>
-            Rodrigo Caruso Amaral
-        </a>
-        <ul class="nav-links" id="navLinks">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#videos">Media</a></li>
-            <li><a href="#writing">Writing</a></li>
-            <li><a href="#contact">Contact</a></li>
+
+<header class="top" id="top">
+  <div class="wrap top-in">
+    <a href="#" class="id"><b>Rodrigo Caruso Amaral</b><span>AI partnerships at Qualcomm</span></a>
+    <nav class="navpill" aria-label="Primary">
+      <a href="#work">Work</a>
+      <a href="#media" class="opt">Media</a>
+      <a href="#experience">About</a>
+      <a href="#writing">Writing</a>
+      <a href="mailto:rodrigocarusoamaral@gmail.com" class="mail" aria-label="Email Rodrigo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"/><path d="M16 12v1.5a2.5 2.5 0 0 0 5 0v-1.5a9 9 0 1 0 -5.5 8.28"/></svg></a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+<section class="hero" id="about">
+  <div>
+    <div class="hero-tag"><i></i>Business development, Qualcomm</div>
+    <h1>I take AI from the lab to the <span class="serif">market.</span></h1>
+    <p class="hero-sub"><b>Partnerships and go-to-market for on-device AI. Based in San Diego.</b><span>Seven years at Qualcomm. Formerly global product marketing for Qualcomm AI Hub.</span></p>
+    <div class="hero-cta">
+      <a href="mailto:rodrigocarusoamaral@gmail.com" class="pill pill-dark">Get in touch</a>
+      <a href="resume.pdf" class="pill pill-light" target="_blank" rel="noopener">Résumé <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 7l-10 10M8 7h9v9"/></svg></a>
+    </div>
+  </div>
+  <div class="portrait"><img src="profile-1400.jpg" alt="Rodrigo Caruso Amaral" width="1024" height="1024" fetchpriority="high"></div>
+</section>
+
+<div class="stats rv">
+  <div class="stat"><b>7 yrs</b><span>at Qualcomm, product marketing to BD</span></div>
+  <div class="stat"><b>10+</b><span>platform launches on global stages</span></div>
+  <div class="stat"><b>50+</b><span>partnerships with ISVs, cloud, and enterprise</span></div>
+  <div class="stat"><b>1B+</b><span>impressions across campaigns I led</span></div>
+</div>
+
+<div class="logos rv" aria-label="Partners">
+  <p>Worked with teams at</p>
+  <div class="logo-row">
+    <img src="logos/qualcomm.svg" alt="Qualcomm" class="q">
+    <img src="IBM_logo.svg.png" alt="IBM">
+    <img src="logos/palantir.svg" alt="Palantir" class="p">
+    <img src="mistral-logo-black.svg" alt="Mistral AI">
+    <img src="https://cdn.simpleicons.org/meta/1B1B1A" alt="Meta" onerror="this.remove()">
+    <img src="https://cdn.simpleicons.org/google/1B1B1A" alt="Google" onerror="this.remove()">
+    <img src="https://cdn.simpleicons.org/amazonwebservices/1B1B1A" alt="AWS" onerror="this.remove()">
+  </div>
+</div>
+
+<section class="section" id="work">
+  <div class="head rv">
+    <div>
+      <h2 class="h2">Selected <span class="serif">work</span></h2>
+      <p class="lede">Launches and partnerships that took a platform from a technical capability to something partners could ship.</p>
+    </div>
+  </div>
+  <div class="work">
+    <a class="wcard wide rv" href="https://www.youtube.com/watch?v=FyM2w3N9xVw" target="_blank" rel="noopener">
+      <div class="wcard-top">
+        <div><h3>Qualcomm AI Hub</h3><p><b>Qualcomm, MWC Barcelona 2024.</b> Led the global launch and every announcement after it: Snapdragon X Series, Snapdragon Ride, and Bring Your Own Model.</p></div>
+        <svg class="arrow-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6l-6 6"/></svg>
+      </div>
+      <div class="wmedia"><img src="media/FyM2w3N9xVw.jpg" alt="Introducing Qualcomm AI Hub" loading="lazy" width="1280" height="720"></div>
+    </a>
+    <a class="wcard rv" href="https://www.qualcomm.com/news/releases/2025/02/qualcomm-and-ibm-scale-enterprise-grade-generative-ai-from-edge-" target="_blank" rel="noopener">
+      <div class="wcard-top">
+        <div><h3>IBM watsonx on Snapdragon</h3><p><b>Qualcomm and IBM, 2025.</b> Enterprise generative AI governance from cloud to edge. Go-to-market and partnership lead.</p></div>
+        <svg class="arrow-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6l-6 6"/></svg>
+      </div>
+      <div class="wmedia logos-pair"><img class="lp-q" src="logos/qualcomm.svg" alt="Qualcomm"><span class="x">&times;</span><img class="lp-ibm" src="IBM_logo.svg.png" alt="IBM"></div>
+    </a>
+    <a class="wcard rv" href="https://www.qualcomm.com/news/releases/2025/03/qualcomm-and-palantir-work-to-extend-ai-and-ontology-capabilitie" target="_blank" rel="noopener">
+      <div class="wcard-top">
+        <div><h3>Palantir at the edge</h3><p><b>Qualcomm and Palantir, 2025.</b> Palantir ontology and decision intelligence running on-device. Go-to-market and partnership lead.</p></div>
+        <svg class="arrow-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6l-6 6"/></svg>
+      </div>
+      <div class="wmedia logos-pair"><img class="lp-q" src="logos/qualcomm.svg" alt="Qualcomm"><span class="x">&times;</span><img class="lp-pal" src="logos/palantir.svg" alt="Palantir"></div>
+    </a>
+    <a class="wcard wide rv" href="https://www.youtube.com/watch?v=SRh7NL2kpvo" target="_blank" rel="noopener">
+      <div class="wcard-top">
+        <div><h3>Edge of Possible</h3><p><b>Campaign with Michelle Yeoh.</b> Narrative, positioning, and creative strategy for Qualcomm's on-device AI story. More than 500 million impressions.</p></div>
+        <svg class="arrow-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6l-6 6"/></svg>
+      </div>
+      <div class="wmedia"><img src="media/SRh7NL2kpvo.jpg" alt="Go to the Edge of Possible" loading="lazy" width="1280" height="720"></div>
+    </a>
+  </div>
+</section>
+
+<section class="section" id="media">
+  <div class="head rv">
+    <div>
+      <h2 class="h2">Launches and keynotes</h2>
+      <p class="lede">Executive messaging, positioning, and demo narratives on global stages.</p>
+    </div>
+  </div>
+  <ul class="vlist rv" id="vlist"></ul>
+</section>
+
+<section class="section">
+  <div class="head rv">
+    <div>
+      <h2 class="h2">Product briefs</h2>
+      <p class="lede">Platform positioning I helped shape, from flagship phones to data center accelerators.</p>
+    </div>
+  </div>
+  <div class="briefs rv" id="briefs"></div>
+  <div class="chips rv" id="platforms"></div>
+</section>
+
+<section class="section" id="experience">
+  <div class="head rv">
+    <div>
+      <h2 class="h2">Seven years at Qualcomm</h2>
+      <p class="lede">From announcing AI features at Snapdragon Summit to closing the partnerships that take Snapdragon beyond the phone.</p>
+    </div>
+  </div>
+  <div class="xp rv">
+    <div class="role">
+      <div class="yr">2025 to present</div>
+      <div>
+        <h3>AI Business Development Manager, Strategic Accounts</h3>
+        <div class="co">Qualcomm, San Diego</div>
+        <ul>
+          <li>Own business development across consumer applications and emerging platforms, finding new markets for Snapdragon beyond mobile.</li>
+          <li>Drive partnerships from first technical alignment through commercial terms, with engineering, product, and marketing.</li>
+          <li>Work with legal, finance, and operations on partner onboarding and engagement models that scale.</li>
         </ul>
-        <div class="nav-right">
-            <button class="theme-btn" id="themeBtn" aria-label="Toggle theme"><svg id="themeIcon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg></button>
-            <button class="ham" id="ham" aria-label="Menu"><span></span><span></span><span></span></button>
-        </div>
-    </div></nav>
-
-    <main><div class="container">
-
-        <section class="hero" id="about">
-            <div class="hero-court" aria-hidden="true">
-                <svg viewBox="0 0 240 380" fill="none" stroke="currentColor" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="40" y="20" width="160" height="340" rx="2"/>
-                    <line x1="40" y1="190" x2="200" y2="190" stroke-width="2.5"/>
-                    <line x1="66" y1="110" x2="174" y2="110"/>
-                    <line x1="66" y1="270" x2="174" y2="270"/>
-                    <line x1="120" y1="110" x2="120" y2="270"/>
-                    <line x1="120" y1="20" x2="120" y2="36"/>
-                    <line x1="120" y1="344" x2="120" y2="360"/>
-                </svg>
-            </div>
-            <div>
-                <div class="hero-avail"><span class="pulse"></span> Open to strategic AI roles &amp; partnerships</div>
-                <h1>AI strategy that moves from <em>idea</em> to impact.</h1>
-                <div class="hero-sub">RODRIGO CARUSO AMARAL — PARTNERSHIPS &amp; GO-TO-MARKET LEADER</div>
-                <p class="hero-desc">I bridge cutting-edge AI with real-world market impact — specializing in on-device AI, edge computing platforms, and strategic ecosystem enablement. Currently at Qualcomm, driving AI adoption from cloud to edge at scale.</p>
-                <div class="hero-cta">
-                    <a href="mailto:rodrigocarusoamaral@gmail.com" class="btn btn-p">Get in touch <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-                    <a href="https://raw.githubusercontent.com/Rodrigocarusoamaral/portifolio/main/resume.pdf" target="_blank" rel="noopener" download class="btn btn-s">Download résumé <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg></a>
-                    <a href="https://www.linkedin.com/in/rodrigo-caruso-amaral/" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn</a>
-                </div>
-            </div>
-            <div class="headshot-wrap"><div class="headshot">
-                <img src="https://raw.githubusercontent.com/Rodrigocarusoamaral/portifolio/main/profile-photo.jpg" alt="Rodrigo Caruso Amaral">
-                <div class="headshot-cap"><span>San Diego, CA</span><span>Qualcomm</span></div>
-            </div></div>
-        </section>
+      </div>
     </div>
-
-    <hr class="baseline reveal">
-
-    <div class="container reveal" style="padding-top:30px;padding-bottom:8px">
-        <div class="marquee-lead">Partnered with the teams building the future of AI</div>
+    <div class="role">
+      <div class="yr">2024</div>
+      <div>
+        <h3>Global Product Marketing Lead, Qualcomm AI Hub</h3>
+        <div class="co">Qualcomm, San Diego</div>
+        <ul>
+          <li>Launched Qualcomm AI Hub at MWC Barcelona and drove every announcement that followed.</li>
+          <li>Led cross-functional teams across product, engineering, developer relations, finance, operations, and legal.</li>
+          <li>Owned partner go-to-market and roadmap work with third-party applications.</li>
+        </ul>
+      </div>
     </div>
-    <div class="marquee-section reveal" id="marqueeSection"></div>
-
-    <div class="container">
-
-        <section class="block reveal">
-            <div class="term-grid">
-                <div>
-                    <div class="eyebrow">System</div>
-                    <div class="sec-title">A quick <em>readout</em>.</div>
-                    <p class="sec-desc" style="margin-bottom:0">The short version of what I do, who I do it with, and where my focus sits today.</p>
-                </div>
-                <div class="term-box">
-                    <div class="term-header">
-                        <div class="term-dot dot-r"></div>
-                        <div class="term-dot dot-y"></div>
-                        <div class="term-dot dot-g"></div>
-                        <span class="term-title">rodrigo@portfolio ~ %</span>
-                    </div>
-                    <div class="term-body" id="terminal"></div>
-                </div>
-            </div>
-        </section>
-
-        <section class="reveal" style="padding-bottom:104px">
-            <div class="metrics stagger" id="metricsGrid">
-                <div class="metric-card"><div class="metric-val" data-target="1" data-suffix="B+">0</div><div class="metric-lab">Impressions driven</div></div>
-                <div class="metric-card"><div class="metric-val" data-target="10" data-suffix="+">0</div><div class="metric-lab">Platform launches</div></div>
-                <div class="metric-card"><div class="metric-val" data-target="50" data-suffix="+">0</div><div class="metric-lab">Strategic partnerships</div></div>
-            </div>
-        </section>
-
-        <section class="block reveal" id="experience" style="padding-top:0">
-            <div class="eyebrow">Experience</div>
-            <div class="sec-title">Career <em>timeline</em>.</div>
-            <p class="sec-desc">A progression across AI product marketing, global launches, and strategic business development.</p>
-            <div class="timeline" id="timeline"></div>
-        </section>
-
-        <section class="block reveal" id="work" style="padding-top:0">
-            <div class="eyebrow">Case Studies</div>
-            <div class="sec-title">Strategic <em>partnerships</em>.</div>
-            <p class="sec-desc">Enterprise and ecosystem collaborations that extended AI capabilities from cloud to edge.</p>
-            <div class="cs-grid stagger" id="csGrid"></div>
-        </section>
-
-        <section class="block reveal" id="videos" style="padding-top:0">
-            <div class="head-row">
-                <div class="sec-head">
-                    <div class="eyebrow">Media</div>
-                    <div class="sec-title">Launches &amp; <em>keynotes</em>.</div>
-                    <p class="sec-desc" style="margin-bottom:0">Executive messaging, product positioning, and campaign narratives across global stages.</p>
-                </div>
-                <div class="scroll-ctrls">
-                    <button class="scroll-btn" id="vL" aria-label="Scroll left"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg></button>
-                    <button class="scroll-btn" id="vR" aria-label="Scroll right"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>
-                </div>
-            </div>
-            <div class="carousel"><div class="vid-scroll" id="vidScroll"></div></div>
-        </section>
-
-        <section class="block reveal" style="padding-top:0">
-            <div class="head-row">
-                <div class="sec-head">
-                    <div class="eyebrow">Platform Portfolio</div>
-                    <div class="sec-title">Products &amp; <em>platforms</em>.</div>
-                    <p class="sec-desc" style="margin-bottom:0">Messaging strategy and product positioning for Qualcomm's core AI and technology platforms.</p>
-                </div>
-                <div class="scroll-ctrls">
-                    <button class="scroll-btn" id="pL" aria-label="Scroll left"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg></button>
-                    <button class="scroll-btn" id="pR" aria-label="Scroll right"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>
-                </div>
-            </div>
-            <div class="carousel"><div class="plat-scroll" id="platScroll"></div></div>
-            <div class="eyebrow" style="margin-top:32px">Product Briefs</div>
-            <div class="briefs-grid stagger" id="briefsGrid"></div>
-        </section>
-
-        <section class="block reveal" id="writing" style="padding-top:0">
-            <div class="eyebrow">Thought Leadership</div>
-            <div class="sec-title">Published <em>work</em>.</div>
-            <p class="sec-desc">Articles, technical partnerships, and industry perspectives across enterprise and developer platforms.</p>
-            <div class="blog-list" id="blogList"></div>
-            <div class="arch-row"><button class="arch-btn" id="bArchBtn">View archive <span class="arr">&rarr;</span></button></div>
-            <div class="blog-archive" id="blogArch"></div>
-
-            <div class="essays-wrap reveal">
-                <div class="eyebrow">Essays</div>
-                <div class="sec-title">The Thinking <em>Athlete</em>.</div>
-                <p class="sec-desc">Strategic reflections at the intersection of technology, sport, and culture.</p>
-                <div class="essay-grid stagger" id="essayGrid"></div>
-            </div>
-        </section>
-
-        <section class="block reveal" style="padding-top:0;padding-bottom:0">
-            <div class="eyebrow">Beyond Work</div>
-            <div class="sec-title">Off the <em>clock</em>.</div>
-            <p class="sec-desc">A few things that shape how I think when I'm not building go-to-market strategy.</p>
-            <div class="beyond-grid stagger" id="beyondGrid"></div>
-        </section>
-
+    <div class="role">
+      <div class="yr">2019 to 2024</div>
+      <div>
+        <h3>AI Product Marketing</h3>
+        <div class="co">Qualcomm, San Diego</div>
+        <ul>
+          <li>Announced every AI feature for Snapdragon mobile platforms at Snapdragon Summit, each year.</li>
+          <li>Built executive keynotes and messaging with product, PR, legal, and brand.</li>
+          <li>Coordinated with Google, Baichuan, Snap, and Meta to showcase on-device AI.</li>
+        </ul>
+      </div>
     </div>
+  </div>
+</section>
 
-    <section class="contact reveal" id="contact" style="margin-top:104px">
-        <div class="eyebrow">Contact</div>
-        <div class="contact-title">Let's create <em>impact</em> together.</div>
-        <p class="contact-desc">Interested in collaborating on strategic AI initiatives or exploring partnership opportunities? I'd love to hear from you.</p>
-        <div class="contact-btns">
-            <a href="mailto:rodrigocarusoamaral@gmail.com" class="btn btn-p">Email me <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-            <a href="https://www.linkedin.com/in/rodrigo-caruso-amaral/" target="_blank" rel="noopener" class="btn btn-s">Connect on LinkedIn</a>
-        </div>
-    </section>
-    <footer>
-        <span class="f-name">Rodrigo Caruso Amaral</span>
-        <span class="f-tag">From the baseline, to the edge.</span>
-        <span class="f-meta">© 2026 · Designed &amp; built with intent</span>
-    </footer>
-    </main>
+<section class="section" id="writing">
+  <div class="head rv">
+    <div>
+      <h2 class="h2"><span class="serif">Writing</span></h2>
+      <p class="lede">Technical articles for Qualcomm and AWS, and essays on technology, sport, and culture.</p>
+    </div>
+  </div>
+  <div class="wr">
+    <div class="panel rv">
+      <div class="panel-head"><h3>The Thinking Athlete</h3><a href="https://thethinkingathlete.substack.com" target="_blank" rel="noopener">Substack <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 7l-10 10M8 7h9v9"/></svg></a></div>
+      <a class="feat" id="feat" href="#" target="_blank" rel="noopener"></a>
+      <ul class="rows" id="essays"></ul>
+    </div>
+    <div class="panel rv">
+      <div class="panel-head"><h3>Published articles</h3></div>
+      <div id="articles"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="head rv"><div><h2 class="h2">Off the clock</h2></div></div>
+  <div class="beyond rv">
+    <div class="bcard"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"/><path d="M6 5.3a9 9 0 0 1 0 13.4"/><path d="M18 5.3a9 9 0 0 0 0 13.4"/></svg><h3>Division I tennis</h3><p>Played NCAA Division I tennis at UC San Diego. Competition still shapes how I think about strategy.</p></div>
+    <div class="bcard"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"/><path d="M3.6 9h16.8"/><path d="M3.6 15h16.8"/><path d="M11.5 3a17 17 0 0 0 0 18"/><path d="M12.5 3a17 17 0 0 1 0 18"/></svg><h3>Travel</h3><p>Brazilian, based in San Diego, happiest learning from a place I have not been before.</p></div>
+    <div class="bcard"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 7h1a2 2 0 0 0 2 -2a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1a2 2 0 0 0 2 2h1a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-9a2 2 0 0 1 2 -2"/><path d="M9 13a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"/></svg><h3>Photography</h3><p>An exercise in noticing. Most of what I know about framing a story I learned behind a lens.</p></div>
+    <div class="bcard"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 5m0 1a1 1 0 0 1 1 -1h12a1 1 0 0 1 1 1v12a1 1 0 0 1 -1 1h-12a1 1 0 0 1 -1 -1z"/><path d="M9 9h6v6h-6z"/><path d="M3 10h2"/><path d="M3 14h2"/><path d="M10 3v2"/><path d="M14 3v2"/><path d="M21 10h-2"/><path d="M21 14h-2"/><path d="M14 21v-2"/><path d="M10 21v-2"/></svg><h3>Side projects</h3><p>Experimental AI builds on nights and weekends, usually to test a hunch before I bring it to work.</p></div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2 class="rv">Let's <span class="serif">talk.</span></h2>
+  <p class="lede rv">Open to conversations about strategic AI roles, partnerships, and the occasional essay idea. Email is fastest.</p>
+  <div class="hero-cta rv">
+    <a href="mailto:rodrigocarusoamaral@gmail.com" class="pill pill-dark">Get in touch</a>
+    <a href="https://www.linkedin.com/in/rodrigo-caruso-amaral/" class="pill pill-light" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+  <div class="foot">
+    <div class="copy"><b>&copy; 2026 Rodrigo Caruso Amaral</b>San Diego, California</div>
+    <div><p class="fh">Main</p><ul><li><a href="#work">Work</a></li><li><a href="#experience">About</a></li><li><a href="#writing">Writing</a></li></ul></div>
+    <div><p class="fh">Contact</p><ul>
+      <li><a href="mailto:rodrigocarusoamaral@gmail.com">Email</a></li>
+      <li><a href="https://www.linkedin.com/in/rodrigo-caruso-amaral/" target="_blank" rel="noopener">LinkedIn <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 7l-10 10M8 7h9v9"/></svg></a></li>
+      <li><a href="resume.pdf" target="_blank" rel="noopener">Résumé <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 7l-10 10M8 7h9v9"/></svg></a></li>
+    </ul></div>
+  </div>
+</section>
+
+</main>
 
 <script>
-const GH = 'https://raw.githubusercontent.com/Rodrigocarusoamaral/portifolio/main/';
+const $ = s => document.querySelector(s);
+const esc = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
+const up = '<svg class="arrow-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 7l-10 10M8 7h9v9"/></svg>';
+const upSm = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 7l-10 10M8 7h9v9"/></svg>';
 
-// THEME
-const html = document.documentElement;
-function setIcon(theme){
-    const i = document.getElementById('themeIcon');
-    if(theme === 'dark'){
-        i.innerHTML = '<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>';
-    } else {
-        i.innerHTML = '<circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>';
-    }
-}
-const savedTheme = localStorage.getItem('theme') || 'light';
-html.setAttribute('data-theme', savedTheme);
-setIcon(savedTheme);
-document.getElementById('themeBtn').addEventListener('click', () => {
-    const n = html.dataset.theme === 'dark' ? 'light' : 'dark';
-    html.dataset.theme = n; localStorage.setItem('theme', n); setIcon(n);
-});
-
-// NAV
-const nav = document.getElementById('nav');
-document.getElementById('ham').addEventListener('click', () => document.getElementById('navLinks').classList.toggle('open'));
-document.querySelectorAll('.nav-links a').forEach(a => a.addEventListener('click', () => document.getElementById('navLinks').classList.remove('open')));
-window.addEventListener('scroll', () => {
-    nav.classList.toggle('scrolled', window.scrollY > 12);
-    let c = '';
-    document.querySelectorAll('section[id]').forEach(s => { if(pageYOffset >= s.offsetTop - 220) c = s.id });
-    document.querySelectorAll('.nav-links a').forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + c));
-});
-
-// REVEAL
-const rObs = new IntersectionObserver(es => es.forEach(e => { if(e.isIntersecting){ e.target.classList.add('vis'); rObs.unobserve(e.target);} }), {threshold:.08,rootMargin:'0px 0px -40px 0px'});
-document.querySelectorAll('.reveal,.stagger').forEach(el => rObs.observe(el));
-
-// ===== DATA =====
 const videos = [
-    {title:'Introducing Qualcomm AI Hub',id:'FyM2w3N9xVw',tag:'Product Launch',contribution:'Developed overall technical messaging, demo narratives, and product positioning for AI Hub launch at MWC Barcelona.',featured:true},
-    {title:'Go to the Edge of Possible with Qualcomm On-Device AI',id:'SRh7NL2kpvo',tag:'Campaign',contribution:'Campaign narrative, positioning, and creative strategy for the Edge of Possible campaign, driving 500M+ impressions.',featured:true},
-    {title:'Cephable x Qualcomm AI Hub — Gesture Control',id:'e-DDMkeQWLY',tag:'Developer Platform',contribution:'Led messaging strategy and positioning for AI Hub partner demos at Microsoft Build.',featured:true},
-    {title:'What Does On-Device AI Mean?',id:'3Dxlix1WNH8',tag:'Thought Leadership',contribution:'Developed messaging framework and narrative strategy for on-device AI education and awareness.',featured:true},
-    {title:'Snapdragon Summit 2024: Snapdragon 8 Elite Launch',id:'0e5zpV0NS50',tag:'Platform Launch',contribution:'Led platform messaging, product positioning, and coordinated partner demos for Snapdragon 8 Elite launch at Snapdragon Summit.',featured:true},
-    {title:'Snapdragon Summit 2023: Snapdragon 8 Gen 3 Launch',id:'h_vh7_n_OPs',tag:'Platform Launch',contribution:'Coordinated messaging, partner integration, and demo narrative across product management, engineering, and marketing.',featured:true}
+  { t: 'Introducing Qualcomm AI Hub', id: 'FyM2w3N9xVw', n: 'Technical messaging, demo narratives, and launch positioning.', w: 'MWC 2024' },
+  { t: 'Snapdragon 8 Elite launch', id: '0e5zpV0NS50', n: 'Platform messaging, positioning, and partner demos.', w: 'Summit 2024' },
+  { t: 'Snapdragon 8 Gen 3 launch', id: 'h_vh7_n_OPs', n: 'Messaging, partner integration, and demo narrative.', w: 'Summit 2023' },
+  { t: 'Go to the Edge of Possible', id: 'SRh7NL2kpvo', n: 'Campaign narrative and creative strategy. 500M+ impressions.', w: 'Campaign' },
+  { t: 'Cephable and Qualcomm AI Hub', id: 'e-DDMkeQWLY', n: 'Partner demo messaging for Microsoft Build.', w: 'Build 2024' },
+  { t: 'What does on-device AI mean?', id: '3Dxlix1WNH8', n: 'Messaging framework for on-device AI education.', w: 'Explainer' }
 ];
-const blogs = [
-    {title:'AI Developer Workflows Simplified: Empowering Developers with Qualcomm AI Hub',date:'May 2024',publication:'Qualcomm OnQ',url:'https://www.qualcomm.com/news/onq/2024/05/ai-developer-workflows-simplified-empowering-developers-with-qualcomm-ai-hub',category:'Developer Tools',featured:true},
-    {title:'Exploring the Present and Future of AI: Insights from Qualcomm AI Analyst Media Workshop',date:'Jul 2024',publication:'Qualcomm OnQ',url:'https://www.qualcomm.com/news/onq/2024/07/exploring-the-present-and-future-of-ai-insights-from-qualcomm-ai-analyst-media-workshop',category:'Industry Insights',featured:true},
-    {title:'Qualcomm Partners with Meta to Support Llama 3.2: Big Deal for On-Device AI',date:'Sep 2024',publication:'Qualcomm OnQ',url:'https://www.qualcomm.com/news/onq/2024/09/qualcomm-partners-with-meta-to-support-llama-3-point-2-big-deal-for-on-device-ai',category:'Partnerships',featured:true},
-    {title:'Train, Optimize, and Deploy Models on Edge Devices Using Amazon SageMaker and Qualcomm AI Hub',date:'2024',publication:'AWS Machine Learning Blog',url:'https://aws.amazon.com/blogs/machine-learning/train-optimize-and-deploy-models-on-edge-devices-using-amazon-sagemaker-and-qualcomm-ai-hub/',category:'Technical Partnership',featured:true},
-    {title:'Granite 4.0 to the Edge: On-Device AI for Real-World Performance',date:'Oct 2025',publication:'Qualcomm Developer Blog',url:'https://www.qualcomm.com/developer/blog/2025/10/granite-4-0-to-the-edge-on-device-ai-for-real-world-performance',category:'Technical',featured:true},
-    {title:'Lantronix: Integrating Qualcomm AI Hub for Shorter Inference',date:'May 2024',publication:'Qualcomm Developer Blog',url:'https://www.qualcomm.com/developer/blog/2024/05/lantronix-integrating-qualcomm-ai-hub-shorter-inference',category:'Case Study',featured:true},
-    {title:'Women Leading the Future of Mobile AI',date:'Oct 2020',publication:'Qualcomm OnQ',url:'https://www.qualcomm.com/news/onq/2020/10/women-leading-future-mobile-ai',category:'Leadership',featured:false},
-    {title:"We're Making Work, Life, and Play Sound Better Than Ever",date:'Sep 2020',publication:'Qualcomm OnQ',url:'https://www.qualcomm.com/news/onq/2020/09/were-making-work-life-and-play-sound-better-ever',category:'Product Innovation',featured:false},
-    {title:'Deep Dive: Quick Charge 5 and Other Cool Quick Charge News',date:'Aug 2020',publication:'Qualcomm OnQ',url:'https://www.qualcomm.com/news/onq/2020/08/deep-dive-quick-charge-5-and-other-cool-quick-charge-news',category:'Technology',featured:false},
-    {title:'Waves Nx Earbuds: 3D Audio in Motion',date:'Nov 2020',publication:'Qualcomm OnQ',url:'https://www.qualcomm.com/news/onq/2020/11/waves-nx-earbuds-3d-audio-motion',category:'Audio Innovation',featured:false}
-];
-const essays = [
-    {title:'WHOOP Won Because It Figured Out What Athletes Actually Care About',date:'Feb 2026',publication:'The Thinking Athlete',url:'https://open.substack.com/pub/thethinkingathlete/p/whoop-won-because-it-figured-out?r=1mt84j&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true',descriptor:'A strategic reflection on wearable platforms, athlete culture, and the evolving role of AI-driven performance ecosystems.',category:'Product Strategy'},
-    {title:'The Australian Open Through a Tech Lens',date:'Feb 2026',publication:'The Thinking Athlete',url:'https://open.substack.com/pub/thethinkingathlete/p/the-australian-open-through-a-tech?utm_campaign=post-expanded-share&utm_medium=web',descriptor:'Exploring the intersection of AI, broadcast innovation, and fan engagement through the lens of a global tennis stage.',category:'Technology & Sport'},
-    {title:'The Cost of Thinking in the Cloud',date:'Feb 2026',publication:'The Thinking Athlete',url:'https://open.substack.com/pub/thethinkingathlete/p/the-cost-of-thinking-in-the-cloud?r=1mt84j&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true',descriptor:'A reflection on the economic, philosophical, and technological implications of cloud-based AI computing.',category:'AI & Philosophy'},
-    {title:"The Super Bowl Wasn’t Selling You Products — It Was Selling You AI",date:'Feb 2026',publication:'The Thinking Athlete',url:'https://open.substack.com/pub/thethinkingathlete/p/the-super-bowl-wasnt-selling-you?r=1mt84j&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true',descriptor:'A cultural and strategic reflection on how AI narratives, platform positioning, and consumer perception took center stage during the Super Bowl advertising landscape.',category:'AI & Culture'},
-    {title:'What I Saw at GDC',date:'Mar 2026',publication:'The Thinking Athlete',url:'https://open.substack.com/pub/thethinkingathlete/p/what-i-saw-at-gdc',descriptor:'A firsthand look at GDC through the lens of an AI professional, exploring how gaming and enterprise AI are converging.',category:'Technology & Gaming'},
-    {title:'Your Body as a Dashboard: When Did We Start Needing Permission to Feel?',date:'Mar 2026',publication:'The Thinking Athlete',url:'https://open.substack.com/pub/thethinkingathlete/p/your-body-as-a-dashboard',descriptor:'A reflection on the quantified self movement and the tension between data-driven health and human intuition.',category:'AI & Philosophy'},
-    {title:'The Smartest Ball Ever Made',date:'Apr 2026',publication:'The Thinking Athlete',url:'https://open.substack.com/pub/thethinkingathlete/p/the-smartest-ball-ever-made',descriptor:'How a chip inside the 2026 World Cup ball is quietly replacing human judgment with real-time sensor data and AI-powered officiating.',category:'Technology & Sport'},
-    {title:'FIFA Promised You a $60 Ticket. The Algorithm Had Other Plans.',date:'Apr 2026',publication:'The Thinking Athlete',url:'https://open.substack.com/pub/thethinkingathlete/p/fifa-promised-you-a-60-ticket',descriptor:'An investigation into how dynamic pricing turned FIFA accessibility promises into the most exclusionary ticketing in World Cup history.',category:'Technology & Sport'},
-    {title:'Your AI Agent Has a Spending Problem',date:'Apr 2026',publication:'The Thinking Athlete',url:'https://open.substack.com/pub/thethinkingathlete/p/your-ai-agent-has-a-spending-problem',descriptor:'A deep dive into the hidden costs of AI agent autonomy and why giving AI your credit card might be the most expensive decision you make.',category:'Technology'},
-    {title:'The Best AI in the World Exists. You\'re Not Allowed to Use It.',date:'May 2026',publication:'The Thinking Athlete',url:'https://open.substack.com/pub/thethinkingathlete/p/the-best-ai-in-the-world-exists-youre',descriptor:'Anthropic built a model so powerful they refused to release it. How AI access is becoming stratified into tiers most people will never reach.',category:'Technology'}
-];
-const experiences = [
-    {title:'AI Business Development Manager — Strategic Accounts',company:'Qualcomm',location:'San Diego, CA',period:'Jan 2025 — Present',current:true,highlights:['Owned business development initiatives across consumer applications and emerging platforms, identifying new markets and use cases for Snapdragon technologies beyond traditional mobile','Drove partnership strategy from initial technical alignment through commercial discussions, coordinating closely with engineering, product management, and marketing teams','Evaluated market opportunities and competitive dynamics to prioritize high-impact partnerships and pilot engagements','Worked cross-functionally with legal, finance, and operations to support partner onboarding, agreement execution, and scalable engagement models',"Helped expand Qualcomm's presence in new consumer and immersive technology segments, contributing to longer-term platform growth and ecosystem development"]},
-    {title:'Global Product Marketing Lead — Qualcomm AI Hub',company:'Qualcomm',location:'San Diego, CA',period:'Jan 2024 — Dec 2024',highlights:['Launches: Responsible for Qualcomm AI Hub at MWC Barcelona and drove all forthcoming announcements for Snapdragon X Series, Snapdragon Ride and Bring Your Own Model (BYOM)','Cross-Functional Lead: Managed several cross-functional teams, including product management, engineering, developer relationships, finance, operations, and legal departments on each announcement','Partnerships: Responsible for all partner activities, including working with 3rd party applications on GTM strategies and future roadmap']},
-    {title:'AI Product Marketing',company:'Qualcomm',location:'San Diego, CA',period:'Jan 2019 — Jan 2024',highlights:['Product Launches: Responsible for announcing all AI features for Snapdragon mobile platforms at Snapdragon Summit, yearly','Executive Speakerships: Developed and refined executive keynote presentations and messaging through collaboration with PDMs, PR, legal, and brand','Partnerships: Coordinated efforts with ISVs and partners such as Google, Baichuan, Snap, and Meta to highlight our on-device AI leadership','Campaigns: Lead several high-level campaigns for our on-device AI narrative which included the "Edge of Possible" with Oscar-winning Michelle Yeoh with over 500M impressions']}
-];
-const caseStudies = [
-    {tag:'Enterprise AI',title:'IBM watsonx.governance Integration',outcome:'Built the enterprise GenAI deployment framework extending watsonx governance to Snapdragon platforms.',role:'GTM Strategy & Partnership Lead',link:'https://www.qualcomm.com/news/releases/2025/02/qualcomm-and-ibm-scale-enterprise-grade-generative-ai-from-edge-'},
-    {tag:'Edge Computing',title:'Palantir Edge AI Collaboration',outcome:'Extended Palantir ontology capabilities to edge devices, bringing decision intelligence on-device.',role:'GTM Strategy & Partnership Lead',link:'https://www.qualcomm.com/news/releases/2025/03/qualcomm-and-palantir-work-to-extend-ai-and-ontology-capabilitie'}
-];
-const partners = [
-    {name:'Qualcomm'},
-    {name:'IBM'},
-    {name:'AWS'},
-    {name:'Palantir'},
-    {name:'Google'},
-    {name:'Mistral AI'},
-    {name:'Duolingo'},
-    {name:'Oracle'},
-    {name:'Meta'}
+const briefs = [
+  { t: 'Snapdragon 8 Elite', s: 'Mobile platform', pdf: 'b57555fc0_Snapdragon-8-Elite-Platform-Product-Brief (3).pdf', img: 'briefs/8-elite.jpg' },
+  { t: 'Snapdragon 8 Gen 3', s: 'Mobile platform', pdf: '3432a7986_87-71408-1_REV_G_Snapdragon_8_gen_3_Mobile_Platform_Product_Brief (2).pdf', img: 'briefs/8-gen-3.jpg' },
+  { t: 'Cloud AI 100 Ultra', s: 'Data center accelerator', pdf: '9daa3a398_Prod-Brief-QCOM-Cloud-AI-100-Ultra (1).pdf', img: 'briefs/ai-100-ultra.jpg' },
+  { t: 'Cloud AI 100', s: 'Edge accelerator', pdf: '5b32285d3_Prod-Brief-QCOM-Cloud-AI-100 (2).pdf', img: 'briefs/ai-100.jpg' }
 ];
 const platforms = [
-    {title:'Qualcomm AI Engine',link:'https://www.qualcomm.com/processors/ai-engine',role:'Led product messaging, positioning, and feature storytelling in collaboration with product management and digital SEO teams.',thumbnail:'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=500&fit=crop'},
-    {title:'Cloud AI 100 Ultra Platform',link:'https://www.qualcomm.com/artificial-intelligence/data-center/cloud-ai-100-ultra',role:'Defined platform positioning, enterprise messaging, and technical feature narrative with product and data center teams.',thumbnail:'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=500&fit=crop'},
-    {title:'Qualcomm AI Developer Platform',link:'https://www.qualcomm.com/developer/artificial-intelligence',role:'Developed developer-facing messaging, platform positioning, and ecosystem narrative with PM and developer relations teams.',thumbnail:'https://images.unsplash.com/photo-1605379399642-870262d3d051?w=800&h=500&fit=crop'},
-    {title:'Mobile AI Platform',link:'https://www.qualcomm.com/artificial-intelligence/mobile-ai',role:'Created AI platform positioning and product storytelling for mobile AI capabilities in partnership with product marketing and PM.',thumbnail:'https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=500&fit=crop'},
-    {title:'Mobile Audio Applications',link:'https://www.qualcomm.com/audio/applications/mobile-audio',role:'Led messaging strategy and feature positioning for mobile audio platform capabilities across consumer and enterprise use cases.',thumbnail:'https://images.unsplash.com/photo-1614680376573-df3480f0c6ff?w=800&h=500&fit=crop'},
-    {title:'Qualcomm Quick Charge',link:'https://www.qualcomm.com/products/features/quick-charge',role:'Built product positioning, messaging framework, and feature narrative with product and digital teams.',thumbnail:'https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?w=800&h=500&fit=crop'}
+  ['Qualcomm AI Engine', 'https://www.qualcomm.com/processors/ai-engine'],
+  ['Cloud AI 100 Ultra', 'https://www.qualcomm.com/artificial-intelligence/data-center/cloud-ai-100-ultra'],
+  ['AI Developer Platform', 'https://www.qualcomm.com/developer/artificial-intelligence'],
+  ['Mobile AI', 'https://www.qualcomm.com/artificial-intelligence/mobile-ai'],
+  ['Mobile Audio', 'https://www.qualcomm.com/audio/applications/mobile-audio'],
+  ['Quick Charge', 'https://www.qualcomm.com/products/features/quick-charge']
 ];
-const productBriefs = [
-    {title:'Snapdragon 8 Elite',tag:'Mobile Platform',descriptor:'Flagship mobile platform positioning across AI, CPU, GPU, and connectivity capabilities.',pdfUrl:GH+'b57555fc0_Snapdragon-8-Elite-Platform-Product-Brief%20(3).pdf',thumbnail:GH+'b57555fc0_Snapdragon-8-Elite-Platform-Product-Brief%20(3).png'},
-    {title:'Snapdragon 8 Gen 3',tag:'Mobile Platform',descriptor:'Flagship mobile platform product brief for premium smartphones and on-device AI.',pdfUrl:GH+'3432a7986_87-71408-1_REV_G_Snapdragon_8_gen_3_Mobile_Platform_Product_Brief%20(2).pdf',thumbnail:GH+'3432a7986_87-71408-1_REV_G_Snapdragon_8_gen_3_Mobile_Platform_Product_Brief%20(2).png'},
-    {title:'Cloud AI 100 Ultra',tag:'AI Accelerator / Data Center',descriptor:'AI inference accelerator platform brief for data center and edge deployments.',pdfUrl:GH+'9daa3a398_Prod-Brief-QCOM-Cloud-AI-100-Ultra%20(1).pdf',thumbnail:GH+'9daa3a398_Prod-Brief-QCOM-Cloud-AI-100-Ultra%20(1).png'},
-    {title:'Cloud AI 100',tag:'AI Accelerator / Edge',descriptor:'First-generation AI accelerator platform overview and positioning.',pdfUrl:GH+'5b32285d3_Prod-Brief-QCOM-Cloud-AI-100%20(2).pdf',thumbnail:GH+'5b32285d3_Prod-Brief-QCOM-Cloud-AI-100%20(2).png'}
+const articles = [
+  { o: 'Qualcomm OnQ', i: [
+    ['AI Developer Workflows Simplified with Qualcomm AI Hub', 'May 2024', 'https://www.qualcomm.com/news/onq/2024/05/ai-developer-workflows-simplified-empowering-developers-with-qualcomm-ai-hub'],
+    ['Qualcomm Partners with Meta to Support Llama 3.2', 'Sep 2024', 'https://www.qualcomm.com/news/onq/2024/09/qualcomm-partners-with-meta-to-support-llama-3-point-2-big-deal-for-on-device-ai'],
+    ['Insights from the Qualcomm AI Analyst Media Workshop', 'Jul 2024', 'https://www.qualcomm.com/news/onq/2024/07/exploring-the-present-and-future-of-ai-insights-from-qualcomm-ai-analyst-media-workshop'],
+    ['Women Leading the Future of Mobile AI', 'Oct 2020', 'https://www.qualcomm.com/news/onq/2020/10/women-leading-future-mobile-ai']
+  ]},
+  { o: 'Qualcomm Developer Blog', i: [
+    ['Granite 4.0 to the Edge', 'Oct 2025', 'https://www.qualcomm.com/developer/blog/2025/10/granite-4-0-to-the-edge-on-device-ai-for-real-world-performance'],
+    ['Lantronix: Integrating Qualcomm AI Hub', 'May 2024', 'https://www.qualcomm.com/developer/blog/2024/05/lantronix-integrating-qualcomm-ai-hub-shorter-inference']
+  ]},
+  { o: 'AWS Machine Learning Blog', i: [
+    ['Deploy Models on Edge Devices with SageMaker and Qualcomm AI Hub', '2024', 'https://aws.amazon.com/blogs/machine-learning/train-optimize-and-deploy-models-on-edge-devices-using-amazon-sagemaker-and-qualcomm-ai-hub/']
+  ]}
 ];
-const beyondItems = [
-    {title:'NCAA Division I Tennis',description:'Former NCAA Division I tennis player at UC San Diego — competition shapes how I approach strategy.',icon:'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M18.5 5.5c-3 3.5-3 9.5 0 13"/><path d="M5.5 5.5c3 3.5 3 9.5 0 13"/><path d="M2 12h20"/></svg>'},
-    {title:'Travel & Exploration',description:'Passionate about exploring the world and learning from diverse cultures and perspectives.',icon:'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>'},
-    {title:'Photography',description:'Capturing moments and perspectives through the lens — an exercise in noticing.',icon:'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="12" r="3.5"/><circle cx="12" cy="12" r="7.5"/><line x1="12" y1="2" x2="12" y2="4.5"/><line x1="12" y1="19.5" x2="12" y2="22"/><line x1="2" y1="12" x2="4.5" y2="12"/><line x1="19.5" y1="12" x2="22" y2="12"/></svg>'},
-    {title:'AI Personal Projects',description:'Exploring emerging AI applications and experimental builds on nights and weekends.',icon:'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>'}
+const essays = [
+  ["The Best AI in the World Exists. You're Not Allowed to Use It.", 'May 2026', 'https://open.substack.com/pub/thethinkingathlete/p/the-best-ai-in-the-world-exists-youre', 'Anthropic built a model so capable they would not release it. How AI access is splitting into tiers most people will never reach.'],
+  ['Your AI Agent Has a Spending Problem', 'Apr 2026', 'https://open.substack.com/pub/thethinkingathlete/p/your-ai-agent-has-a-spending-problem'],
+  ['FIFA Promised You a $60 Ticket', 'Apr 2026', 'https://open.substack.com/pub/thethinkingathlete/p/fifa-promised-you-a-60-ticket'],
+  ['The Smartest Ball Ever Made', 'Apr 2026', 'https://open.substack.com/pub/thethinkingathlete/p/the-smartest-ball-ever-made'],
+  ['Your Body as a Dashboard', 'Mar 2026', 'https://open.substack.com/pub/thethinkingathlete/p/your-body-as-a-dashboard'],
+  ['What I Saw at GDC', 'Mar 2026', 'https://open.substack.com/pub/thethinkingathlete/p/what-i-saw-at-gdc'],
+  ['The Cost of Thinking in the Cloud', 'Feb 2026', 'https://open.substack.com/pub/thethinkingathlete/p/the-cost-of-thinking-in-the-cloud']
 ];
 
-// ===== MARQUEE (uniform wordmarks) =====
-const mq = document.getElementById('marqueeSection');
-const wrapper = document.createElement('div');
-wrapper.className = 'marquee-track';
-partners.concat(partners).forEach(p => {
-    const t = document.createElement('span'); t.className='logo-text'; t.textContent = p.name; wrapper.appendChild(t);
-});
-mq.appendChild(wrapper);
+$('#vlist').innerHTML = videos.map(v => `<li><a class="vrow" href="https://www.youtube.com/watch?v=${v.id}" target="_blank" rel="noopener"><div class="vthumb"><img src="media/${v.id}.jpg" alt="" loading="lazy" width="1280" height="720"></div><div><h3>${esc(v.t)}</h3><p>${esc(v.n)}</p></div><span class="when">${v.w}</span>${up}</a></li>`).join('');
+$('#briefs').innerHTML = briefs.map(b => `<a class="brief" href="${encodeURI(b.pdf)}" target="_blank" rel="noopener"><div class="cover"><img src="${b.img}" alt="${esc(b.t)} product brief" loading="lazy" width="900" height="1165"></div><h3>${esc(b.t)}</h3><p>${esc(b.s)}</p></a>`).join('');
+$('#platforms').innerHTML = platforms.map(([t, u]) => `<a href="${u}" target="_blank" rel="noopener">${esc(t)} ${upSm}</a>`).join('');
+$('#articles').innerHTML = articles.map(g => `<div class="outlet">${esc(g.o)}</div><ul class="rows">${g.i.map(([t, d, u]) => `<li><a href="${u}" target="_blank" rel="noopener">${esc(t)}<span>${d}</span></a></li>`).join('')}</ul>`).join('');
+const [f, ...rest] = essays;
+const fe = $('#feat'); fe.href = f[2];
+fe.innerHTML = `<small>Latest essay, ${f[1]}</small><h4>${esc(f[0])}</h4><p>${esc(f[3])}</p>`;
+$('#essays').innerHTML = rest.map(([t, d, u]) => `<li><a href="${u}" target="_blank" rel="noopener">${esc(t)}<span>${d}</span></a></li>`).join('');
 
-// ===== TERMINAL =====
-const termEl = document.getElementById('terminal');
-const termLines = [
-    {t:'cmd',v:'> rodrigo.init()'},
-    {t:'out',v:''},
-    {t:'out',v:'AI Business Development & Partnerships at Qualcomm'},
-    {t:'out',v:'Bridging cutting-edge AI with real-world market impact'},
-    {t:'out',v:''},
-    {t:'cmd',v:'> rodrigo.focus()'},
-    {t:'out',v:''},
-    {t:'out',v:'Edge AI and on-device platforms'},
-    {t:'out',v:'Developer ecosystems and enterprise deployments'},
-    {t:'out',v:'Technical storytelling and go-to-market strategy'},
-    {t:'out',v:''},
-    {t:'cmd',v:'> rodrigo.partnerships()'},
-    {t:'out',v:''},
-    {t:'out',v:'Strategic collaborations: IBM, AWS, Palantir, Google'},
-    {t:'out',v:'Driving AI adoption from cloud to edge at scale'},
-    {t:'out',v:''},
-    {t:'cmd',v:'> status: ACTIVE'},
-    {t:'cmd',v:'> domain: GenAI, Edge AI, Partnerships, Platforms'}
-];
-let tStarted = false;
-function typeTerm(){
-    let tI = 0;
-    (function step(){
-        if(tI < termLines.length){
-            const l = document.createElement('div'); l.className='t-line'; l.style.animationDelay='0ms';
-            const d = termLines[tI];
-            if(!d.v) l.innerHTML='<br>';
-            else if(d.t==='cmd') l.innerHTML='<span class="t-cmd">'+d.v+'</span>';
-            else l.textContent = d.v;
-            termEl.appendChild(l); tI++; setTimeout(step, 75);
-        }
-    })();
-}
-const termObs = new IntersectionObserver(es => es.forEach(e => { if(e.isIntersecting && !tStarted){ tStarted = true; typeTerm(); termObs.disconnect(); } }), {threshold:.3});
-termObs.observe(termEl);
+// Nav state
+const links = [...document.querySelectorAll('.navpill a[href^="#"]')];
+const spy = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) links.forEach(a => a.setAttribute('aria-current', a.getAttribute('href') === '#' + e.target.id ? 'true' : 'false')); }), { rootMargin: '-40% 0px -55% 0px' });
+['about', 'work', 'media', 'experience', 'writing'].forEach(id => spy.observe(document.getElementById(id)));
 
-// ===== EXPERIENCE =====
-const timeline = document.getElementById('timeline');
-experiences.forEach(exp => {
-    const item = document.createElement('div');
-    item.className = 'tl-item' + (exp.current ? ' current' : '');
-    item.innerHTML = `<div class="tl-dot"></div>
-        <div class="tl-card"><div class="tl-head"><div>
-            <div class="tl-title">${exp.title}</div>
-            <div class="tl-co">${exp.company}</div>
-            <div class="tl-meta">${exp.location} &middot; ${exp.period}</div>
-        </div>${exp.current ? '<div class="tl-badge">Current</div>' : ''}</div>
-        <div class="tl-body"><ul>${exp.highlights.map(h=>'<li>'+h+'</li>').join('')}</ul></div>
-        <div class="tl-expand"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg><span>Expand</span></div></div>`;
-    const card = item.querySelector('.tl-card');
-    card.addEventListener('click', () => {
-        card.classList.toggle('open');
-        card.querySelector('.tl-expand span').textContent = card.classList.contains('open') ? 'Collapse' : 'Expand';
-    });
-    timeline.appendChild(item);
-});
-const firstCard = timeline.querySelector('.tl-item.current .tl-card');
-if(firstCard){ firstCard.classList.add('open'); firstCard.querySelector('.tl-expand span').textContent='Collapse'; }
-
-// ===== CASE STUDIES =====
-const csGrid = document.getElementById('csGrid');
-caseStudies.forEach(cs => { const c=document.createElement('div');c.className='cs-card';c.innerHTML=`<div class="cs-tag">${cs.tag}</div><h3 class="cs-title">${cs.title}</h3><p class="cs-desc">${cs.outcome}</p><p class="cs-role">Role — ${cs.role}</p><a href="${cs.link}" target="_blank" rel="noopener" class="cs-link">Read the announcement <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>`;csGrid.appendChild(c) });
-
-// ===== VIDEOS =====
-const vidScroll = document.getElementById('vidScroll');
-videos.forEach(v => { const c=document.createElement('div');c.className='vid-card';c.innerHTML=`<a href="https://www.youtube.com/watch?v=${v.id}" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;display:block"><div class="vid-thumb"><img src="https://img.youtube.com/vi/${v.id}/hqdefault.jpg" alt="${v.title}" loading="lazy"><div class="vid-play"></div></div><div class="vid-info"><div class="vid-tag">${v.tag}</div><div class="vid-title">${v.title}</div><div class="vid-desc">${v.contribution}</div></div></a>`;vidScroll.appendChild(c) });
-document.getElementById('vL').addEventListener('click', ()=>vidScroll.scrollBy({left:-416,behavior:'smooth'}));
-document.getElementById('vR').addEventListener('click', ()=>vidScroll.scrollBy({left:416,behavior:'smooth'}));
-
-// ===== PLATFORMS =====
-const platScroll = document.getElementById('platScroll');
-platforms.forEach(p => { const c=document.createElement('div');c.className='plat-card';c.innerHTML=`<div class="plat-thumb"><img src="${p.thumbnail}" alt="${p.title}" loading="lazy"></div><div class="plat-body"><div class="plat-title">${p.title}</div><div class="plat-role">${p.role}</div><a href="${p.link}" target="_blank" rel="noopener" class="plat-link">View platform <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>`;platScroll.appendChild(c) });
-document.getElementById('pL').addEventListener('click', ()=>platScroll.scrollBy({left:-476,behavior:'smooth'}));
-document.getElementById('pR').addEventListener('click', ()=>platScroll.scrollBy({left:476,behavior:'smooth'}));
-
-// ===== PRODUCT BRIEFS =====
-const briefsGrid = document.getElementById('briefsGrid');
-productBriefs.forEach(b => {
-    const c=document.createElement('div');c.className='brief-card';
-    const a=document.createElement('a');a.href=b.pdfUrl;a.target='_blank';a.rel='noopener';a.style.cssText='text-decoration:none;color:inherit;display:block';
-    const thumbDiv=document.createElement('div');thumbDiv.className='brief-thumb';
-    const canvas=document.createElement('canvas');
-    const img=new Image();img.crossOrigin='anonymous';
-    img.onload=function(){canvas.width=img.naturalWidth;canvas.height=img.naturalHeight;canvas.getContext('2d').drawImage(img,0,0)};
-    img.onerror=function(){ const im=document.createElement('img'); im.src=b.thumbnail; im.alt=b.title; im.loading='lazy'; canvas.replaceWith(im); };
-    img.src=b.thumbnail;
-    thumbDiv.appendChild(canvas);
-    const body=document.createElement('div');body.className='brief-body';
-    body.innerHTML=`<div class="brief-tag">${b.tag}</div><div class="brief-title">${b.title}</div><div class="brief-desc">${b.descriptor}</div>`;
-    a.appendChild(thumbDiv);a.appendChild(body);c.appendChild(a);briefsGrid.appendChild(c);
-});
-
-// ===== BLOGS =====
-function blogEntry(b){ return `<a href="${b.url}" target="_blank" rel="noopener"><div><div class="blog-entry-cat">${b.category}</div><div class="blog-entry-title">${b.title}</div><div class="blog-entry-meta">${b.date} &middot; ${b.publication}</div></div><div class="blog-entry-arrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg></div></a>`; }
-const blogList=document.getElementById('blogList');
-blogs.filter(b=>b.featured).forEach(b=>{const e=document.createElement('div');e.className='blog-entry';e.innerHTML=blogEntry(b);blogList.appendChild(e)});
-const blogArchEl=document.getElementById('blogArch');
-blogs.filter(b=>!b.featured).forEach(b=>{const e=document.createElement('div');e.className='blog-entry';e.innerHTML=blogEntry(b);blogArchEl.appendChild(e)});
-document.getElementById('bArchBtn').addEventListener('click', function(){ blogArchEl.classList.toggle('open'); this.innerHTML = blogArchEl.classList.contains('open') ? 'Hide archive <span class="arr">&rarr;</span>' : 'View archive <span class="arr">&rarr;</span>'; });
-
-// ===== ESSAYS =====
-const essayGrid=document.getElementById('essayGrid');
-essays.slice().reverse().forEach(e=>{const c=document.createElement('div');c.className='essay-card';c.innerHTML=`<a href="${e.url}" target="_blank" rel="noopener"><div class="essay-cat">${e.category}</div><div class="essay-title">${e.title}</div><div class="essay-desc">${e.descriptor}</div><div class="essay-meta">${e.date} &middot; ${e.publication}</div></a>`;essayGrid.appendChild(c)});
-
-// ===== BEYOND =====
-const beyondGrid=document.getElementById('beyondGrid');
-beyondItems.forEach(item=>{const c=document.createElement('div');c.className='beyond-card';c.innerHTML=`<div class="beyond-icon">${item.icon}</div><div class="beyond-title">${item.title}</div><div class="beyond-desc">${item.description}</div>`;beyondGrid.appendChild(c)});
-
-// ===== COUNT-UP =====
-const countEls=document.querySelectorAll('[data-target]');
-const cObs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting&&!e.target.dataset.counted){e.target.dataset.counted='1';const t=parseInt(e.target.dataset.target),s=e.target.dataset.suffix;const wrap=v=>v.replace(/([A-Za-z+]+)$/,'<span class="u">$1</span>');if(t===1){e.target.innerHTML=wrap('1'+s);return}let cur=0;const inc=t/45;const timer=setInterval(()=>{cur+=inc;if(cur>=t){e.target.innerHTML=wrap(t+s);clearInterval(timer)}else e.target.innerHTML=wrap(Math.floor(cur)+s)},26)}})},{threshold:.5});
-countEls.forEach(el=>cObs.observe(el));
+// Reveal
+const rv = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('on'); rv.unobserve(e.target); } }), { threshold: .12, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('.rv').forEach(el => rv.observe(el));
 </script>
 </body>
 </html>
