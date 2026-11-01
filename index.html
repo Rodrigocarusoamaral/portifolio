@@ -2,510 +2,780 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rodrigo Caruso Amaral</title>
-<meta name="description" content="Rodrigo Caruso Amaral. AI business development, partnerships, and go-to-market at Qualcomm, based in San Diego.">
-<meta property="og:title" content="Rodrigo Caruso Amaral">
-<meta property="og:description" content="AI business development, partnerships, and go-to-market at Qualcomm.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://rodrigocarusoamaralportfolio.me/">
-<meta property="og:image" content="https://rodrigocarusoamaralportfolio.me/profile-1400.jpg">
-<meta name="theme-color" content="#F7F7F5">
-<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rodrigo Caruso Amaral — AI Partnerships & Go-to-Market</title>
+<meta name="description" content="Rodrigo Caruso Amaral — AI business development, partnerships, and go-to-market leader at Qualcomm. On-device AI, edge platforms, ecosystem strategy.">
+<meta property="og:title" content="Rodrigo Caruso Amaral — AI strategy from idea to impact">
+<meta property="og:description" content="AI partnerships and go-to-market, from the cloud to the edge.">
+<meta property="og:image" content="https://raw.githubusercontent.com/Rodrigocarusoamaral/portifolio/main/profile-photo.jpg">
+<meta name="theme-color" content="#07070a">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600&family=DM+Serif+Display:ital@1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js');if(matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('rm');</script>
 <style>
 :root{
-  --bg:#F7F7F5;
-  --card:#EEEEEA;
-  --card-2:#E6E6E1;
-  --white:#FFFFFF;
-  --ink:#1B1B1A;
-  --ink-2:#4F4F4B;
-  --ink-3:#63635E;
-  --line:rgba(27,27,26,.09);
-  --line-2:rgba(27,27,26,.16);
-  --blue:#2F5BEA;
-  --sans:"Albert Sans",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
-  --serif:"DM Serif Display",Georgia,serif;
-  --out:cubic-bezier(.23,1,.32,1);
-  --r-lg:28px;
-  --r-md:18px;
-  --r-sm:12px;
-  --max:1120px;
-  --gutter:20px;
-  --space:88px;
-  color-scheme:light;
+  --bg:#07070a;--bg2:#0e0e12;--fg:#f2efe9;--mute:rgba(242,239,233,.56);--dim:rgba(242,239,233,.32);
+  --line:rgba(242,239,233,.12);--accent:#ff6a3d;--accent2:#ffb38a;
+  --sans:'Inter Tight',system-ui,-apple-system,Segoe UI,sans-serif;--serif:'Instrument Serif',Georgia,serif;--mono:'JetBrains Mono',ui-monospace,monospace;
+  --pad:clamp(20px,4vw,64px);--ease:cubic-bezier(.16,1,.3,1);
 }
-@media(min-width:760px){:root{--gutter:32px;--space:120px}}
-
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;scroll-padding-top:96px}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-body{font-family:var(--sans);font-size:17px;line-height:1.55;color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;overflow-x:clip}
-::selection{background:var(--ink);color:var(--bg)}
-:focus-visible{outline:2px solid var(--blue);outline-offset:3px;border-radius:6px}
-img{display:block;max-width:100%;height:auto}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--bg);color:var(--fg);overflow-x:clip}
+body{font-family:var(--sans);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
 a{color:inherit;text-decoration:none}
 button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
-h1,h2,h3{font-weight:500;letter-spacing:-.025em;text-wrap:balance}
-.serif{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:-.01em}
-.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gutter)}
-.section{padding-top:var(--space)}
-.h2{font-size:clamp(2rem,3.6vw,3rem);line-height:1.08;margin-bottom:14px}
-.lede{color:var(--ink-2);max-width:56ch;font-size:clamp(1.02rem,1.3vw,1.15rem)}
-.muted{color:var(--ink-3)}
-.head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:40px;flex-wrap:wrap}
+img{display:block;max-width:100%}
+::selection{background:var(--accent);color:#000}
+.mono{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+.serif{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:0}
+.accent{color:var(--accent)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
 
-/* Pills */
-.pill{display:inline-flex;align-items:center;gap:8px;height:46px;padding:0 22px;border-radius:999px;font-weight:500;font-size:15.5px;white-space:nowrap;transition:transform .16s var(--out),background-color .15s ease,color .15s ease}
-.pill:active{transform:scale(.97)}
-.pill-dark{background:var(--ink);color:var(--bg)}
-.pill-light{background:var(--card);color:var(--ink)}
-@media(hover:hover){.pill-dark:hover{background:#000}.pill-light:hover{background:var(--card-2)}}
-.pill svg{width:16px;height:16px}
-.arrow-ic{width:18px;height:18px;flex:none;transition:transform .25s var(--out)}
+/* grain */
+body:after{content:"";position:fixed;inset:-50%;pointer-events:none;z-index:90;opacity:.05;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");animation:grain 1.2s steps(6) infinite}
+@keyframes grain{0%{transform:translate(0,0)}20%{transform:translate(-3%,2%)}40%{transform:translate(2%,-3%)}60%{transform:translate(-2%,-1%)}80%{transform:translate(3%,3%)}100%{transform:translate(0,0)}}
 
-/* Header: name left, glass pill nav right */
-.top{position:sticky;top:0;z-index:50;padding:14px 0;transition:background-color .2s ease}
-.top-in{display:flex;justify-content:space-between;align-items:center;gap:16px}
-.id{line-height:1.25}
-.id b{font-weight:600;font-size:15.5px;display:block}
-.id span{font-size:13.5px;color:var(--ink-3)}
-.navpill{display:flex;align-items:center;gap:4px;padding:5px;border-radius:999px;background:rgba(255,255,255,.72);backdrop-filter:blur(14px) saturate(1.4);-webkit-backdrop-filter:blur(14px) saturate(1.4);box-shadow:0 1px 0 rgba(255,255,255,.8) inset,0 6px 24px -12px rgba(27,27,26,.25);border:1px solid var(--line)}
-.navpill a{padding:9px 16px;border-radius:999px;font-size:14.5px;font-weight:500;color:var(--ink-2);transition:background-color .15s ease,color .15s ease}
-.navpill a:hover{color:var(--ink)}
-.navpill a[aria-current="true"]{background:var(--ink);color:var(--bg)}
-.navpill .mail{width:38px;height:38px;padding:0;display:grid;place-items:center;background:var(--ink);color:var(--bg);margin-left:4px}
-.navpill .mail svg{width:17px;height:17px}
-.navpill .opt{display:none}
-@media(min-width:720px){.navpill .opt{display:inline-block}}
-@media(max-width:520px){.id span{display:none}.id b{font-size:14.5px}.navpill a{padding:8px 12px;font-size:14px}.navpill a[href="#experience"]{display:none}.navpill .mail{width:34px;height:34px}main .portrait{width:240px}.wcard{padding:22px;border-radius:22px}.wcard p{font-size:15px}}
+/* loader */
+.loader{display:none}
+.js .loader{display:flex;position:fixed;inset:0;z-index:100;background:var(--bg);align-items:flex-end;justify-content:space-between;padding:var(--pad);transition:transform 1s var(--ease)}
+.loader.done{transform:translateY(-100%)}
+.loader .ln{font-size:clamp(64px,14vw,200px);font-weight:600;line-height:.8;letter-spacing:-.05em;font-variant-numeric:tabular-nums}
+.loader .lname{color:var(--mute)}
+.rm .loader{display:none}
 
-/* Hero */
-.hero{padding-top:40px;display:grid;gap:40px;align-items:center}
-@media(min-width:900px){.hero{grid-template-columns:1.35fr .65fr;gap:64px;padding-top:56px}}
-.hero-tag{display:inline-flex;align-items:center;gap:10px;font-size:14.5px;color:var(--ink-2);margin-bottom:22px}
-.hero-tag i{width:8px;height:8px;border-radius:50%;background:var(--blue);box-shadow:0 0 0 4px rgba(47,91,234,.14)}
-.hero h1{font-size:clamp(2.6rem,6vw,4.9rem);line-height:1.02;letter-spacing:-.035em;margin-bottom:26px}
-.hero h1 .serif{font-size:1.06em;letter-spacing:-.02em}
-.hero-sub{font-size:clamp(1.05rem,1.4vw,1.22rem);line-height:1.5;margin-bottom:30px;max-width:40ch}
-.hero-sub b{font-weight:500;color:var(--ink)}
-.hero-sub span{display:block;color:var(--ink-3)}
-.hero-cta{display:flex;flex-wrap:wrap;gap:10px}
-.portrait{justify-self:center;width:min(360px,78vw);aspect-ratio:3/4;border-radius:999px;overflow:hidden;background:var(--card);box-shadow:0 30px 60px -40px rgba(27,27,26,.45)}
-@media(min-width:900px){.portrait{justify-self:end;width:100%;max-width:340px}}
-.portrait img{width:100%;height:100%;object-fit:cover;object-position:center 22%}
+/* nav */
+.nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:20px var(--pad);mix-blend-mode:difference}
+.brand{white-space:nowrap;display:flex;align-items:center;gap:10px;font-weight:500;letter-spacing:-.01em}
+.brand b{width:30px;height:30px;border:1px solid var(--fg);border-radius:50%;display:grid;place-items:center;font-size:11px;font-weight:600;letter-spacing:.02em}
+.nav ul{display:flex;gap:28px;list-style:none}
+.nav ul a{font-size:14px;color:var(--fg);opacity:.75;transition:opacity .3s}
+.nav ul a:hover{opacity:1}
+.pill{display:inline-flex;align-items:center;gap:10px;padding:12px 20px;border-radius:999px;border:1px solid var(--line);font-size:14px;font-weight:500;transition:background .4s var(--ease),color .4s var(--ease),border-color .4s}
+.pill:hover{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.pill.solid{background:var(--accent);border-color:var(--accent);color:#120804}
+.pill.solid:hover{background:var(--fg);border-color:var(--fg)}
+.pill svg{width:14px;height:14px}
+.nav .pill{border-color:rgba(242,239,233,.4)}
 
-/* Stats */
-.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:28px 24px;margin-top:64px;padding-top:28px;border-top:1px solid var(--line)}
-@media(min-width:760px){.stats{grid-template-columns:repeat(4,1fr)}}
-.stat b{display:block;font-weight:500;font-size:clamp(2rem,3.4vw,2.8rem);letter-spacing:-.03em;line-height:1;margin-bottom:10px;font-variant-numeric:tabular-nums}
-.stat span{font-size:14.5px;color:var(--ink-3);line-height:1.35;display:block;max-width:20ch}
+/* HUD */
+.hud{position:fixed;right:var(--pad);bottom:28px;z-index:50;display:flex;align-items:center;gap:14px;mix-blend-mode:difference;color:var(--fg)}
+.hud .hn{font-family:var(--mono);font-size:12px;letter-spacing:.08em}
+.hud .hbar{width:90px;height:1px;background:rgba(242,239,233,.25);position:relative;overflow:hidden}
+.hud .hbar i{position:absolute;inset:0;background:var(--fg);transform-origin:left;transform:scaleX(0)}
+.hud .hname{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;min-width:110px}
 
-/* Logos */
-.logos{margin-top:64px;display:grid;gap:20px}
-.logos p{font-size:14px;color:var(--ink-3)}
-.logo-row{display:flex;flex-wrap:wrap;align-items:center;gap:22px 44px}
-.logo-row img{height:22px;width:auto;filter:grayscale(1);opacity:.62;transition:opacity .2s ease}
-.logo-row img.q{height:20px}
-.logo-row img.p{height:24px}
-.logo-row img:hover{opacity:1}
+/* scenes */
+.scene{position:relative;height:var(--len,300vh)}
+.stage{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden}
+.block{padding:clamp(100px,14vh,160px) var(--pad)}
+.eyebrow{display:flex;align-items:center;gap:12px;color:var(--mute);margin-bottom:28px}
+.eyebrow:before{content:"";width:28px;height:1px;background:var(--accent)}
+.h2{font-size:clamp(40px,6.4vw,104px);font-weight:500;letter-spacing:-.045em;line-height:.95}
+.h2 .serif{letter-spacing:-.01em}
+.lead{font-size:clamp(17px,1.4vw,20px);color:var(--mute);max-width:560px;margin-top:22px}
 
-/* Work cards (Perry-style: big rounded card, title and arrow, image inside) */
-.work{display:grid;gap:16px}
-@media(min-width:860px){.work{grid-template-columns:1fr 1fr;gap:20px}.work .wide{grid-column:1/-1}.work .wide .wmedia{aspect-ratio:2.1/1}}
-.wcard{display:flex;flex-direction:column;gap:22px;padding:28px;border-radius:var(--r-lg);background:var(--card);transition:background-color .2s ease}
-@media(min-width:760px){.wcard{padding:36px}}
-.wcard:hover{background:var(--card-2)}
-.wcard-top{display:flex;justify-content:space-between;align-items:start;gap:20px}
-.wcard h3{font-size:clamp(1.5rem,2.4vw,2rem);line-height:1.12;margin-bottom:8px}
-.wcard p{color:var(--ink-3);font-size:15.5px;max-width:52ch}
-.wcard p b{color:var(--ink);font-weight:500}
-.wcard .arrow-ic{width:26px;height:26px;margin-top:4px}
-.wcard:hover .arrow-ic{transform:translateX(4px)}
-.wmedia{border-radius:var(--r-md);overflow:hidden;background:var(--white);aspect-ratio:16/9;margin-top:auto;box-shadow:0 1px 0 var(--line)}
-.wmedia img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--out)}
-.wcard:hover .wmedia img{transform:scale(1.025)}
-.wmedia.logos-pair{display:flex;align-items:center;justify-content:center;gap:clamp(18px,4vw,40px);padding:0 10%}
-.wmedia.logos-pair img{width:auto;height:auto;object-fit:contain;transform:none!important}
-.wmedia.logos-pair .x{font-family:var(--serif);font-style:italic;font-size:clamp(1.6rem,3vw,2.4rem);color:var(--ink-3);line-height:1}
-.lp-q{max-width:34%;height:clamp(20px,3vw,34px)!important}
-.lp-ibm{max-width:26%;height:clamp(36px,5vw,60px)!important}
-.lp-pal{max-width:40%;height:clamp(28px,4.2vw,48px)!important}
+/* video slots */
+.media{position:absolute;inset:0}
+.media canvas,.media video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.media video{opacity:0;transition:opacity 1s}
+.media.has-video video{opacity:1}
+.media.has-video canvas{opacity:0}
+.vignette{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at center,transparent 35%,rgba(7,7,10,.85) 100%)}
 
-/* Media list (Blunar-style rows) */
-.vlist{list-style:none;border-top:1px solid var(--line)}
-.vlist li{border-bottom:1px solid var(--line)}
-.vrow{display:grid;grid-template-columns:120px 1fr auto;gap:18px;align-items:center;padding:16px 0;transition:background-color .15s ease}
-@media(min-width:760px){.vrow{grid-template-columns:180px 1fr 140px auto;gap:28px;padding:18px 8px}}
-.vrow:hover{background:rgba(27,27,26,.025)}
-.vthumb{aspect-ratio:16/9;border-radius:10px;overflow:hidden;background:var(--card)}
-.vthumb img{width:100%;height:100%;object-fit:cover}
-.vrow h3{font-size:16.5px;line-height:1.3;letter-spacing:-.01em;margin-bottom:3px}
-.vrow p{font-size:14.5px;color:var(--ink-3);line-height:1.4}
-.vrow .when{display:none;font-size:14px;color:var(--ink-3)}
-@media(min-width:760px){.vrow .when{display:block}}
-.vrow .arrow-ic{color:var(--ink-3)}
-.vrow:hover .arrow-ic{transform:translate(3px,-3px);color:var(--ink)}
+/* HERO */
+#hero{--len:240vh}
+.hero-copy{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:0 var(--pad) clamp(72px,11vh,120px);pointer-events:none}
+.hero-copy a{pointer-events:auto}
+.hero-top{position:absolute;top:clamp(90px,14vh,140px);left:var(--pad);right:var(--pad);display:flex;justify-content:space-between;color:var(--mute)}
+.status{display:inline-flex;align-items:center;gap:10px}
+.status i{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 0 rgba(255,106,61,.6);animation:ping 2.4s infinite}
+@keyframes ping{0%{box-shadow:0 0 0 0 rgba(255,106,61,.55)}70%{box-shadow:0 0 0 12px rgba(255,106,61,0)}100%{box-shadow:0 0 0 0 rgba(255,106,61,0)}}
+.h1{font-size:clamp(48px,9.2vw,168px);font-weight:500;letter-spacing:-.055em;line-height:.88;max-width:14ch}
+.h1 .serif{letter-spacing:-.02em;padding-right:.04em}
+.line{display:block;overflow:hidden;padding-bottom:.16em;margin-bottom:-.1em}
+.line>span{display:inline-block;transform:translateY(105%);transition:transform 1.3s var(--ease)}
+.ready .line>span{transform:none}
+.hero-meta{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;margin-top:40px;flex-wrap:wrap}
+.hero-meta p{max-width:440px;color:var(--mute);font-size:clamp(15px,1.15vw,17px)}
+.hero-meta p strong{color:var(--fg);font-weight:500}
+.cta{display:flex;gap:10px;flex-wrap:wrap}
+.fade-in{opacity:0;transform:translateY(16px);transition:opacity 1.2s var(--ease) .5s,transform 1.2s var(--ease) .5s}
+.ready .fade-in{opacity:1;transform:none}
+.hero-second:before{content:"";position:absolute;width:min(70vw,760px);aspect-ratio:2/1;background:radial-gradient(closest-side,rgba(7,7,10,.85),rgba(7,7,10,0));z-index:-1}
+.hero-second{z-index:1;position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;pointer-events:none;opacity:0}
+.hero-second .h2{font-size:clamp(36px,5.4vw,88px)}
+.hero-second .mono{color:var(--mute);margin-top:26px}
+.scrollcue{position:absolute;left:50%;bottom:28px;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:10px;color:var(--dim)}
+.scrollcue i{width:1px;height:42px;background:linear-gradient(var(--fg),transparent);animation:cue 2s var(--ease) infinite;transform-origin:top}
+@keyframes cue{0%{transform:scaleY(0)}50%{transform:scaleY(1)}100%{transform:scaleY(1);opacity:0}}
 
-/* Briefs */
-.briefs{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
-@media(min-width:860px){.briefs{grid-template-columns:repeat(4,1fr);gap:18px}}
-.brief{display:block;padding:14px;border-radius:var(--r-md);background:var(--card);transition:background-color .2s ease}
-.brief:hover{background:var(--card-2)}
-.brief .cover{border-radius:8px;overflow:hidden;background:var(--white);aspect-ratio:17/22;box-shadow:0 12px 30px -20px rgba(27,27,26,.4)}
-.brief .cover img{width:100%;height:100%;object-fit:cover;object-position:top;transition:transform .6s var(--out)}
-.brief:hover .cover img{transform:translateY(-2px) scale(1.01)}
-.brief h3{font-size:15.5px;margin:14px 4px 2px;letter-spacing:-.01em}
-.brief p{font-size:13.5px;color:var(--ink-3);margin:0 4px}
-.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:28px}
-.chips a{display:inline-flex;align-items:center;gap:6px;height:40px;padding:0 16px;border-radius:999px;background:var(--white);border:1px solid var(--line);font-size:14.5px;font-weight:500;transition:border-color .15s ease,transform .16s var(--out)}
-.chips a:hover{border-color:var(--line-2)}
-.chips a:active{transform:scale(.97)}
-.chips svg{width:14px;height:14px;color:var(--ink-3)}
+/* READOUT */
+#readout{--len:440vh}
+#readout .stage{display:flex;align-items:center;padding:0 var(--pad)}
+.statement{position:absolute;left:var(--pad);right:var(--pad);top:50%;transform:translateY(-50%)}
+.statement p{font-size:clamp(30px,4.3vw,72px);font-weight:500;letter-spacing:-.04em;line-height:1.04;max-width:20ch}
+.statement p span{opacity:.14;transition:opacity .2s linear}
+.statement p .serif{letter-spacing:-.01em}
+.stat{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:0 var(--pad);opacity:0;will-change:transform,opacity}
+.stat .num{font-size:clamp(120px,27vw,460px);font-weight:600;letter-spacing:-.07em;line-height:.8;font-variant-numeric:tabular-nums;white-space:nowrap}
+.stat .num em{font-style:normal;color:var(--accent);font-size:.5em;vertical-align:.62em;margin-left:.04em}
+.stat .row{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-top:28px;border-top:1px solid var(--line);padding-top:20px;flex-wrap:wrap}
+.stat .lbl{font-size:clamp(22px,2.2vw,34px);font-weight:500;letter-spacing:-.03em}
+.stat .sub{color:var(--mute);max-width:380px}
+.stepper{position:absolute;left:var(--pad);bottom:34px;display:flex;gap:8px}
+.stepper i{width:28px;height:2px;background:var(--line);position:relative;overflow:hidden}
+.stepper i b{position:absolute;inset:0;background:var(--fg);transform-origin:left;transform:scaleX(0)}
 
-/* Experience */
-.xp{border-top:1px solid var(--line)}
-.role{display:grid;gap:8px;padding:30px 0;border-bottom:1px solid var(--line)}
-@media(min-width:860px){.role{grid-template-columns:220px 1fr;gap:40px;padding:36px 0}}
-.role .yr{font-size:14.5px;color:var(--ink-3);font-variant-numeric:tabular-nums;padding-top:4px}
-.role h3{font-size:clamp(1.2rem,1.8vw,1.45rem);line-height:1.25;margin-bottom:2px}
-.role .co{font-size:15px;color:var(--ink-3);margin-bottom:14px}
-.role ul{list-style:none;display:grid;gap:8px;max-width:64ch}
-.role li{position:relative;padding-left:18px;color:var(--ink-2);font-size:15.5px}
-.role li::before{content:"";position:absolute;left:2px;top:.72em;width:5px;height:5px;border-radius:50%;background:var(--line-2)}
+/* MARQUEE */
+.marquee{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:34px 0;overflow:hidden;white-space:nowrap}
+.marquee .mtrack{display:inline-flex;will-change:transform}
+.marquee span{font-size:clamp(34px,5vw,80px);font-weight:500;letter-spacing:-.04em;padding:0 .4em;color:var(--dim);transition:color .3s}
+.marquee span:hover{color:var(--fg)}
+.marquee span.sep{color:var(--accent);font-family:var(--serif);font-style:italic}
+.mlabel{display:flex;justify-content:space-between;padding:0 var(--pad);margin-bottom:22px;color:var(--mute)}
 
-/* Writing */
-.wr{display:grid;gap:20px}
-@media(min-width:900px){.wr{grid-template-columns:1fr 1fr;gap:20px}}
-.panel{border-radius:var(--r-lg);background:var(--card);padding:28px}
-@media(min-width:760px){.panel{padding:36px}}
-.panel-head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:22px}
-.panel-head h3{font-size:1.05rem;font-weight:600;letter-spacing:-.01em}
-.panel-head a{font-size:14px;color:var(--ink-3);display:inline-flex;align-items:center;gap:4px}
-.panel-head a:hover{color:var(--ink)}
-.panel-head a svg{width:14px;height:14px}
-.feat{display:block;padding:22px;border-radius:var(--r-md);background:var(--white);margin-bottom:10px;transition:transform .25s var(--out),box-shadow .25s ease}
-.feat:hover{transform:translateY(-2px);box-shadow:0 14px 30px -22px rgba(27,27,26,.4)}
-.feat small{font-size:13.5px;color:var(--ink-3)}
-.feat h4{font-size:clamp(1.25rem,1.9vw,1.6rem);font-weight:500;letter-spacing:-.02em;line-height:1.18;margin:8px 0 10px}
-.feat p{font-size:15px;color:var(--ink-2)}
-.rows{list-style:none}
-.rows li+li{border-top:1px solid var(--line)}
-.rows a{display:grid;grid-template-columns:1fr auto;gap:16px;align-items:baseline;padding:13px 2px;font-size:15.5px;font-weight:500;line-height:1.35;transition:color .15s ease}
-.rows a:hover{color:var(--blue)}
-.rows span{font-size:13.5px;color:var(--ink-3);font-weight:400;white-space:nowrap;font-variant-numeric:tabular-nums}
-.outlet{font-size:13.5px;color:var(--ink-3);margin:18px 2px 4px}
-.outlet:first-of-type{margin-top:0}
+/* CAREER horizontal */
+#career{--len:420vh}
+#career .media{opacity:.35}
+.htrack{position:absolute;top:0;left:0;height:100%;display:flex;align-items:stretch;will-change:transform}
+.panel{flex:0 0 auto;width:min(78vw,1100px);height:100%;display:flex;flex-direction:column;justify-content:center;padding:0 clamp(28px,5vw,80px);border-left:1px solid var(--line);position:relative}
+.panel.intro{width:min(62vw,860px);border-left:0;padding-left:var(--pad)}
+.panel .yr{font-size:clamp(110px,19vw,320px);font-weight:600;letter-spacing:-.07em;line-height:.8;color:rgba(242,239,233,.07);position:absolute;top:clamp(90px,12vh,130px);right:clamp(28px,5vw,80px)}
+.panel.cur .yr{color:rgba(255,106,61,.22)}
+.panel .badge{display:inline-flex;align-items:center;gap:8px;color:var(--accent);margin-bottom:18px}
+.panel .badge i{width:6px;height:6px;border-radius:50%;background:var(--accent)}
+.panel h3{font-size:clamp(30px,3.4vw,56px);font-weight:500;letter-spacing:-.04em;line-height:1;max-width:15ch;position:relative}
+.panel .co{display:flex;gap:18px;color:var(--mute);margin:18px 0 30px;flex-wrap:wrap}
+.panel ul{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px 34px;max-width:900px;position:relative}
+.panel li{color:var(--mute);font-size:15px;padding-top:14px;border-top:1px solid var(--line)}
+.panel li b{display:block;color:var(--fg);font-weight:500;margin-bottom:4px}
+.tl{position:absolute;left:var(--pad);right:var(--pad);bottom:34px;height:1px;background:var(--line)}
+.tl i{position:absolute;inset:0;background:var(--accent);transform-origin:left;transform:scaleX(0)}
 
-/* Beyond */
-.beyond{display:grid;gap:16px;grid-template-columns:1fr}
-@media(min-width:600px){.beyond{grid-template-columns:1fr 1fr}}
-@media(min-width:1000px){.beyond{grid-template-columns:repeat(4,1fr)}}
-.bcard{padding:24px;border-radius:var(--r-md);background:var(--card)}
-.bcard svg{width:26px;height:26px;color:var(--ink);margin-bottom:28px;stroke-width:1.5}
-.bcard h3{font-size:1.05rem;margin-bottom:6px;letter-spacing:-.01em}
-.bcard p{font-size:14.5px;color:var(--ink-3);line-height:1.45}
+/* MEDIA */
+#launches{--len:260vh}
+.mhead{position:absolute;top:clamp(100px,15vh,150px);left:0;right:0;text-align:center;z-index:2}
+.mhead .h2{font-size:clamp(40px,6vw,96px)}
+.frame{position:absolute;inset:0;overflow:hidden;cursor:pointer;will-change:clip-path;background:#16161b}
+.frame img{width:100%;height:100%;object-fit:cover;transform:scale(1.25);will-change:transform;filter:saturate(.9)}
+.frame:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,7,10,.1) 30%,rgba(7,7,10,.85))}
+.finfo{position:absolute;left:var(--pad);right:var(--pad);bottom:clamp(60px,10vh,100px);z-index:3;display:flex;justify-content:space-between;align-items:flex-end;gap:32px;opacity:0;pointer-events:none;flex-wrap:wrap}
+.finfo h3{font-size:clamp(32px,4.6vw,76px);font-weight:500;letter-spacing:-.045em;line-height:.95;max-width:16ch}
+.finfo p{color:var(--mute);max-width:420px;margin-top:16px}
+.play{width:clamp(84px,9vw,124px);aspect-ratio:1;border-radius:50%;background:var(--fg);color:var(--bg);display:grid;place-items:center;flex:0 0 auto;transition:transform .5s var(--ease),background .3s}
+.play:hover{transform:scale(1.08);background:var(--accent)}
+.play svg{width:26%;margin-left:6%}
+.vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,360px),1fr));gap:28px 22px;margin-top:56px}
+.vcard{cursor:pointer;display:block;text-align:left;width:100%}
+.vcard .th{aspect-ratio:16/9;border-radius:10px;overflow:hidden;position:relative;background:var(--bg2)}
+.vcard img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.vcard:hover img{transform:scale(1.06)}
+.vcard .th:after{content:"";position:absolute;inset:0;border:1px solid var(--line);border-radius:10px}
+.vcard .tag{color:var(--accent);margin:18px 0 8px}
+.vcard h4{font-size:21px;font-weight:500;letter-spacing:-.025em;line-height:1.15}
+.vcard p{color:var(--mute);font-size:14px;margin-top:8px}
 
-/* Contact / footer */
-.contact{padding-top:var(--space);padding-bottom:40px}
-.contact h2{font-size:clamp(3rem,9vw,7rem);line-height:.98;letter-spacing:-.04em;margin-bottom:22px}
-.contact .lede{margin-bottom:28px}
-.foot{display:grid;gap:28px;margin-top:72px;padding-top:28px;border-top:1px solid var(--line)}
-@media(min-width:760px){.foot{grid-template-columns:1fr auto auto;gap:72px}}
-.foot .fh{font-size:12.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);margin-bottom:12px}
-.foot ul{list-style:none;display:grid;gap:8px}
-.foot ul a{font-size:16px;font-weight:500;display:inline-flex;align-items:center;gap:6px}
-.foot ul a:hover{color:var(--blue)}
-.foot ul svg{width:15px;height:15px}
-.foot .copy{font-size:14px;color:var(--ink-3);line-height:1.5}
-.foot .copy b{display:block;color:var(--ink);font-weight:500;font-size:15.5px}
+/* CASES */
+#partnerships{--len:360vh}
+.case{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:0 var(--pad);opacity:0;pointer-events:none}
+.case.on{pointer-events:auto}
+.case .x{font-size:clamp(64px,11vw,190px);font-weight:600;letter-spacing:-.065em;line-height:.85}
+.case .x .serif{color:var(--accent);font-weight:400;padding:0 .08em}
+.case .cgrid{display:grid;grid-template-columns:1.2fr 1fr auto;gap:32px;align-items:end;margin-top:40px;border-top:1px solid var(--line);padding-top:24px;max-width:1300px}
+.case .cgrid p{font-size:clamp(18px,1.6vw,24px);letter-spacing:-.02em;line-height:1.3}
+.case .cgrid .mono{color:var(--mute);line-height:1.8}
+.case-intro{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:0 var(--pad)}
 
-/* Reveal: short fade-up, once */
-.rv{opacity:0;transform:translateY(16px);transition:opacity .7s var(--out),transform .7s var(--out)}
-.rv.on{opacity:1;transform:none}
-@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+/* PLATFORMS */
+.plist{margin-top:56px;border-top:1px solid var(--line)}
+.prow{display:grid;grid-template-columns:70px 1fr 1.1fr 40px;gap:24px;align-items:center;padding:28px 0;border-bottom:1px solid var(--line);position:relative;transition:padding .5s var(--ease)}
+.prow .i{color:var(--dim)}
+.prow h4{font-size:clamp(24px,3vw,46px);font-weight:500;letter-spacing:-.04em;line-height:1;transition:transform .6s var(--ease),color .3s}
+.prow p{color:var(--mute);font-size:15px}
+.prow .ar{justify-self:end;transition:transform .5s var(--ease)}
+.prow:hover h4{transform:translateX(14px);color:var(--accent)}
+.prow:hover .ar{transform:rotate(-45deg)}
+.peek{position:fixed;left:0;top:0;width:300px;aspect-ratio:16/10;border-radius:10px;overflow:hidden;pointer-events:none;z-index:40;opacity:0;transform:translate(-50%,-50%) scale(.8);transition:opacity .35s,transform .5s var(--ease)}
+.peek.on{opacity:1;transform:translate(-50%,-50%) scale(1)}
+.peek img{width:100%;height:100%;object-fit:cover}
+.briefs{display:grid;grid-auto-flow:column;grid-auto-columns:min(78vw,340px);gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;margin-top:40px;padding-bottom:16px;scrollbar-width:thin;scrollbar-color:var(--line) transparent}
+.brief{scroll-snap-align:start;display:block}
+.brief .th{aspect-ratio:4/5;background:#111;border-radius:10px;overflow:hidden;position:relative}
+.brief img{width:100%;height:100%;object-fit:cover;object-position:top;transition:transform 1.2s var(--ease)}
+.brief:hover img{transform:scale(1.05)}
+.brief .tag{color:var(--accent);margin:16px 0 6px}
+.brief h4{font-size:20px;font-weight:500;letter-spacing:-.02em}
+.brief p{color:var(--mute);font-size:14px;margin-top:6px}
+.subhead{display:flex;justify-content:space-between;align-items:flex-end;margin-top:110px;gap:20px;flex-wrap:wrap}
+.subhead h3{font-size:clamp(28px,3vw,44px);font-weight:500;letter-spacing:-.035em}
+
+/* WRITING */
+.tabs{display:flex;gap:8px;margin-top:44px;flex-wrap:wrap}
+.tab{padding:10px 18px;border-radius:999px;border:1px solid var(--line);font-size:14px;color:var(--mute);transition:all .3s}
+.tab[aria-selected="true"]{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.wlist{margin-top:28px;border-top:1px solid var(--line)}
+.wrow{display:grid;grid-template-columns:110px 1fr 220px 30px;gap:24px;align-items:baseline;padding:24px 0;border-bottom:1px solid var(--line);transition:background .3s}
+.wrow .d{color:var(--dim)}
+.wrow h4{font-size:clamp(19px,1.7vw,26px);font-weight:500;letter-spacing:-.025em;line-height:1.2;transition:color .3s}
+.wrow .desc{color:var(--mute);font-size:14px;margin-top:6px;max-width:680px}
+.wrow .pub{color:var(--mute)}
+.wrow .ar{transition:transform .4s var(--ease);justify-self:end}
+.wrow:hover h4{color:var(--accent)}
+.wrow:hover .ar{transform:translate(4px,-4px)}
+.more{margin-top:28px}
+
+/* BEYOND */
+.beyond{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:0;margin-top:56px;border-top:1px solid var(--line)}
+.beyond div{padding:28px 28px 28px 0;border-right:1px solid var(--line)}
+.beyond div:last-child{border-right:0}
+.beyond svg{color:var(--accent);margin-bottom:22px}
+.beyond h4{font-size:21px;font-weight:500;letter-spacing:-.02em;margin-bottom:8px}
+.beyond p{color:var(--mute);font-size:15px;padding-right:12px}
+.about-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:clamp(32px,6vw,100px);align-items:center}
+.portrait{aspect-ratio:4/5;border-radius:12px;overflow:hidden;background:var(--bg2);position:relative;max-width:460px}
+.portrait img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.05);transition:filter 1s}
+.portrait:hover img{filter:none}
+.portrait .mono{position:absolute;left:16px;bottom:14px;color:var(--fg);mix-blend-mode:difference}
+
+/* CONTACT */
+#contact{--len:200vh}
+#contact .stage{display:flex;flex-direction:column;justify-content:center;padding:0 var(--pad)}
+.big{font-size:clamp(56px,11vw,200px);font-weight:500;letter-spacing:-.06em;line-height:.88}
+.big .wd{display:inline-block;white-space:nowrap}.big .ch{display:inline-block;will-change:transform,opacity}
+.big .serif{color:var(--accent)}
+.cfoot{display:flex;justify-content:space-between;align-items:flex-end;gap:28px;margin-top:48px;flex-wrap:wrap;opacity:0}
+.cfoot p{color:var(--mute);max-width:440px}
+footer{display:flex;justify-content:space-between;padding:28px var(--pad);border-top:1px solid var(--line);color:var(--dim);gap:16px;flex-wrap:wrap}
+
+/* reveal (normal flow) */
+.rv{opacity:0;transform:translateY(40px);transition:opacity 1.1s var(--ease),transform 1.1s var(--ease)}
+.rv.in{opacity:1;transform:none}
+
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:95;background:rgba(7,7,10,.94);display:none;align-items:center;justify-content:center;padding:var(--pad)}
+.lb.on{display:flex}
+.lb .box{width:min(1200px,100%);aspect-ratio:16/9;background:#000;border-radius:10px;overflow:hidden}
+.lb iframe{width:100%;height:100%;border:0}
+.lb .close{position:absolute;top:22px;right:var(--pad);width:48px;height:48px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;font-size:20px}
+
+/* responsive */
+@media (max-width:1100px){.nav ul{display:none}}
+@media (max-width:900px){
+  .scrollcue{display:none}
+  .hud .hname{display:none}
+  .about-row{grid-template-columns:1fr}
+  .case .cgrid{grid-template-columns:1fr}
+  .prow{grid-template-columns:40px 1fr 30px}
+  .prow p{grid-column:2/3}
+  .prow .ar{grid-row:1;grid-column:3}
+  .wrow{grid-template-columns:1fr 24px}
+  .wrow .d,.wrow .pub{grid-column:1/2}
+  .wrow .d{order:-1}
+  .wrow .ar{grid-row:2;grid-column:2}
+  .beyond div{border-right:0;border-bottom:1px solid var(--line)}
+}
+@media (max-width:820px){
+  #career{height:auto}
+  #career .stage{position:relative;height:auto;overflow:visible}
+  #career .media,.tl{display:none}
+  .htrack{position:relative;flex-direction:column;transform:none!important}
+  .panel,.panel.intro{width:100%;height:auto;padding:70px var(--pad);border-left:0;border-top:1px solid var(--line)}
+  .panel.intro{border-top:0;padding-top:120px}
+  .panel .yr{position:relative;top:auto;right:auto;font-size:30vw;margin-bottom:18px}
+}
+.rm .scene{height:auto!important}
+.rm .stage{position:relative;height:auto;min-height:100vh;overflow:visible}
+.rm .line>span,.rm .fade-in,.rm .rv{transform:none!important;opacity:1!important;transition:none}
+.rm .statement{position:relative;transform:none;top:auto;padding:120px 0}
+.rm .statement p span{opacity:1}
+.rm .stat,.rm .case,.rm .cfoot,.rm .finfo{position:relative;opacity:1!important;inset:auto;padding:60px var(--pad);pointer-events:auto}
+.rm .hero-second{display:none}
+.rm .htrack{position:relative;flex-direction:column}
+.rm .panel{width:100%;height:auto;padding:80px var(--pad)}
+.rm .frame{position:relative;height:70vh;clip-path:none!important}
+.rm .mhead{position:relative;top:auto;padding:120px 0 40px}
+.rm body:after{animation:none}
 </style>
 </head>
 <body>
 
-<header class="top" id="top">
-  <div class="wrap top-in">
-    <a href="#" class="id"><b>Rodrigo Caruso Amaral</b><span>AI partnerships at Qualcomm</span></a>
-    <nav class="navpill" aria-label="Primary">
-      <a href="#work">Work</a>
-      <a href="#media" class="opt">Media</a>
-      <a href="#experience">About</a>
-      <a href="#writing">Writing</a>
-      <a href="mailto:rodrigocarusoamaral@gmail.com" class="mail" aria-label="Email Rodrigo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"/><path d="M16 12v1.5a2.5 2.5 0 0 0 5 0v-1.5a9 9 0 1 0 -5.5 8.28"/></svg></a>
-    </nav>
-  </div>
-</header>
-
-<main class="wrap">
-
-<section class="hero" id="about">
-  <div>
-    <div class="hero-tag"><i></i>Business development, Qualcomm</div>
-    <h1>I take AI from the lab to the <span class="serif">market.</span></h1>
-    <p class="hero-sub"><b>Partnerships and go-to-market for on-device AI. Based in San Diego.</b><span>Seven years at Qualcomm. Formerly global product marketing for Qualcomm AI Hub.</span></p>
-    <div class="hero-cta">
-      <a href="mailto:rodrigocarusoamaral@gmail.com" class="pill pill-dark">Get in touch</a>
-      <a href="resume.pdf" class="pill pill-light" target="_blank" rel="noopener">Résumé <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 7l-10 10M8 7h9v9"/></svg></a>
-    </div>
-  </div>
-  <div class="portrait"><img src="profile-1400.jpg" alt="Rodrigo Caruso Amaral" width="1024" height="1024" fetchpriority="high"></div>
-</section>
-
-<div class="stats rv">
-  <div class="stat"><b>7 yrs</b><span>at Qualcomm, product marketing to BD</span></div>
-  <div class="stat"><b>10+</b><span>platform launches on global stages</span></div>
-  <div class="stat"><b>50+</b><span>partnerships with ISVs, cloud, and enterprise</span></div>
-  <div class="stat"><b>1B+</b><span>impressions across campaigns I led</span></div>
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="lname mono">Rodrigo Caruso Amaral<br>AI · Partnerships · GTM</div>
+  <div class="ln" id="loadnum">0</div>
 </div>
 
-<div class="logos rv" aria-label="Partners">
-  <p>Worked with teams at</p>
-  <div class="logo-row">
-    <img src="logos/qualcomm.svg" alt="Qualcomm" class="q">
-    <img src="IBM_logo.svg.png" alt="IBM">
-    <img src="logos/palantir.svg" alt="Palantir" class="p">
-    <img src="mistral-logo-black.svg" alt="Mistral AI">
-    <img src="https://cdn.simpleicons.org/meta/1B1B1A" alt="Meta" onerror="this.remove()">
-    <img src="https://cdn.simpleicons.org/google/1B1B1A" alt="Google" onerror="this.remove()">
-    <img src="https://cdn.simpleicons.org/amazonwebservices/1B1B1A" alt="AWS" onerror="this.remove()">
-  </div>
+<nav class="nav" aria-label="Primary">
+  <a href="#hero" class="brand"><b>RCA</b><span>Rodrigo Caruso Amaral</span></a>
+  <ul>
+    <li><a href="#career">Career</a></li>
+    <li><a href="#launches">Launches</a></li>
+    <li><a href="#partnerships">Partnerships</a></li>
+    <li><a href="#writing">Writing</a></li>
+  </ul>
+  <a href="#contact" class="pill">Get in touch</a>
+</nav>
+
+<div class="hud" aria-hidden="true">
+  <span class="hn" id="hudNum">00</span>
+  <span class="hbar"><i id="hudBar"></i></span>
+  <span class="hname" id="hudName">Intro</span>
 </div>
 
-<section class="section" id="work">
-  <div class="head rv">
-    <div>
-      <h2 class="h2">Selected <span class="serif">work</span></h2>
-      <p class="lede">Launches and partnerships that took a platform from a technical capability to something partners could ship.</p>
+<main>
+
+<!-- HERO -->
+<section class="scene" id="hero" data-scene="hero" data-ch="00" data-name="Intro">
+  <div class="stage">
+    <div class="media" id="heroMedia">
+      <canvas id="heroCanvas" aria-hidden="true"></canvas>
+      <video data-src="media/hero.mp4" data-mode="scrub" muted playsinline preload="auto" aria-hidden="true"></video>
+      <div class="vignette"></div>
     </div>
-  </div>
-  <div class="work">
-    <a class="wcard wide rv" href="https://www.youtube.com/watch?v=FyM2w3N9xVw" target="_blank" rel="noopener">
-      <div class="wcard-top">
-        <div><h3>Qualcomm AI Hub</h3><p><b>Qualcomm, MWC Barcelona 2024.</b> Led the global launch and every announcement after it: Snapdragon X Series, Snapdragon Ride, and Bring Your Own Model.</p></div>
-        <svg class="arrow-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6l-6 6"/></svg>
+    <div class="hero-top mono fade-in">
+      <span class="status"><i></i>Open to strategic AI roles &amp; partnerships</span>
+      <span>San Diego, CA</span>
+    </div>
+    <div class="hero-copy" id="heroCopy">
+      <h1 class="h1">
+        <span class="line"><span>AI strategy</span></span>
+        <span class="line"><span>that moves from</span></span>
+        <span class="line"><span><span class="serif">idea</span> to impact.</span></span>
+      </h1>
+      <div class="hero-meta fade-in">
+        <p><strong>Partnerships &amp; go-to-market leader at Qualcomm.</strong> I take on-device AI from the lab to the market — platform launches, ecosystem deals, and the stories that make them land.</p>
+        <div class="cta">
+          <a class="pill solid" href="mailto:rodrigocarusoamaral@gmail.com">Get in touch <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12 12 4M5 4h7v7"/></svg></a>
+          <a class="pill" href="https://www.linkedin.com/in/rodrigo-caruso-amaral/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
       </div>
-      <div class="wmedia"><img src="media/FyM2w3N9xVw.jpg" alt="Introducing Qualcomm AI Hub" loading="lazy" width="1280" height="720"></div>
-    </a>
-    <a class="wcard rv" href="https://www.qualcomm.com/news/releases/2025/02/qualcomm-and-ibm-scale-enterprise-grade-generative-ai-from-edge-" target="_blank" rel="noopener">
-      <div class="wcard-top">
-        <div><h3>IBM watsonx on Snapdragon</h3><p><b>Qualcomm and IBM, 2025.</b> Enterprise generative AI governance from cloud to edge. Go-to-market and partnership lead.</p></div>
-        <svg class="arrow-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6l-6 6"/></svg>
-      </div>
-      <div class="wmedia logos-pair"><img class="lp-q" src="logos/qualcomm.svg" alt="Qualcomm"><span class="x">&times;</span><img class="lp-ibm" src="IBM_logo.svg.png" alt="IBM"></div>
-    </a>
-    <a class="wcard rv" href="https://www.qualcomm.com/news/releases/2025/03/qualcomm-and-palantir-work-to-extend-ai-and-ontology-capabilitie" target="_blank" rel="noopener">
-      <div class="wcard-top">
-        <div><h3>Palantir at the edge</h3><p><b>Qualcomm and Palantir, 2025.</b> Palantir ontology and decision intelligence running on-device. Go-to-market and partnership lead.</p></div>
-        <svg class="arrow-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6l-6 6"/></svg>
-      </div>
-      <div class="wmedia logos-pair"><img class="lp-q" src="logos/qualcomm.svg" alt="Qualcomm"><span class="x">&times;</span><img class="lp-pal" src="logos/palantir.svg" alt="Palantir"></div>
-    </a>
-    <a class="wcard wide rv" href="https://www.youtube.com/watch?v=SRh7NL2kpvo" target="_blank" rel="noopener">
-      <div class="wcard-top">
-        <div><h3>Edge of Possible</h3><p><b>Campaign with Michelle Yeoh.</b> Narrative, positioning, and creative strategy for Qualcomm's on-device AI story. More than 500 million impressions.</p></div>
-        <svg class="arrow-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6l-6 6"/></svg>
-      </div>
-      <div class="wmedia"><img src="media/SRh7NL2kpvo.jpg" alt="Go to the Edge of Possible" loading="lazy" width="1280" height="720"></div>
-    </a>
+    </div>
+    <div class="hero-second" id="heroSecond">
+      <h2 class="h2">From the cloud<br><span class="serif accent">to the edge.</span></h2>
+      <div class="mono">Where AI meets the device in your hand</div>
+    </div>
+    <div class="scrollcue mono" id="cue"><span>Scroll</span><i></i></div>
   </div>
 </section>
 
-<section class="section" id="media">
-  <div class="head rv">
-    <div>
-      <h2 class="h2">Launches and keynotes</h2>
-      <p class="lede">Executive messaging, positioning, and demo narratives on global stages.</p>
+<!-- READOUT -->
+<section class="scene" id="readout" data-scene="readout" data-ch="01" data-name="Readout">
+  <div class="stage">
+    <div class="statement" id="statement">
+      <div class="eyebrow mono">01 — The readout</div>
+      <p id="stmt">I bridge cutting-edge AI with real-world market impact. On-device AI, edge platforms, and the <span class="serif">ecosystems</span> that make them matter — driving adoption from cloud to edge, at scale.</p>
     </div>
+    <div class="stat" data-target="1000" data-kind="imp">
+      <div class="num"><span class="n">0</span><em>+</em></div>
+      <div class="row"><div class="lbl">Impressions driven</div><div class="sub">Campaigns like Edge of Possible with Oscar-winner Michelle Yeoh, plus yearly Snapdragon Summit launches.</div></div>
+    </div>
+    <div class="stat" data-target="10">
+      <div class="num"><span class="n">0</span><em>+</em></div>
+      <div class="row"><div class="lbl">Platform launches</div><div class="sub">Snapdragon 8 Elite, 8 Gen 3, Qualcomm AI Hub at MWC, Snapdragon X Series, and more.</div></div>
+    </div>
+    <div class="stat" data-target="50">
+      <div class="num"><span class="n">0</span><em>+</em></div>
+      <div class="row"><div class="lbl">Strategic partnerships</div><div class="sub">From technical alignment to signed deals — IBM, AWS, Palantir, Google, Meta, Mistral AI.</div></div>
+    </div>
+    <div class="stepper" id="stepper"><i><b></b></i><i><b></b></i><i><b></b></i><i><b></b></i></div>
   </div>
-  <ul class="vlist rv" id="vlist"></ul>
 </section>
 
-<section class="section">
-  <div class="head rv">
-    <div>
-      <h2 class="h2">Product briefs</h2>
-      <p class="lede">Platform positioning I helped shape, from flagship phones to data center accelerators.</p>
-    </div>
-  </div>
-  <div class="briefs rv" id="briefs"></div>
-  <div class="chips rv" id="platforms"></div>
+<!-- PARTNERS -->
+<section style="padding:80px 0" aria-label="Partners">
+  <div class="mlabel mono"><span>Partnered with the teams building the future of AI</span><span>2019 — Now</span></div>
+  <div class="marquee"><div class="mtrack" id="mtrack"></div></div>
 </section>
 
-<section class="section" id="experience">
-  <div class="head rv">
-    <div>
-      <h2 class="h2">Seven years at Qualcomm</h2>
-      <p class="lede">From announcing AI features at Snapdragon Summit to closing the partnerships that take Snapdragon beyond the phone.</p>
+<!-- CAREER -->
+<section class="scene" id="career" data-scene="career" data-ch="02" data-name="Career">
+  <div class="stage">
+    <div class="media" id="careerMedia">
+      <video data-src="media/career.mp4" data-mode="loop" muted playsinline loop preload="metadata" aria-hidden="true"></video>
     </div>
+    <div class="htrack" id="htrack">
+      <div class="panel intro">
+        <div class="eyebrow mono">02 — Career</div>
+        <h2 class="h2">Three acts.<br><span class="serif">One thread.</span></h2>
+        <p class="lead">From product marketing to global launches to strategic business development — always at the point where AI meets the market.</p>
+      </div>
+    </div>
+    <div class="tl"><i id="tlbar"></i></div>
   </div>
-  <div class="xp rv">
-    <div class="role">
-      <div class="yr">2025 to present</div>
+</section>
+
+<!-- LAUNCHES -->
+<section class="scene" id="launches" data-scene="launches" data-ch="03" data-name="Launches">
+  <div class="stage">
+    <div class="mhead" id="mhead">
+      <div class="eyebrow mono" style="justify-content:center">03 — Launches &amp; keynotes</div>
+      <h2 class="h2">Stories told on<br><span class="serif">global stages.</span></h2>
+    </div>
+    <div class="frame" id="frame" role="button" tabindex="0" aria-label="Play Go to the Edge of Possible">
+      <img id="frameImg" alt="Go to the Edge of Possible campaign" src="https://img.youtube.com/vi/SRh7NL2kpvo/maxresdefault.jpg">
+    </div>
+    <div class="finfo" id="finfo">
       <div>
-        <h3>AI Business Development Manager, Strategic Accounts</h3>
-        <div class="co">Qualcomm, San Diego</div>
-        <ul>
-          <li>Own business development across consumer applications and emerging platforms, finding new markets for Snapdragon beyond mobile.</li>
-          <li>Drive partnerships from first technical alignment through commercial terms, with engineering, product, and marketing.</li>
-          <li>Work with legal, finance, and operations on partner onboarding and engagement models that scale.</li>
-        </ul>
+        <div class="mono accent">Campaign · 500M+ impressions</div>
+        <h3 style="margin-top:14px">Go to the Edge of Possible</h3>
+        <p>Campaign narrative, positioning, and creative strategy for Qualcomm’s on-device AI story, starring Michelle Yeoh.</p>
       </div>
-    </div>
-    <div class="role">
-      <div class="yr">2024</div>
-      <div>
-        <h3>Global Product Marketing Lead, Qualcomm AI Hub</h3>
-        <div class="co">Qualcomm, San Diego</div>
-        <ul>
-          <li>Launched Qualcomm AI Hub at MWC Barcelona and drove every announcement that followed.</li>
-          <li>Led cross-functional teams across product, engineering, developer relations, finance, operations, and legal.</li>
-          <li>Owned partner go-to-market and roadmap work with third-party applications.</li>
-        </ul>
-      </div>
-    </div>
-    <div class="role">
-      <div class="yr">2019 to 2024</div>
-      <div>
-        <h3>AI Product Marketing</h3>
-        <div class="co">Qualcomm, San Diego</div>
-        <ul>
-          <li>Announced every AI feature for Snapdragon mobile platforms at Snapdragon Summit, each year.</li>
-          <li>Built executive keynotes and messaging with product, PR, legal, and brand.</li>
-          <li>Coordinated with Google, Baichuan, Snap, and Meta to showcase on-device AI.</li>
-        </ul>
-      </div>
+      <button class="play" data-vid="SRh7NL2kpvo" aria-label="Play video"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 3l16 9-16 9z"/></svg></button>
     </div>
   </div>
 </section>
+<section class="block" aria-label="More launches">
+  <div class="eyebrow mono rv">More from the stage</div>
+  <div class="vgrid" id="vgrid"></div>
+</section>
 
-<section class="section" id="writing">
-  <div class="head rv">
+<!-- PARTNERSHIPS -->
+<section class="scene" id="partnerships" data-scene="cases" data-ch="04" data-name="Partnerships">
+  <div class="stage">
+    <div class="media" id="edgeMedia">
+      <canvas id="netCanvas" aria-hidden="true"></canvas>
+      <video data-src="media/edge.mp4" data-mode="loop" muted playsinline loop preload="metadata" aria-hidden="true"></video>
+      <div class="vignette"></div>
+    </div>
+    <div class="case-intro" id="caseIntro">
+      <div class="eyebrow mono">04 — Strategic partnerships</div>
+      <h2 class="h2">Deals that took AI<br><span class="serif">out of the cloud.</span></h2>
+      <p class="lead">Enterprise and ecosystem collaborations that brought governance and decision intelligence onto the device.</p>
+    </div>
+    <div id="cases"></div>
+  </div>
+</section>
+
+<!-- PLATFORMS -->
+<section class="block" id="platforms" data-ch="05" data-name="Platforms">
+  <div class="eyebrow mono rv">05 — Platforms</div>
+  <h2 class="h2 rv">Products I’ve<br><span class="serif">given a voice.</span></h2>
+  <p class="lead rv">Messaging strategy and positioning for Qualcomm’s core AI and technology platforms.</p>
+  <div class="plist" id="plist"></div>
+  <div class="subhead rv"><h3>Product briefs</h3><span class="mono" style="color:var(--mute)">Drag or scroll →</span></div>
+  <div class="briefs" id="briefs"></div>
+</section>
+<div class="peek" id="peek"><img alt="" id="peekImg"></div>
+
+<!-- WRITING -->
+<section class="block" id="writing" data-ch="06" data-name="Writing">
+  <div class="eyebrow mono rv">06 — Writing</div>
+  <h2 class="h2 rv">Thinking<br><span class="serif">out loud.</span></h2>
+  <p class="lead rv">Technical partnerships and industry perspective for Qualcomm and AWS — plus <em>The Thinking Athlete</em>, my essays at the intersection of tech, sport, and culture.</p>
+  <div class="tabs" role="tablist">
+    <button class="tab" role="tab" aria-selected="true" data-tab="essays">The Thinking Athlete</button>
+    <button class="tab" role="tab" aria-selected="false" data-tab="blogs">Published work</button>
+  </div>
+  <div class="wlist" id="wlist"></div>
+  <button class="pill more" id="more">Show all</button>
+</section>
+
+<!-- ABOUT / BEYOND -->
+<section class="block" id="about" data-ch="06" data-name="Beyond">
+  <div class="about-row">
+    <div class="portrait rv"><img src="https://raw.githubusercontent.com/Rodrigocarusoamaral/portifolio/main/profile-photo.jpg" alt="Rodrigo Caruso Amaral" loading="lazy"><span class="mono">San Diego · UCSD Tennis</span></div>
     <div>
-      <h2 class="h2"><span class="serif">Writing</span></h2>
-      <p class="lede">Technical articles for Qualcomm and AWS, and essays on technology, sport, and culture.</p>
+      <div class="eyebrow mono rv">Off the clock</div>
+      <h2 class="h2 rv">Competition<br><span class="serif">shaped the strategy.</span></h2>
+      <p class="lead rv">A few things that shape how I think when I’m not building go-to-market plans.</p>
     </div>
   </div>
-  <div class="wr">
-    <div class="panel rv">
-      <div class="panel-head"><h3>The Thinking Athlete</h3><a href="https://thethinkingathlete.substack.com" target="_blank" rel="noopener">Substack <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 7l-10 10M8 7h9v9"/></svg></a></div>
-      <a class="feat" id="feat" href="#" target="_blank" rel="noopener"></a>
-      <ul class="rows" id="essays"></ul>
-    </div>
-    <div class="panel rv">
-      <div class="panel-head"><h3>Published articles</h3></div>
-      <div id="articles"></div>
+  <div class="beyond" id="beyond"></div>
+</section>
+
+<!-- CONTACT -->
+<section class="scene" id="contact" data-scene="contact" data-ch="07" data-name="Contact">
+  <div class="stage">
+    <div class="eyebrow mono">07 — Contact</div>
+    <h2 class="big" id="big" aria-label="Let's create impact together.">Let’s create <span class="serif">impact</span> together.</h2>
+    <div class="cfoot" id="cfoot">
+      <p>Working on strategic AI initiatives, edge platforms, or a partnership worth building? I’d love to hear from you.</p>
+      <div class="cta">
+        <a class="pill solid" href="mailto:rodrigocarusoamaral@gmail.com">rodrigocarusoamaral@gmail.com</a>
+        <a class="pill" href="https://www.linkedin.com/in/rodrigo-caruso-amaral/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
     </div>
   </div>
 </section>
-
-<section class="section">
-  <div class="head rv"><div><h2 class="h2">Off the clock</h2></div></div>
-  <div class="beyond rv">
-    <div class="bcard"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"/><path d="M6 5.3a9 9 0 0 1 0 13.4"/><path d="M18 5.3a9 9 0 0 0 0 13.4"/></svg><h3>Division I tennis</h3><p>Played NCAA Division I tennis at UC San Diego. Competition still shapes how I think about strategy.</p></div>
-    <div class="bcard"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"/><path d="M3.6 9h16.8"/><path d="M3.6 15h16.8"/><path d="M11.5 3a17 17 0 0 0 0 18"/><path d="M12.5 3a17 17 0 0 1 0 18"/></svg><h3>Travel</h3><p>Brazilian, based in San Diego, happiest learning from a place I have not been before.</p></div>
-    <div class="bcard"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 7h1a2 2 0 0 0 2 -2a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1a2 2 0 0 0 2 2h1a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-9a2 2 0 0 1 2 -2"/><path d="M9 13a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"/></svg><h3>Photography</h3><p>An exercise in noticing. Most of what I know about framing a story I learned behind a lens.</p></div>
-    <div class="bcard"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 5m0 1a1 1 0 0 1 1 -1h12a1 1 0 0 1 1 1v12a1 1 0 0 1 -1 1h-12a1 1 0 0 1 -1 -1z"/><path d="M9 9h6v6h-6z"/><path d="M3 10h2"/><path d="M3 14h2"/><path d="M10 3v2"/><path d="M14 3v2"/><path d="M21 10h-2"/><path d="M21 14h-2"/><path d="M14 21v-2"/><path d="M10 21v-2"/></svg><h3>Side projects</h3><p>Experimental AI builds on nights and weekends, usually to test a hunch before I bring it to work.</p></div>
-  </div>
-</section>
-
-<section class="contact" id="contact">
-  <h2 class="rv">Let's <span class="serif">talk.</span></h2>
-  <p class="lede rv">Open to conversations about strategic AI roles, partnerships, and the occasional essay idea. Email is fastest.</p>
-  <div class="hero-cta rv">
-    <a href="mailto:rodrigocarusoamaral@gmail.com" class="pill pill-dark">Get in touch</a>
-    <a href="https://www.linkedin.com/in/rodrigo-caruso-amaral/" class="pill pill-light" target="_blank" rel="noopener">LinkedIn</a>
-  </div>
-  <div class="foot">
-    <div class="copy"><b>&copy; 2026 Rodrigo Caruso Amaral</b>San Diego, California</div>
-    <div><p class="fh">Main</p><ul><li><a href="#work">Work</a></li><li><a href="#experience">About</a></li><li><a href="#writing">Writing</a></li></ul></div>
-    <div><p class="fh">Contact</p><ul>
-      <li><a href="mailto:rodrigocarusoamaral@gmail.com">Email</a></li>
-      <li><a href="https://www.linkedin.com/in/rodrigo-caruso-amaral/" target="_blank" rel="noopener">LinkedIn <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 7l-10 10M8 7h9v9"/></svg></a></li>
-      <li><a href="resume.pdf" target="_blank" rel="noopener">Résumé <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 7l-10 10M8 7h9v9"/></svg></a></li>
-    </ul></div>
-  </div>
-</section>
-
 </main>
 
+<footer class="mono"><span>© 2026 Rodrigo Caruso Amaral</span><span>Designed &amp; built with intent</span><a href="#hero">Back to top ↑</a></footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Video">
+  <button class="close" id="lbClose" aria-label="Close">✕</button>
+  <div class="box" id="lbBox"></div>
+</div>
+
 <script>
-const $ = s => document.querySelector(s);
-const esc = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
-const up = '<svg class="arrow-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 7l-10 10M8 7h9v9"/></svg>';
-const upSm = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 7l-10 10M8 7h9v9"/></svg>';
+/* ---------- DATA ---------- */
+const GH='https://raw.githubusercontent.com/Rodrigocarusoamaral/portifolio/main/';
+const experiences=[
+ {title:'AI Product Marketing',company:'Qualcomm',location:'San Diego, CA',period:'Jan 2019 — Jan 2024',yr:'2019',hl:[['Product launches','Announced every AI feature for Snapdragon mobile platforms at Snapdragon Summit, yearly.'],['Executive keynotes','Built and refined keynote messaging with PDMs, PR, legal, and brand.'],['Partnerships','Showcased on-device AI leadership with Google, Snap, Meta, and Baichuan.'],['Campaigns','Led the “Edge of Possible” campaign with Michelle Yeoh — 500M+ impressions.']]},
+ {title:'Global Product Marketing Lead — Qualcomm AI Hub',company:'Qualcomm',location:'San Diego, CA',period:'Jan 2024 — Dec 2024',yr:'2024',hl:[['Launches','Launched Qualcomm AI Hub at MWC Barcelona; drove announcements for Snapdragon X Series, Snapdragon Ride, and Bring Your Own Model.'],['Cross-functional lead','Ran PM, engineering, developer relations, finance, ops, and legal on every announcement.'],['Partnerships','Owned all partner activity — third-party GTM strategy and future roadmap.']]},
+ {title:'AI Business Development Manager — Strategic Accounts',company:'Qualcomm',location:'San Diego, CA',period:'Jan 2025 — Present',yr:'2025',current:true,hl:[['New markets','Find new markets and use cases for Snapdragon beyond traditional mobile.'],['Deal strategy','Drive partnerships from technical alignment through commercial close, with engineering, PM, and marketing.'],['Prioritization','Size opportunities and competitive dynamics to focus on high-impact pilots.'],['Scale','Partner onboarding and agreement execution with legal, finance, and operations.']]}
+];
+const partners=['Qualcomm','IBM','AWS','Palantir','Google','Mistral AI','Duolingo','Oracle','Meta'];
+const videos=[
+ {title:'Introducing Qualcomm AI Hub',id:'FyM2w3N9xVw',tag:'Product launch',c:'Technical messaging, demo narratives, and positioning for the AI Hub launch at MWC Barcelona.'},
+ {title:'Snapdragon Summit 2024: Snapdragon 8 Elite',id:'0e5zpV0NS50',tag:'Platform launch',c:'Platform messaging, positioning, and partner demos for the Snapdragon 8 Elite launch.'},
+ {title:'Snapdragon Summit 2023: Snapdragon 8 Gen 3',id:'h_vh7_n_OPs',tag:'Platform launch',c:'Messaging, partner integration, and demo narrative across PM, engineering, and marketing.'},
+ {title:'Cephable × Qualcomm AI Hub — Gesture Control',id:'e-DDMkeQWLY',tag:'Developer platform',c:'Messaging and positioning for AI Hub partner demos at Microsoft Build.'},
+ {title:'What Does On-Device AI Mean?',id:'3Dxlix1WNH8',tag:'Thought leadership',c:'Messaging framework and narrative for on-device AI education.'}
+];
+const cases=[
+ {a:'IBM',tag:'Enterprise AI',title:'watsonx.governance on Snapdragon',outcome:'Built the enterprise GenAI deployment framework that extends watsonx governance to Snapdragon platforms.',role:'GTM strategy & partnership lead',link:'https://www.qualcomm.com/news/releases/2025/02/qualcomm-and-ibm-scale-enterprise-grade-generative-ai-from-edge-'},
+ {a:'Palantir',tag:'Edge computing',title:'Ontology at the edge',outcome:'Extended Palantir’s ontology capabilities to edge devices, bringing decision intelligence on-device.',role:'GTM strategy & partnership lead',link:'https://www.qualcomm.com/news/releases/2025/03/qualcomm-and-palantir-work-to-extend-ai-and-ontology-capabilitie'}
+];
+const platforms=[
+ {t:'Qualcomm AI Engine',l:'https://www.qualcomm.com/processors/ai-engine',r:'Product messaging, positioning, and feature storytelling with PM and digital SEO teams.',img:'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=380&fit=crop'},
+ {t:'Cloud AI 100 Ultra',l:'https://www.qualcomm.com/artificial-intelligence/data-center/cloud-ai-100-ultra',r:'Platform positioning, enterprise messaging, and technical narrative with data center teams.',img:'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=380&fit=crop'},
+ {t:'AI Developer Platform',l:'https://www.qualcomm.com/developer/artificial-intelligence',r:'Developer-facing messaging and ecosystem narrative with PM and developer relations.',img:'https://images.unsplash.com/photo-1605379399642-870262d3d051?w=600&h=380&fit=crop'},
+ {t:'Mobile AI Platform',l:'https://www.qualcomm.com/artificial-intelligence/mobile-ai',r:'AI platform positioning and product storytelling for mobile AI capabilities.',img:'https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=380&fit=crop'},
+ {t:'Mobile Audio',l:'https://www.qualcomm.com/audio/applications/mobile-audio',r:'Messaging strategy and feature positioning across consumer and enterprise audio.',img:'https://images.unsplash.com/photo-1614680376573-df3480f0c6ff?w=600&h=380&fit=crop'},
+ {t:'Quick Charge',l:'https://www.qualcomm.com/products/features/quick-charge',r:'Product positioning, messaging framework, and feature narrative.',img:'https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?w=600&h=380&fit=crop'}
+];
+const briefs=[
+ {t:'Snapdragon 8 Elite',tag:'Mobile platform',d:'Flagship positioning across AI, CPU, GPU, and connectivity.',pdf:GH+'b57555fc0_Snapdragon-8-Elite-Platform-Product-Brief%20(3).pdf',img:GH+'b57555fc0_Snapdragon-8-Elite-Platform-Product-Brief%20(3).png'},
+ {t:'Snapdragon 8 Gen 3',tag:'Mobile platform',d:'Premium smartphone platform brief built around on-device AI.',pdf:GH+'3432a7986_87-71408-1_REV_G_Snapdragon_8_gen_3_Mobile_Platform_Product_Brief%20(2).pdf',img:GH+'3432a7986_87-71408-1_REV_G_Snapdragon_8_gen_3_Mobile_Platform_Product_Brief%20(2).png'},
+ {t:'Cloud AI 100 Ultra',tag:'Data center',d:'AI inference accelerator for data center and edge deployments.',pdf:GH+'9daa3a398_Prod-Brief-QCOM-Cloud-AI-100-Ultra%20(1).pdf',img:GH+'9daa3a398_Prod-Brief-QCOM-Cloud-AI-100-Ultra%20(1).png'},
+ {t:'Cloud AI 100',tag:'Edge accelerator',d:'First-generation AI accelerator overview and positioning.',pdf:GH+'5b32285d3_Prod-Brief-QCOM-Cloud-AI-100%20(2).pdf',img:GH+'5b32285d3_Prod-Brief-QCOM-Cloud-AI-100%20(2).png'}
+];
+const SUB='https://open.substack.com/pub/thethinkingathlete/p/';
+const essays=[
+ {t:"The Best AI in the World Exists. You're Not Allowed to Use It.",d:'May 2026',u:SUB+'the-best-ai-in-the-world-exists-youre',c:'Technology',x:'How AI access is becoming stratified into tiers most people will never reach.'},
+ {t:'Your AI Agent Has a Spending Problem',d:'Apr 2026',u:SUB+'your-ai-agent-has-a-spending-problem',c:'Technology',x:'The hidden costs of AI agent autonomy — and why handing AI your credit card gets expensive.'},
+ {t:'FIFA Promised You a $60 Ticket. The Algorithm Had Other Plans.',d:'Apr 2026',u:SUB+'fifa-promised-you-a-60-ticket',c:'Technology & sport',x:'How dynamic pricing turned accessibility promises into the most exclusionary ticketing in World Cup history.'},
+ {t:'The Smartest Ball Ever Made',d:'Apr 2026',u:SUB+'the-smartest-ball-ever-made',c:'Technology & sport',x:'A chip inside the 2026 World Cup ball is quietly replacing human judgment with real-time sensor data.'},
+ {t:'Your Body as a Dashboard',d:'Mar 2026',u:SUB+'your-body-as-a-dashboard',c:'AI & philosophy',x:'The quantified self and the tension between data-driven health and human intuition.'},
+ {t:'What I Saw at GDC',d:'Mar 2026',u:SUB+'what-i-saw-at-gdc',c:'Technology & gaming',x:'How gaming and enterprise AI are converging, seen firsthand.'},
+ {t:"The Super Bowl Wasn't Selling You Products — It Was Selling You AI",d:'Feb 2026',u:SUB+'the-super-bowl-wasnt-selling-you',c:'AI & culture',x:'AI narratives and platform positioning took center stage in Super Bowl advertising.'},
+ {t:'The Cost of Thinking in the Cloud',d:'Feb 2026',u:SUB+'the-cost-of-thinking-in-the-cloud',c:'AI & philosophy',x:'The economic and philosophical implications of cloud-based AI computing.'},
+ {t:'The Australian Open Through a Tech Lens',d:'Feb 2026',u:SUB+'the-australian-open-through-a-tech',c:'Technology & sport',x:'AI, broadcast innovation, and fan engagement on a global tennis stage.'},
+ {t:'WHOOP Won Because It Figured Out What Athletes Actually Care About',d:'Feb 2026',u:SUB+'whoop-won-because-it-figured-out',c:'Product strategy',x:'Wearable platforms, athlete culture, and AI-driven performance ecosystems.'}
+];
+const blogs=[
+ {t:'Granite 4.0 to the Edge: On-Device AI for Real-World Performance',d:'Oct 2025',p:'Qualcomm Developer Blog',u:'https://www.qualcomm.com/developer/blog/2025/10/granite-4-0-to-the-edge-on-device-ai-for-real-world-performance',c:'Technical'},
+ {t:'Qualcomm Partners with Meta to Support Llama 3.2',d:'Sep 2024',p:'Qualcomm OnQ',u:'https://www.qualcomm.com/news/onq/2024/09/qualcomm-partners-with-meta-to-support-llama-3-point-2-big-deal-for-on-device-ai',c:'Partnerships'},
+ {t:'Exploring the Present and Future of AI: Analyst Media Workshop',d:'Jul 2024',p:'Qualcomm OnQ',u:'https://www.qualcomm.com/news/onq/2024/07/exploring-the-present-and-future-of-ai-insights-from-qualcomm-ai-analyst-media-workshop',c:'Industry insights'},
+ {t:'AI Developer Workflows Simplified with Qualcomm AI Hub',d:'May 2024',p:'Qualcomm OnQ',u:'https://www.qualcomm.com/news/onq/2024/05/ai-developer-workflows-simplified-empowering-developers-with-qualcomm-ai-hub',c:'Developer tools'},
+ {t:'Lantronix: Integrating Qualcomm AI Hub for Shorter Inference',d:'May 2024',p:'Qualcomm Developer Blog',u:'https://www.qualcomm.com/developer/blog/2024/05/lantronix-integrating-qualcomm-ai-hub-shorter-inference',c:'Case study'},
+ {t:'Train, Optimize, and Deploy Models on Edge Devices with SageMaker and AI Hub',d:'2024',p:'AWS Machine Learning Blog',u:'https://aws.amazon.com/blogs/machine-learning/train-optimize-and-deploy-models-on-edge-devices-using-amazon-sagemaker-and-qualcomm-ai-hub/',c:'Technical partnership'},
+ {t:'Waves Nx Earbuds: 3D Audio in Motion',d:'Nov 2020',p:'Qualcomm OnQ',u:'https://www.qualcomm.com/news/onq/2020/11/waves-nx-earbuds-3d-audio-motion',c:'Audio'},
+ {t:'Women Leading the Future of Mobile AI',d:'Oct 2020',p:'Qualcomm OnQ',u:'https://www.qualcomm.com/news/onq/2020/10/women-leading-future-mobile-ai',c:'Leadership'},
+ {t:"We're Making Work, Life, and Play Sound Better Than Ever",d:'Sep 2020',p:'Qualcomm OnQ',u:'https://www.qualcomm.com/news/onq/2020/09/were-making-work-life-and-play-sound-better-ever',c:'Product innovation'},
+ {t:'Deep Dive: Quick Charge 5',d:'Aug 2020',p:'Qualcomm OnQ',u:'https://www.qualcomm.com/news/onq/2020/08/deep-dive-quick-charge-5-and-other-cool-quick-charge-news',c:'Technology'}
+];
+const ic=p=>`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round">${p}</svg>`;
+const beyond=[
+ {t:'NCAA Division I Tennis',d:'Played Division I at UC San Diego. Competition still shapes how I approach strategy.',i:ic('<circle cx="12" cy="12" r="10"/><path d="M18.5 5.5c-3 3.5-3 9.5 0 13M5.5 5.5c3 3.5 3 9.5 0 13"/>')},
+ {t:'Travel & exploration',d:'Learning from different cultures and perspectives, one trip at a time.',i:ic('<circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20M2 12h20"/>')},
+ {t:'Photography',d:'Capturing moments through the lens — an exercise in noticing.',i:ic('<circle cx="12" cy="12" r="3.5"/><circle cx="12" cy="12" r="7.5"/>')},
+ {t:'AI side projects',d:'Experimental builds with emerging AI on nights and weekends.',i:ic('<rect x="5" y="5" width="14" height="14" rx="2"/><rect x="9.5" y="9.5" width="5" height="5"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/>')}
+];
 
-const videos = [
-  { t: 'Introducing Qualcomm AI Hub', id: 'FyM2w3N9xVw', n: 'Technical messaging, demo narratives, and launch positioning.', w: 'MWC 2024' },
-  { t: 'Snapdragon 8 Elite launch', id: '0e5zpV0NS50', n: 'Platform messaging, positioning, and partner demos.', w: 'Summit 2024' },
-  { t: 'Snapdragon 8 Gen 3 launch', id: 'h_vh7_n_OPs', n: 'Messaging, partner integration, and demo narrative.', w: 'Summit 2023' },
-  { t: 'Go to the Edge of Possible', id: 'SRh7NL2kpvo', n: 'Campaign narrative and creative strategy. 500M+ impressions.', w: 'Campaign' },
-  { t: 'Cephable and Qualcomm AI Hub', id: 'e-DDMkeQWLY', n: 'Partner demo messaging for Microsoft Build.', w: 'Build 2024' },
-  { t: 'What does on-device AI mean?', id: '3Dxlix1WNH8', n: 'Messaging framework for on-device AI education.', w: 'Explainer' }
-];
-const briefs = [
-  { t: 'Snapdragon 8 Elite', s: 'Mobile platform', pdf: 'b57555fc0_Snapdragon-8-Elite-Platform-Product-Brief (3).pdf', img: '8-elite.jpg' },
-  { t: 'Snapdragon 8 Gen 3', s: 'Mobile platform', pdf: '3432a7986_87-71408-1_REV_G_Snapdragon_8_gen_3_Mobile_Platform_Product_Brief (2).pdf', img: '8-gen-3.jpg' },
-  { t: 'Cloud AI 100 Ultra', s: 'Data center accelerator', pdf: '9daa3a398_Prod-Brief-QCOM-Cloud-AI-100-Ultra (1).pdf', img: 'ai-100-ultra.jpg' },
-  { t: 'Cloud AI 100', s: 'Edge accelerator', pdf: '5b32285d3_Prod-Brief-QCOM-Cloud-AI-100 (2).pdf', img: 'ai-100.jpg' }
-];
-const platforms = [
-  ['Qualcomm AI Engine', 'https://www.qualcomm.com/processors/ai-engine'],
-  ['Cloud AI 100 Ultra', 'https://www.qualcomm.com/artificial-intelligence/data-center/cloud-ai-100-ultra'],
-  ['AI Developer Platform', 'https://www.qualcomm.com/developer/artificial-intelligence'],
-  ['Mobile AI', 'https://www.qualcomm.com/artificial-intelligence/mobile-ai'],
-  ['Mobile Audio', 'https://www.qualcomm.com/audio/applications/mobile-audio'],
-  ['Quick Charge', 'https://www.qualcomm.com/products/features/quick-charge']
-];
-const articles = [
-  { o: 'Qualcomm OnQ', i: [
-    ['AI Developer Workflows Simplified with Qualcomm AI Hub', 'May 2024', 'https://www.qualcomm.com/news/onq/2024/05/ai-developer-workflows-simplified-empowering-developers-with-qualcomm-ai-hub'],
-    ['Qualcomm Partners with Meta to Support Llama 3.2', 'Sep 2024', 'https://www.qualcomm.com/news/onq/2024/09/qualcomm-partners-with-meta-to-support-llama-3-point-2-big-deal-for-on-device-ai'],
-    ['Insights from the Qualcomm AI Analyst Media Workshop', 'Jul 2024', 'https://www.qualcomm.com/news/onq/2024/07/exploring-the-present-and-future-of-ai-insights-from-qualcomm-ai-analyst-media-workshop'],
-    ['Women Leading the Future of Mobile AI', 'Oct 2020', 'https://www.qualcomm.com/news/onq/2020/10/women-leading-future-mobile-ai']
-  ]},
-  { o: 'Qualcomm Developer Blog', i: [
-    ['Granite 4.0 to the Edge', 'Oct 2025', 'https://www.qualcomm.com/developer/blog/2025/10/granite-4-0-to-the-edge-on-device-ai-for-real-world-performance'],
-    ['Lantronix: Integrating Qualcomm AI Hub', 'May 2024', 'https://www.qualcomm.com/developer/blog/2024/05/lantronix-integrating-qualcomm-ai-hub-shorter-inference']
-  ]},
-  { o: 'AWS Machine Learning Blog', i: [
-    ['Deploy Models on Edge Devices with SageMaker and Qualcomm AI Hub', '2024', 'https://aws.amazon.com/blogs/machine-learning/train-optimize-and-deploy-models-on-edge-devices-using-amazon-sagemaker-and-qualcomm-ai-hub/']
-  ]}
-];
-const essays = [
-  ["The Best AI in the World Exists. You're Not Allowed to Use It.", 'May 2026', 'https://open.substack.com/pub/thethinkingathlete/p/the-best-ai-in-the-world-exists-youre', 'Anthropic built a model so capable they would not release it. How AI access is splitting into tiers most people will never reach.'],
-  ['Your AI Agent Has a Spending Problem', 'Apr 2026', 'https://open.substack.com/pub/thethinkingathlete/p/your-ai-agent-has-a-spending-problem'],
-  ['FIFA Promised You a $60 Ticket', 'Apr 2026', 'https://open.substack.com/pub/thethinkingathlete/p/fifa-promised-you-a-60-ticket'],
-  ['The Smartest Ball Ever Made', 'Apr 2026', 'https://open.substack.com/pub/thethinkingathlete/p/the-smartest-ball-ever-made'],
-  ['Your Body as a Dashboard', 'Mar 2026', 'https://open.substack.com/pub/thethinkingathlete/p/your-body-as-a-dashboard'],
-  ['What I Saw at GDC', 'Mar 2026', 'https://open.substack.com/pub/thethinkingathlete/p/what-i-saw-at-gdc'],
-  ['The Cost of Thinking in the Cloud', 'Feb 2026', 'https://open.substack.com/pub/thethinkingathlete/p/the-cost-of-thinking-in-the-cloud']
-];
+/* ---------- UTIL ---------- */
+const $=(s,c=document)=>c.querySelector(s),$$=(s,c=document)=>[...c.querySelectorAll(s)];
+const clamp=(v,a=0,b=1)=>Math.min(b,Math.max(a,v));
+const lerp=(a,b,t)=>a+(b-a)*t;
+const ease=t=>t<.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2;
+const eOut=t=>1-Math.pow(1-t,3);
+const win=(p,a,b)=>clamp((p-a)/(b-a));
+const RM=document.documentElement.classList.contains('rm');
+const isMobile=()=>innerWidth<=820;
+const arrow='<svg width="18" height="18" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 12 12 4M5 4h7v7"/></svg>';
+function prog(el){const r=el.getBoundingClientRect(),t=el.offsetHeight-innerHeight;return t>0?clamp(-r.top/t):(r.top<innerHeight/2?1:0)}
+function visible(el){const r=el.getBoundingClientRect();return r.bottom>-50&&r.top<innerHeight+50}
 
-$('#vlist').innerHTML = videos.map(v => `<li><a class="vrow" href="https://www.youtube.com/watch?v=${v.id}" target="_blank" rel="noopener"><div class="vthumb"><img src="media/${v.id}.jpg" alt="" loading="lazy" width="1280" height="720"></div><div><h3>${esc(v.t)}</h3><p>${esc(v.n)}</p></div><span class="when">${v.w}</span>${up}</a></li>`).join('');
-$('#briefs').innerHTML = briefs.map(b => `<a class="brief" href="${encodeURI(b.pdf)}" target="_blank" rel="noopener"><div class="cover"><img src="${b.img}" alt="${esc(b.t)} product brief" loading="lazy" width="900" height="1165"></div><h3>${esc(b.t)}</h3><p>${esc(b.s)}</p></a>`).join('');
-$('#platforms').innerHTML = platforms.map(([t, u]) => `<a href="${u}" target="_blank" rel="noopener">${esc(t)} ${upSm}</a>`).join('');
-$('#articles').innerHTML = articles.map(g => `<div class="outlet">${esc(g.o)}</div><ul class="rows">${g.i.map(([t, d, u]) => `<li><a href="${u}" target="_blank" rel="noopener">${esc(t)}<span>${d}</span></a></li>`).join('')}</ul>`).join('');
-const [f, ...rest] = essays;
-const fe = $('#feat'); fe.href = f[2];
-fe.innerHTML = `<small>Latest essay, ${f[1]}</small><h4>${esc(f[0])}</h4><p>${esc(f[3])}</p>`;
-$('#essays').innerHTML = rest.map(([t, d, u]) => `<li><a href="${u}" target="_blank" rel="noopener">${esc(t)}<span>${d}</span></a></li>`).join('');
+/* ---------- RENDER ---------- */
+const track=$('#htrack');
+experiences.forEach(e=>{track.insertAdjacentHTML('beforeend',`<article class="panel${e.current?' cur':''}">
+ <div class="yr" aria-hidden="true">${e.yr}</div>
+ ${e.current?'<div class="badge mono"><i></i>Current role</div>':''}
+ <h3>${e.title}</h3>
+ <div class="co mono"><span>${e.company}</span><span>${e.location}</span><span>${e.period}</span></div>
+ <ul>${e.hl.map(h=>`<li><b>${h[0]}</b>${h[1]}</li>`).join('')}</ul></article>`)});
 
-// Nav state
-const links = [...document.querySelectorAll('.navpill a[href^="#"]')];
-const spy = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) links.forEach(a => a.setAttribute('aria-current', a.getAttribute('href') === '#' + e.target.id ? 'true' : 'false')); }), { rootMargin: '-40% 0px -55% 0px' });
-['about', 'work', 'media', 'experience', 'writing'].forEach(id => spy.observe(document.getElementById(id)));
+const m=[...partners,...partners].map(p=>`<span>${p}</span><span class="sep">✦</span>`).join('');
+$('#mtrack').innerHTML=m+m;
 
-// Reveal
-const rv = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('on'); rv.unobserve(e.target); } }), { threshold: .12, rootMargin: '0px 0px -40px 0px' });
-document.querySelectorAll('.rv').forEach(el => rv.observe(el));
+$('#vgrid').innerHTML=videos.map(v=>`<button class="vcard rv" data-vid="${v.id}"><div class="th"><img loading="lazy" src="https://img.youtube.com/vi/${v.id}/hqdefault.jpg" alt=""></div><div class="tag mono">${v.tag}</div><h4>${v.title}</h4><p>${v.c}</p></button>`).join('');
+
+$('#cases').innerHTML=cases.map((c,i)=>`<article class="case" data-i="${i}">
+ <div class="eyebrow mono">${c.tag} · 0${i+1}/0${cases.length}</div>
+ <div class="x">${c.a}<span class="serif">×</span>Qualcomm</div>
+ <div class="cgrid"><p>${c.outcome}</p><div class="mono">${c.title}<br>${c.role}</div><a class="pill" href="${c.link}" target="_blank" rel="noopener">Read release ${arrow}</a></div></article>`).join('');
+
+$('#plist').innerHTML=platforms.map((p,i)=>`<a class="prow rv" href="${p.l}" target="_blank" rel="noopener" data-img="${p.img}"><span class="i mono">0${i+1}</span><h4>${p.t}</h4><p>${p.r}</p><span class="ar">${arrow}</span></a>`).join('');
+$('#briefs').innerHTML=briefs.map(b=>`<a class="brief" href="${b.pdf}" target="_blank" rel="noopener"><div class="th"><img loading="lazy" src="${b.img}" alt="${b.t} product brief"></div><div class="tag mono">${b.tag}</div><h4>${b.t}</h4><p>${b.d}</p></a>`).join('');
+$('#beyond').innerHTML=beyond.map(b=>`<div class="rv">${b.i}<h4>${b.t}</h4><p>${b.d}</p></div>`).join('');
+
+let tab='essays',all=false;
+function renderW(){const list=tab==='essays'?essays:blogs;const items=all?list:list.slice(0,6);
+ $('#wlist').innerHTML=items.map(w=>`<a class="wrow" href="${w.u}" target="_blank" rel="noopener"><span class="d mono">${w.d}</span><div><h4>${w.t}</h4>${w.x?`<div class="desc">${w.x}</div>`:''}</div><span class="pub mono">${w.p||'The Thinking Athlete'} · ${w.c}</span><span class="ar">${arrow}</span></a>`).join('');
+ $('#more').textContent=all?'Show less':`Show all ${list.length}`;}
+$$('.tab').forEach(b=>b.addEventListener('click',()=>{tab=b.dataset.tab;all=false;$$('.tab').forEach(x=>x.setAttribute('aria-selected',x===b));renderW()}));
+$('#more').addEventListener('click',()=>{all=!all;renderW()});
+renderW();
+
+/* statement words */
+(function(){const p=$('#stmt');const walk=n=>{[...n.childNodes].forEach(c=>{if(c.nodeType===3){const f=document.createDocumentFragment();c.textContent.split(/(\s+)/).forEach(w=>{if(!w)return;if(/^\s+$/.test(w))f.append(w);else{const s=document.createElement('span');s.textContent=w;f.append(s)}});c.replaceWith(f)}else if(c.tagName==='SPAN'&&!c.dataset.w){c.dataset.w=1;}})};walk(p)})();
+const words=$$('#stmt>span');
+
+/* contact chars */
+(function(){const big=$('#big');const out=[];[...big.childNodes].forEach(n=>{const isSerif=n.nodeType===1;const txt=n.textContent;const wrap=isSerif?document.createElement('span'):document.createDocumentFragment();if(isSerif)wrap.className='serif';txt.split(/(\s+)/).forEach(wd=>{if(!wd)return;if(/^\s+$/.test(wd)){wrap.append(' ');return}const wb=document.createElement('span');wb.className='wd';wd.split('').forEach(ch=>{const s=document.createElement('span');s.className='ch';s.setAttribute('aria-hidden','true');s.textContent=ch;s._r=[(Math.random()-.5)*80,(Math.random()-.5)*90,(Math.random()-.5)*120];wb.append(s)});wrap.append(wb)});out.push(wrap)});big.innerHTML='';out.forEach(o=>big.append(o))})();
+const chars=$$('#big .ch');
+
+/* ---------- VIDEO SLOTS ---------- */
+$$('video[data-src]').forEach(v=>{
+  v.addEventListener('loadeddata',()=>{v.closest('.media').classList.add('has-video');if(v.dataset.mode==='loop'&&!RM)v.play().catch(()=>{})},{once:true});
+  v.addEventListener('error',()=>v.remove(),{once:true});
+  v.src=v.dataset.src;
+});
+
+/* ---------- HERO CANVAS: particle field -> chip ---------- */
+const hero={c:$('#heroCanvas'),pts:[],w:0,h:0,dpr:1,mx:-9999,my:-9999};
+hero.x=hero.c.getContext('2d');
+function heroSize(){const d=hero.dpr=Math.min(devicePixelRatio||1,2);hero.w=innerWidth;hero.h=innerHeight;hero.c.width=hero.w*d;hero.c.height=hero.h*d;hero.x.setTransform(d,0,0,d,0,0);buildChip()}
+function buildChip(){
+  const W=hero.w,H=hero.h,S=Math.min(W,H)*(W<700?.56:.40),cx=W/2,cy=H/2,T=[];
+  const g=W<700?13:17;
+  for(let i=0;i<g;i++)for(let j=0;j<g;j++){const x=cx-S/2+S*(i+.5)/g,y=cy-S/2+S*(j+.5)/g;const core=Math.abs(i-(g-1)/2)<2.6&&Math.abs(j-(g-1)/2)<2.6;T.push([x,y,core?2:0])}
+  const pins=W<700?9:13;
+  for(let k=0;k<pins;k++){const t=-S/2+S*(k+.5)/pins;for(let l=1;l<=4;l++){const o=S/2+l*S*.035;T.push([cx+t,cy-o,1],[cx+t,cy+o,1],[cx-o,cy+t,1],[cx+o,cy+t,1])}}
+  const ring=W<700?120:220;for(let k=0;k<ring;k++){const a=k/ring*Math.PI*2,r=S*.98+(k%3)*S*.02;T.push([cx+Math.cos(a)*r,cy+Math.sin(a)*r,3])}
+  const N=T.length+(W<700?120:260);
+  if(hero.pts.length!==N){hero.pts=Array.from({length:N},()=>({ox:Math.random()*W,oy:Math.random()*H,ph:Math.random()*6.28,sp:.4+Math.random(),z:Math.random()}))}
+  hero.pts.forEach((p,i)=>{const t=T[i];p.tx=t?t[0]:p.ox;p.ty=t?t[1]:p.oy;p.k=t?t[2]:4;p.ox=Math.random()*W;p.oy=Math.random()*H});
+}
+function heroDraw(p,t){
+  const x=hero.x,W=hero.w,H=hero.h;x.clearRect(0,0,W,H);
+  const e=ease(win(p,.08,.62));
+  const pulse=.5+.5*Math.sin(t*.003);
+  for(const q of hero.pts){
+    let dx=q.ox+Math.sin(t*.00035*q.sp+q.ph)*60,dy=q.oy+Math.cos(t*.0003*q.sp+q.ph)*60;
+    const ee=q.k===4?e*.15:e;
+    let X=lerp(dx,q.tx,ee),Y=lerp(dy,q.ty,ee);
+    const mx=X-hero.mx,my=Y-hero.my,d2=mx*mx+my*my;
+    if(d2<16000){const f=(1-d2/16000)*28;const d=Math.sqrt(d2)||1;X+=mx/d*f;Y+=my/d*f}
+    let a,s,col;
+    if(q.k===2&&e>.5){a=.55+.45*pulse*e;col='255,106,61';s=2.4}
+    else if(q.k===4){a=.12+q.z*.25;col='242,239,233';s=1.2}
+    else{a=.25+q.z*.35+e*.35;col=q.k===1&&e>.6?'255,179,138':'242,239,233';s=1.1+q.z*.9}
+    x.fillStyle=`rgba(${col},${a.toFixed(3)})`;x.fillRect(X,Y,s,s);
+  }
+}
+addEventListener('pointermove',e=>{hero.mx=e.clientX;hero.my=e.clientY},{passive:true});
+
+/* ---------- NET CANVAS: cloud -> edge ---------- */
+const net={c:$('#netCanvas'),w:0,h:0};net.x=net.c.getContext('2d');
+function netSize(){const d=Math.min(devicePixelRatio||1,2);net.w=innerWidth;net.h=innerHeight;net.c.width=net.w*d;net.c.height=net.h*d;net.x.setTransform(d,0,0,d,0,0);
+  const W=net.w,H=net.h,cl=[],ed=[];for(let i=0;i<9;i++){const a=Math.PI*(1.15+.7*i/8);cl.push([W/2+Math.cos(a)*W*.28,H*.62+Math.sin(a)*H*.5])}
+  const n=W<700?10:18;for(let i=0;i<n;i++)ed.push([W*.06+W*.88*i/(n-1),H*.88+Math.sin(i*1.7)*H*.03]);
+  net.cl=cl;net.ed=ed;net.links=[];ed.forEach((e,i)=>{net.links.push([i%cl.length,i]);net.links.push([(i*5+2)%cl.length,i])});
+  net.pul=net.links.map(()=>Math.random())}
+function netDraw(p,t){const x=net.x,W=net.w,H=net.h;x.clearRect(0,0,W,H);const lit=ease(win(p,.1,.95))*net.ed.length;
+  x.lineWidth=1;net.links.forEach((l,k)=>{const a=net.cl[l[0]],b=net.ed[l[1]],on=l[1]<lit;
+    x.strokeStyle=on?'rgba(255,106,61,.16)':'rgba(242,239,233,.05)';x.beginPath();x.moveTo(a[0],a[1]);x.quadraticCurveTo((a[0]+b[0])/2,a[1]+(b[1]-a[1])*.9,b[0],b[1]);x.stroke();
+    if(on){const u=(net.pul[k]+t*.00025*(1+k%3))%1;const px=lerp(lerp(a[0],(a[0]+b[0])/2,u),lerp((a[0]+b[0])/2,b[0],u),u),py=lerp(lerp(a[1],a[1]+(b[1]-a[1])*.9,u),lerp(a[1]+(b[1]-a[1])*.9,b[1],u),u);x.fillStyle='rgba(255,179,138,.9)';x.fillRect(px-1.2,py-1.2,2.4,2.4)}});
+  net.cl.forEach(c=>{x.strokeStyle='rgba(242,239,233,.25)';x.beginPath();x.arc(c[0],c[1],5,0,7);x.stroke()});
+  net.ed.forEach((e,i)=>{const on=i<lit;x.fillStyle=on?'rgba(255,106,61,.95)':'rgba(242,239,233,.18)';x.fillRect(e[0]-4,e[1]-7,8,14);if(on){x.strokeStyle='rgba(255,106,61,.25)';x.strokeRect(e[0]-8,e[1]-11,16,22)}})}
+
+/* ---------- SCENES ---------- */
+const S={hero:$('#hero'),readout:$('#readout'),career:$('#career'),launches:$('#launches'),cases:$('#partnerships'),contact:$('#contact')};
+const heroVid=$('#heroMedia video');
+const stats=$$('.stat'),steps=$$('#stepper b');
+const caseEls=$$('.case');
+let vidT=0;const chs=$$('[data-ch]');
+function fmtImp(v){return v>=990?'1B':Math.round(v)+'M'}
+
+function update(t){
+  /* hero */
+  if(visible(S.hero)){const p=prog(S.hero);
+    if(!RM)heroDraw(p,t);
+    const a=win(p,0,.38);
+    $('#heroCopy').style.transform=`translateY(${-a*90}px)`;$('#heroCopy').style.opacity=1-ease(a);
+    $('.hero-top').style.opacity=1-a;$('#cue').style.opacity=1-win(p,0,.1);
+    const b=win(p,.55,.85);$('#heroSecond').style.opacity=ease(b)*(1-win(p,.94,1));$('#heroSecond').style.transform=`scale(${lerp(.94,1,eOut(b))})`;
+    if(heroVid&&heroVid.duration){const tg=p*heroVid.duration;vidT=lerp(vidT,tg,.12);if(Math.abs(heroVid.currentTime-vidT)>.03)heroVid.currentTime=vidT}
+  }
+  /* readout */
+  if(visible(S.readout)&&!RM){const p=prog(S.readout);
+    const wp=win(p,0,.26)*words.length;words.forEach((w,i)=>w.style.opacity=(.14+.86*clamp(wp-i)).toFixed(3));
+    const so=win(p,.28,.34);$('#statement').style.opacity=1-so;$('#statement').style.transform=`translateY(calc(-50% - ${so*80}px))`;
+    const ph=[[.34,.56],[.56,.78],[.78,1]];
+    stats.forEach((s,i)=>{const l=win(p,ph[i][0],ph[i][1]);const last=i===ph.length-1;
+      const inn=eOut(win(l,0,.22)),out=last?0:ease(win(l,.8,1));
+      const active=p>=ph[i][0]-.02&&p<=ph[i][1]+.02;
+      s.style.opacity=active?(inn*(1-out)).toFixed(3):0;
+      s.style.transform=`translateY(${(1-inn)*18-out*18}vh)`;
+      const v=+s.dataset.target*eOut(win(l,.05,.55));
+      $('.n',s).textContent=s.dataset.kind==='imp'?fmtImp(v):Math.round(v)});
+    const segs=[[0,.34],...ph];steps.forEach((b,i)=>b.style.transform=`scaleX(${win(p,segs[i][0],segs[i][1])})`);
+  }
+  /* career */
+  if(visible(S.career)&&!RM&&!isMobile()){const p=prog(S.career);const max=track.scrollWidth-innerWidth;
+    track.style.transform=`translate3d(${-ease(win(p,.04,.96))*max}px,0,0)`;$('#tlbar').style.transform=`scaleX(${p})`;
+    $$('.panel .yr').forEach(y=>{const r=y.parentElement.getBoundingClientRect();const o=(r.left+r.width/2-innerWidth/2)/innerWidth;y.style.transform=`translateX(${o*-120}px)`})}
+  /* launches */
+  if(visible(S.launches)&&!RM){const p=prog(S.launches),W=innerWidth,H=innerHeight;
+    const e=ease(win(p,.05,.6));const w0=Math.min(W*(W<700?.86:.42),720),h0=w0*9/16;
+    const ix=lerp((W-w0)/2,0,e),iy0=lerp((H-h0)/2+H*.12,0,e),iy1=lerp((H-h0)/2-H*.12,0,e);
+    $('#frame').style.clipPath=`inset(${iy0}px ${ix}px ${iy1}px ${ix}px round ${lerp(14,0,e)}px)`;
+    $('#frameImg').style.transform=`scale(${lerp(1.3,1.04,e)+win(p,.6,1)*.06})`;
+    $('#mhead').style.opacity=1-win(p,.18,.38);$('#mhead').style.transform=`translateY(${-win(p,.1,.4)*60}px)`;
+    const f=win(p,.6,.75);$('#finfo').style.opacity=f;$('#finfo').style.transform=`translateY(${(1-eOut(f))*40}px)`;$('#finfo').style.pointerEvents=f>.5?'auto':'none'}
+  /* cases */
+  if(visible(S.cases)){const p=prog(S.cases);if(!RM)netDraw(p,t);
+    if(!RM){const io=win(p,.12,.2);$('#caseIntro').style.opacity=1-io;$('#caseIntro').style.transform=`translateY(${-io*60}px)`;
+    const ph=[[.18,.6],[.6,1]];caseEls.forEach((c,i)=>{const l=win(p,ph[i][0],ph[i][1]),last=i===ph.length-1;const inn=eOut(win(l,0,.25)),out=last?0:ease(win(l,.8,1));const op=(p>=ph[i][0]&&(last||p<=ph[i][1]))?inn*(1-out):0;
+      c.style.opacity=op.toFixed(3);c.classList.toggle('on',op>.5);$('.x',c).style.transform=`translateX(${(1-inn)*12-out*12}vw)`;$('.cgrid',c).style.transform=`translateY(${(1-inn)*40}px)`})}}
+  /* contact */
+  if(visible(S.contact)&&!RM){const p=prog(S.contact);const e=eOut(win(p,0,.7));
+    chars.forEach((c,i)=>{const k=1-clamp(e*1.15-i*.004);c.style.transform=`translate(${c._r[0]*k}vw,${c._r[1]*k}vh) rotate(${c._r[2]*k}deg)`;c.style.opacity=(1-k*.9).toFixed(3)});
+    $('#cfoot').style.opacity=win(p,.6,.85);$('#cfoot').style.transform=`translateY(${(1-win(p,.6,.85))*30}px)`}
+  /* hud */
+  let cur=chs[0];for(const c of chs){if(c.getBoundingClientRect().top<innerHeight*.5)cur=c}
+  $('#hudNum').textContent=cur.dataset.ch;$('#hudName').textContent=cur.dataset.name;
+  const total=document.documentElement.scrollHeight-innerHeight;$('#hudBar').style.transform=`scaleX(${clamp(scrollY/total)})`;
+}
+
+/* marquee: velocity-reactive */
+let mx=0,lastY=scrollY,vel=0;const mt=$('#mtrack');
+function marquee(){const dy=scrollY-lastY;lastY=scrollY;vel=lerp(vel,dy,.1);mx-=.6+Math.abs(vel)*.35;const half=mt.scrollWidth/2;if(-mx>half)mx+=half;mt.style.transform=`translate3d(${mx}px,0,0)`}
+
+function loop(t){update(t);if(!RM)marquee();requestAnimationFrame(loop)}
+
+/* reveals */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{rootMargin:'0px 0px -10% 0px'});
+function observe(){$$('.rv:not(.in)').forEach(el=>io.observe(el))}
+observe();new MutationObserver(observe).observe($('#wlist'),{childList:true});
+
+/* platform peek */
+const peek=$('#peek'),pimg=$('#peekImg');let px=0,py=0,tx=0,ty=0;
+if(matchMedia('(hover:hover)').matches){$$('.prow').forEach(r=>{r.addEventListener('mouseenter',()=>{pimg.src=r.dataset.img;peek.classList.add('on')});r.addEventListener('mouseleave',()=>peek.classList.remove('on'))});
+ addEventListener('pointermove',e=>{tx=e.clientX+170;ty=e.clientY});(function pk(){px=lerp(px,tx,.14);py=lerp(py,ty,.14);peek.style.left=px+'px';peek.style.top=py+'px';requestAnimationFrame(pk)})()}
+
+/* lightbox */
+const lb=$('#lb');
+function openVid(id){$('#lbBox').innerHTML=`<iframe src="https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen title="Video"></iframe>`;lb.classList.add('on');$('#lbClose').focus()}
+function closeVid(){lb.classList.remove('on');$('#lbBox').innerHTML=''}
+document.addEventListener('click',e=>{const b=e.target.closest('[data-vid]');if(b){e.preventDefault();openVid(b.dataset.vid)}});
+$('#frame').addEventListener('click',()=>openVid('SRh7NL2kpvo'));$('#frame').addEventListener('keydown',e=>{if(e.key==='Enter')openVid('SRh7NL2kpvo')});
+$('#lbClose').addEventListener('click',closeVid);lb.addEventListener('click',e=>{if(e.target===lb)closeVid()});addEventListener('keydown',e=>{if(e.key==='Escape')closeVid()});
+
+/* smooth anchor */
+$$('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const t=$(a.getAttribute('href'));if(!t)return;e.preventDefault();scrollTo({top:t.getBoundingClientRect().top+scrollY,behavior:RM?'auto':'smooth'})}));
+
+/* init */
+function resize(){heroSize();netSize()}
+addEventListener('resize',resize);resize();
+if(RM){heroDraw(1,0);netDraw(1,0)}
+requestAnimationFrame(loop);
+
+/* loader */
+(function(){const L=$('#loader'),n=$('#loadnum');const go=()=>{L.classList.add('done');document.documentElement.classList.add('ready');setTimeout(()=>L.remove(),1200)};
+ if(RM||!L){document.documentElement.classList.add('ready');return}
+ const t0=performance.now(),D=1100;(function tick(now){const k=clamp((now-t0)/D);n.textContent=Math.round(eOut(k)*100);if(k<1)requestAnimationFrame(tick);else setTimeout(go,150)})(t0)})();
 </script>
 </body>
 </html>
